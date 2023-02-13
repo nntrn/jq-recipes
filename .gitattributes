@@ -1,0 +1,7 @@
+*.html linguist-detectable=false
+*.scss linguist-detectable=false
+
+assets/* linguist-detectable=false
+
+.gitattributes export-ignore
+.gitignore export-ignore
