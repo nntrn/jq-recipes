@@ -1,7 +1,7 @@
 body{font-family:sans-serif;font-size:14px}
 pre{border:#ebedf5 2px solid;padding:1em;overflow-x:hidden;}
 pre,code{font-face:monospace;font-weight:500;font-size:unset;font-size:95%}
-h1{font-weight:600}
+h1{font-weight:600;padding-bottom:.25em}
 button[type="button"]{cursor: pointer!important}
 a {color: #666768;}
 
@@ -10,10 +10,10 @@ a {color: #666768;}
 .search-input{border-radius:0}
 
 @media (max-width: 800px) {
-.aux-nav,.site-heade{display:none}
-.main-header{z-index:0;display:none;background-color:#fff}
+  .aux-nav,.site-header{display:none}
+  .main-header{z-index:0;display:none;background-color:#fff}
 }
 
 @media (min-width: 50rem) {
-.main-content-wrap{padding-top:0;padding-bottom:2rem}
+  .main-content-wrap{padding-top:1rem;padding-bottom:2rem}
 }
