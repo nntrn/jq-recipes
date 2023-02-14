@@ -1,4 +1,4 @@
-# Summary
+# summary
 
 ```jq
 # ~/.jq/utils.jq
