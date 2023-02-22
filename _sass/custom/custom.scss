@@ -3,17 +3,22 @@ pre{border:#ebedf5 2px solid;padding:1em;overflow-x:hidden;}
 pre,code{font-family:monospace;font-weight:500;font-size:unset;font-size:95%}
 h1{font-weight:600;padding-bottom:.25em}
 button[type="button"]{cursor: pointer!important}
-a {color: #666768;}
+a:hover {color: #666768;}
 
 .main-content { line-height:1.1 }
 .search{padding:0;margin:0;border-radius:0}
 .search-input{border-radius:0}
+.search-label .search-icon{width:1.1rem;height:1.1rem}
 
 @media (max-width: 800px) {
-  .aux-nav,.site-header{display:none}
-  .main-header{z-index:0;display:none;background-color:#fff}
+  .main-header{z-index:0;background-color:#fff}
 }
 
 @media (min-width: 50rem) {
   .main-content-wrap{padding-top:1rem;padding-bottom:2rem}
+  .site-nav{padding-top:0;}
+}
+
+@media (max-width: 50rem) {
+  .nav-list{max-height:0px;border:1px solid #ddd;overflow-y:scroll}
 }

@@ -1,8 +1,9 @@
 *.html linguist-detectable=false
 *.scss linguist-detectable=false
 *.css linguist-detectable=false
-
 assets/* linguist-detectable=false
+
+*.md linguist-detectable
 
 .gitattributes export-ignore
 .gitignore export-ignore

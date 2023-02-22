@@ -7,6 +7,11 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+markdown: kramdown
+
+kramdown:
+  toc_levels: 2..6
+
 github_username: nntrn
 
 # Aux links for the upper right navigation
@@ -16,5 +21,5 @@ aux_links:
 
 sass:
   style: compact
-  
+
 exclude: [readme.md]
