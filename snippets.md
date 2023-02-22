@@ -1,5 +1,11 @@
 # snippets
 
+**Create object with filename as key and content as value:**
+
+```sh
+jq 'reduce inputs as $s (.; .[input_filename|gsub(".json";"")|split("/")|last] += $s)' ./*.json
+```
+
 ```sh
 jq --arg key value 'group_by(.[$key]) | map({"\(.[0][$key])": length}) | add'
 ```
