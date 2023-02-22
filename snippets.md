@@ -3,7 +3,7 @@
 **Create object with filename as key and content as value:**
 
 ```sh
-jq 'reduce inputs as $s (.; .[input_filename|gsub(".json";"")|split("/")|last] += $s)' ./*.json
+jq -n 'reduce inputs as $s (.; .[input_filename|gsub(".json";"")|split("/")|last] += $s)' ./*.json
 ```
 
 ```sh
