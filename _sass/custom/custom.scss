@@ -1,5 +1,5 @@
 body{font-family:sans-serif;font-size:14px}
-pre{border:#ebedf5 2px solid;padding:1em;overflow-x:hidden;}
+pre{border:#ebedf5 2px solid;padding:1em;overflow-x:scroll;white-space:pre-wrap}
 pre,code{font-family:monospace;font-weight:500;font-size:unset;font-size:95%}
 h1{font-weight:600;padding-bottom:.25em}
 button[type="button"]{cursor: pointer!important}
@@ -19,6 +19,6 @@ a:hover {color: #666768;}
   .site-nav{padding-top:0;}
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 49rem) {
   .nav-list{max-height:0px;border:1px solid #ddd;overflow-y:scroll}
 }
