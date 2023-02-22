@@ -1,7 +1,5 @@
 # json2csv
 
-## Function
-
 ```jq
 def json2csv:
   (map(keys) | add | unique) as $cols
@@ -10,7 +8,7 @@ def json2csv:
   | @csv;
 ```
 
-## Example
+Example:
 
 ```sh
 curl -s https://jsonplaceholder.typicode.com/todos |
@@ -20,9 +18,9 @@ curl -s https://jsonplaceholder.typicode.com/todos |
   | @csv'
 ```
 
-Result
+Result:
 
-```csv
+```
 "completed","id","title","userId"
 false,1,"delectus aut autem",1
 false,2,"quis ut nam facilis et officia qui",1
