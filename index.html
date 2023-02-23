@@ -9,7 +9,7 @@ title: Home
       <li class="page"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
     {%- endif -%}
   {% endfor %}
-  {% for post in site.posts %}
+  {% for post in site.docs %}
     {%- if page.title -%}
       <li class="post"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {%- endif -%}

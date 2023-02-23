@@ -18,6 +18,7 @@ aux_links:
 collections:
   docs:
     output: true
+    permalink: /:name
 
 exclude: [readme.md]
 
