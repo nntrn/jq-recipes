@@ -6,6 +6,7 @@ color_scheme: custom
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-tidy
 
 markdown: kramdown
 
