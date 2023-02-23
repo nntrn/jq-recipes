@@ -15,17 +15,14 @@ aux_links:
   "Source Code":
     - "//github.com/nntrn/jq-recipes"
 
-# collections:
-#   docs:
-#     permalink: /:slug
+collections:
+  docs:
+    permalink: /:title/
 
 defaults:
   - scope:
       path: ""
       type: "pages"
-    values:
-      #       layout: "default"
-      permalink: /:title/
 
 exclude: [readme.md]
 
