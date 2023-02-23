@@ -2,15 +2,8 @@ title: "JQ Recipes"
 remote_theme: just-the-docs/just-the-docs
 search_enabled: true
 color_scheme: custom
+heading_anchors: true
 
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-  - jekyll-tidy
-
-gems:
-  - jekyll-tidy
-  
 markdown: kramdown
 
 kramdown:
@@ -18,12 +11,26 @@ kramdown:
 
 github_username: nntrn
 
-# Aux links for the upper right navigation
 aux_links:
   "Source Code":
     - "//github.com/nntrn/jq-recipes"
 
+exclude: [readme.md]
+
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
 sass:
   style: compact
 
-exclude: [readme.md]
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
