@@ -1,6 +1,6 @@
 # snippets
 
-1. The generated Toc will be an ordered list
+* TOC
 {:toc}
 
 ## Combine json files
