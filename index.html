@@ -10,8 +10,13 @@ title: Home
     {%- endif -%}
   {% endfor %}
   {% for post in site.posts %}
-    {%- if page.title -%}
+    {%- if post.title -%}
       <li class="post"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {%- endif -%}
+  {% endfor %}
+  {% for doc in site.docs %}
+    {%- if doc.title -%}
+      <li class="doc"><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
     {%- endif -%}
   {% endfor %}
 </ul>
