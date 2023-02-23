@@ -8,6 +8,9 @@ plugins:
   - jekyll-remote-theme
   - jekyll-tidy
 
+gems:
+  - jekyll-tidy
+  
 markdown: kramdown
 
 kramdown:
