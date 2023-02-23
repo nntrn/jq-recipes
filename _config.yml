@@ -15,6 +15,10 @@ aux_links:
   "Source Code":
     - "//github.com/nntrn/jq-recipes"
 
+collections:
+  docs:
+    output: true
+
 exclude: [readme.md]
 
 plugins:
