@@ -15,16 +15,17 @@ aux_links:
   "Source Code":
     - "//github.com/nntrn/jq-recipes"
 
-collections:
-  docs:
-    permalink: /:slug
+# collections:
+#   docs:
+#     permalink: /:slug
 
 defaults:
   - scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
+      path: ""
+      type: "pages"
     values:
-      layout: "default"
+      #       layout: "default"
+      permalink: /:title/
 
 exclude: [readme.md]
 
@@ -37,7 +38,7 @@ sass:
   style: compact
 
 compress_html:
-  clippings: []
+  clippings: all
   comments: []
   endings: []
   ignore:
