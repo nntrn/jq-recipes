@@ -1,0 +1,53 @@
+name: Create content from issue
+
+on:
+  issue_comment:
+    types: [created, edited, deleted]
+  issues:
+    types: [opened, edited]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  create_content:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == github.triggering_actor
+    env:
+      OUT_DIR: docs
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set filename
+        run: >
+          cat issue.json | jq -r '(.issue
+          | [.title|[match("(?<a>[a-zA-Z0-9]+).*?"; "ig")]|.[].string]|join("-")|ascii_downcase)
+          | "ISSUE_FILENAME=\(.).md"' >>$GITHUB_ENV
+
+      - name: Write body
+        working-directory: ${{ env.OUT_DIR }}
+        run: >
+          jq -r '.issue
+            | ["# \(.title)","",.body,""]
+            | join("\n")|gsub("\r";"")' $GITHUB_EVENT_PATH >${{ env.ISSUE_FILENAME }}
+
+      - name: Download comments
+        working-directory: ${{ env.OUT_DIR }}
+        if: ${{ github.event.issue.comments > 0 }}
+        run: |
+          curl -s "${{ github.event.issue.url }}/comments?per_page=100" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" |
+            jq -r 'sort_by(.created_at)
+              | map(select(.author_association == "OWNER").body)
+              | join("\n\n") | gsub("\r";"")'  >>${{ env.ISSUE_FILENAME }}
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions@github.com"
+          git config push.default current
+          git pull
+          git add .
+          git commit -m "#${{github.event.issue.number}} - ${{github.event.issue.title}} [${{github.event.action}}]"
+          git push
