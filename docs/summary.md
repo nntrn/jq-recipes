@@ -13,13 +13,20 @@ def summary:
   | map(del(select((.value|keys[0]|length) > 100 )) | del(select((.value|keys|length) > 400 )))
   | map(select(.))
   | from_entries;
+
+# possibly a better way
+def summary2:
+  . as $data 
+  | (.[0]|keys)
+  | map(. as $item| {key: $item, value: ($data|map(.[$item])|group_by(.)|map({"\(.[0])": length}) )|add } )
+  | map(select((.value|to_entries|length)< (.90 * ($data|length)) ));
 ```
 
 
 ## Example
 
 ```sh
-cat file.json | jq -L $HOME/.jq 'include "utils"; summary'
+cat data/titanic.json | jq -L $HOME/.jq 'include "utils"; summary'
 ```
 
 ```json
