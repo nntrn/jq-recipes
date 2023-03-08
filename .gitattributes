@@ -1,6 +1,6 @@
-docs/* linguist-language=jq
+docs/* linguist-detectable
 _sass/** linguist-generated
 data/** linguist-documentation
 
 *.html linguist-detectable=false
-docs/*.md linguist-detectable
+docs/*.md linguist-language=jq
