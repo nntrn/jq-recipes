@@ -1,3 +1,6 @@
+*.html linguist-detectable=false
+*.md linguist-detectable
+
 docs/** linguist-language=jq
 _sass/** linguist-generated
 data/** linguist-documentation
