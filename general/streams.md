@@ -2,12 +2,21 @@
 
 Data used: [nested.json](../data/outer.json)
 
-Without
-
-```console
-$ jq  -c '' data/outer.json
-
-{"outer1":{"outer2":{"outer3":{"key1":"value1","key2":"value2"},"outer4":{"key1":"value1","key2":"value2"}}}}
+```json
+{
+  "outer1": {
+    "outer2": {
+      "outer3": {
+        "key1": "value1",
+        "key2": "value2"
+      },
+      "outer4": {
+        "key1": "value1",
+        "key2": "value2"
+      }
+    }
+  }
+}
 ```
 
 ```console

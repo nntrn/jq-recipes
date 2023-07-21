@@ -17,6 +17,7 @@ jq -n 'reduce inputs as $s (.; .[input_filename|gsub(".json";"")|split("/")|last
 ```sh
 jq --arg key value 'group_by(.[$key]) | map({"\(.[0][$key])": length}) | add'
 ```
+
 Example:
 
 ```console
@@ -32,9 +33,9 @@ $ jq --arg key Status 'group_by(.[$key]) | map({"\(.[0][$key])": length}) | add'
 ## Flatten json
 
 ```sh
-# https://stackoverflow.com/a/55277881
 jq -r 'paths(scalars) as $p | "\($p|join("."))=\(getpath($p))"' <FILE>
 ```
+
 Example:
 
 ```console
@@ -54,3 +55,5 @@ $ jq -r 'paths(scalars) as $p | "\($p|join("."))=\(getpath($p))"' data/titanic.j
 1.Siblings_Spouses_Aboard=1
 1.Parents_Children_Aboard=0
 ```
+
+[[Source]](https://stackoverflow.com/a/55277881)

@@ -50,19 +50,19 @@ $ jq -r 'paths(scalars) as $p | "\($p|join("."))=\(getpath($p))"' data/titanic.j
 1.Parents_Children_Aboard=0
 ```
 
-**Example: Extract multiple fields**
-
-[[Source]](https://stackoverflow.com/a/55277881)
+**Example:** Extract multiple fields
 
 ```jq
-(paths(scalars) | select(IN(.[];
-    "_index",
-    "current_send_data",
-    "ship_send_delay",
-    "ship_send_priority",
-    "current_ship_status"
-))) as $p | "\($p|join("."))=\(getpath($p))"
+( paths(scalars) | select(IN(.[];
+  "_index",
+  "current_send_data",
+  "ship_send_delay",
+  "ship_send_priority",
+  "current_ship_status"
+))) as $p
+| "\($p|join("."))=\(getpath($p))"
 ```
+
 ```console
 $ jq -r 'paths(scalars) as $p | "\($p|join("."))=\(getpath($p))"' file
 _index=ships
@@ -87,3 +87,4 @@ _source.statistics.space_1.template2.current_ship_status=sent
 _source.statistics.space_1.template2.current_ship_date=4324242
 _source.statistics.space_1.template2.checked_payload=0
 ```
+[[Source]](https://stackoverflow.com/a/55277881)

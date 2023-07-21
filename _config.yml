@@ -3,6 +3,7 @@ description: Code snippets for jq, command-line JSON processor
 baseurl: "/jq-recipes"
 url: "https://nntrn.github.io"
 repository: nntrn/jq-recipes
+recipes_file: recipes.jq
 
 remote_theme: just-the-docs/just-the-docs
 heading_anchors: false
@@ -68,7 +69,7 @@ plugins:
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/nntrn/jq-recipes"
-gh_edit_branch: "devel"
+gh_edit_branch: "master"
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree"
 
