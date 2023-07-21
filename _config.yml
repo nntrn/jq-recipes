@@ -35,18 +35,11 @@ github_username: nntrn
 
 collections:
   functions:
-    permalink: "/:collection/:path/"
+    name: Functions
     output: true
   general:
-    permalink: "/:collection/:path/"
+    name: General
     output: true
-
-jq-recipes:
-  collections:
-    functions:
-      name: Functions
-    general:
-      name: General
 
 defaults:
   - scope:
