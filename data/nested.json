@@ -1,0 +1,14 @@
+{
+  "server": {
+    "atx": {
+      "user": "annie",
+      "port": 22
+    }
+  },
+  "storage": {
+    "nyc": {
+      "user": "nntrn",
+      "port": 22
+    }
+  }
+}

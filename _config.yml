@@ -1,0 +1,100 @@
+title: "JQ Recipes"
+description: Code snippets for jq, command-line JSON processor
+baseurl: "/jq-recipes"
+url: "https://nntrn.github.io"
+repository: nntrn/jq-recipes
+
+remote_theme: just-the-docs/just-the-docs
+heading_anchors: false
+color_scheme: custom
+markdown: kramdown
+permalink: pretty
+enable_copy_code_button: true
+
+favicon_ico: "/assets/favicon.svg"
+
+search_enabled: true
+search:
+  # Maximum amount of previews per search result
+  previews: 3
+  # Maximum amount of words to display before a matched word in the preview
+  preview_words_before: 3
+  # Maximum amount of words to display after a matched word in the preview
+  preview_words_after: 3
+  tokenizer_separator: /[^a-zA-Z0-9]+/
+  rel_url: false
+  button: false
+
+nav_sort: case_sensitive
+
+kramdown:
+  toc_levels: 2..2
+
+github_username: nntrn
+
+collections:
+  functions:
+    permalink: "/:collection/:path/"
+    output: true
+  general:
+    permalink: "/:collection/:path/"
+    output: true
+
+jq-recipes:
+  collections:
+    functions:
+      name: Functions
+    general:
+      name: General
+
+defaults:
+  - scope:
+      path: "functions/*.md"
+    values:
+      parent: "Functions"
+  - scope:
+      path: "general/*.md"
+    values:
+      parent: "General"
+  - scope:
+      path: "**index.html"
+    values:
+      has_children: true
+      layout: "default"
+
+plugins:
+  - jekyll-remote-theme
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/nntrn/jq-recipes"
+gh_edit_branch: "devel"
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree"
+
+callouts_level: quiet
+callouts:
+  highlight:
+    color: yellow
+  source:
+    title: Source
+    color: green
+  data:
+    title: Data
+    color: yellow
+  note:
+    title: Read more
+    color: blue
+
+sass:
+  style: compact
+
+compress_html:
+  clippings: [div, p, ul, td, h1, h2]
+  endings: all
+  comments: ["<!--", "-->"]
+  startings: []
+  blanklines: true
+  profile: false
+
+exclude: [readme.md]

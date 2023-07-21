@@ -1,0 +1,503 @@
+[
+  {
+    "owner": {
+      "reputation": 321577,
+      "accept_rate": 92,
+      "display_name": "Brian Campbell",
+      "link": "https://stackoverflow.com/users/69755/brian-campbell"
+    },
+    "is_accepted": true,
+    "score": 1673,
+    "creation_date": "2009-12-23T21:59:30Z",
+    "answer_id": 1955555,
+    "question_id": 1955505,
+    "share_link": "https://stackoverflow.com/a/1955555",
+    "body_markdown": "There are a number of tools specifically designed for the purpose of manipulating JSON from the command line, and will be a lot easier and more reliable than doing it with Awk, such as [`jq`][1]:\r\n\r\n    curl -s &#39;https://api.github.com/users/lambda&#39; | jq -r &#39;.name&#39;\r\n\r\nYou can also do this with tools that are likely already installed on your system, like Python using the [`json` module][3], and so avoid any extra dependencies, while still having the benefit of a proper JSON parser. The following assume you want to use UTF-8, which the original JSON should be encoded in and is what most modern terminals use as well:\r\n\r\nPython 3:\r\n\r\n    curl -s &#39;https://api.github.com/users/lambda&#39; | \\\r\n        python3 -c &quot;import sys, json; print(json.load(sys.stdin)[&#39;name&#39;])&quot;\r\n\r\nPython 2:\r\n\r\n    export PYTHONIOENCODING=utf8\r\n    curl -s &#39;https://api.github.com/users/lambda&#39; | \\\r\n        python2 -c &quot;import sys, json; print json.load(sys.stdin)[&#39;name&#39;]&quot;\r\n\r\n## Frequently Asked Questions\r\n\r\n### Why not a pure shell solution?\r\n\r\nThe standard [POSIX/Single Unix Specification shell](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html) is a very limited language which doesn&#39;t contain facilities for representing sequences (list or arrays) or associative arrays (also known as hash tables, maps, dicts, or objects in some other languages). This makes representing the result of parsing JSON somewhat tricky in portable shell scripts. There are [somewhat hacky ways to do it](https://stackoverflow.com/questions/688849/associative-arrays-in-shell-scripts), but many of them can break if keys or values contain certain special characters.\r\n\r\nBash 4 and later, zsh, and ksh have support for arrays and associative arrays, but these shells are not universally available (macOS stopped updating Bash at Bash 3, due to a change from GPLv2 to GPLv3, while many Linux systems don&#39;t have zsh installed out of the box). It&#39;s possible that you could write a script that would work in either Bash 4 or zsh, one of which is available on most macOS, Linux, and BSD systems these days, but it would be tough to write a shebang line that worked for such a polyglot script.\r\n\r\nFinally, writing a full fledged JSON parser in shell would be a significant enough dependency that you might as well just use an existing dependency like jq or Python instead. It&#39;s not going to be a one-liner, or even small five-line snippet, to do a good implementation.\r\n\r\n### Why not use awk, sed, or grep?\r\n\r\nIt is possible to use these tools to do some quick extraction from JSON with a known shape and formatted in a known way, such as one key per line. There are several examples of suggestions for this in other answers.\r\n\r\nHowever, these tools are designed for line based or record based formats; they are not designed for recursive parsing of matched delimiters with possible escape characters.\r\n\r\nSo these quick and dirty solutions using awk/sed/grep are likely to be fragile, and break if some aspect of the input format changes, such as collapsing whitespace, or adding additional levels of nesting to the JSON objects, or an escaped quote within a string. A solution that is robust enough to handle all JSON input without breaking will also be fairly large and complex, and so not too much different than adding another dependency on `jq` or Python.\r\n\r\nI have had to deal with large amounts of customer data being deleted due to poor input parsing in a shell script before, so I never recommend quick and dirty methods that may be fragile in this way. If you&#39;re doing some one-off processing, see the other answers for suggestions, but I still highly recommend just using an existing tested JSON parser.\r\n\r\n## Historical notes\r\n\r\nThis answer originally recommended [jsawk][2], which should still work, but is a little more cumbersome to use than `jq`, and depends on a standalone JavaScript interpreter being installed which is less common than a Python interpreter, so the above answers are probably preferable:\r\n\r\n    curl -s &#39;https://api.github.com/users/lambda&#39; | jsawk -a &#39;return this.name&#39;\r\n\r\nThis answer also originally used the Twitter API from the question, but that API no longer works, making it hard to copy the examples to test out, and the new Twitter API requires API keys, so I&#39;ve switched to using the GitHub API which can be used easily without API keys.  The first answer for the original question would be:\r\n\r\n    curl &#39;http://twitter.com/users/username.json&#39; | jq -r &#39;.text&#39;\r\n\r\n  [1]: https://stedolan.github.io/jq/\r\n  [2]: http://github.com/micha/jsawk\r\n  [3]: https://docs.python.org/2/library/json.html",
+    "link": "https://stackoverflow.com/questions/1955505/parsing-json-with-unix-tools/1955555#1955555",
+    "title": "Parsing JSON with Unix tools",
+    "body": "<p>There are a number of tools specifically designed for the purpose of manipulating JSON from the command line, and will be a lot easier and more reliable than doing it with Awk, such as <a href=\"https://stedolan.github.io/jq/\" rel=\"noreferrer\"><code>jq</code></a>:</p>\n<pre><code>curl -s 'https://api.github.com/users/lambda' | jq -r '.name'\n</code></pre>\n<p>You can also do this with tools that are likely already installed on your system, like Python using the <a href=\"https://docs.python.org/2/library/json.html\" rel=\"noreferrer\"><code>json</code> module</a>, and so avoid any extra dependencies, while still having the benefit of a proper JSON parser. The following assume you want to use UTF-8, which the original JSON should be encoded in and is what most modern terminals use as well:</p>\n<p>Python 3:</p>\n<pre><code>curl -s 'https://api.github.com/users/lambda' | \\\n    python3 -c &quot;import sys, json; print(json.load(sys.stdin)['name'])&quot;\n</code></pre>\n<p>Python 2:</p>\n<pre><code>export PYTHONIOENCODING=utf8\ncurl -s 'https://api.github.com/users/lambda' | \\\n    python2 -c &quot;import sys, json; print json.load(sys.stdin)['name']&quot;\n</code></pre>\n<h2>Frequently Asked Questions</h2>\n<h3>Why not a pure shell solution?</h3>\n<p>The standard <a href=\"https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html\" rel=\"noreferrer\">POSIX/Single Unix Specification shell</a> is a very limited language which doesn't contain facilities for representing sequences (list or arrays) or associative arrays (also known as hash tables, maps, dicts, or objects in some other languages). This makes representing the result of parsing JSON somewhat tricky in portable shell scripts. There are <a href=\"https://stackoverflow.com/questions/688849/associative-arrays-in-shell-scripts\">somewhat hacky ways to do it</a>, but many of them can break if keys or values contain certain special characters.</p>\n<p>Bash 4 and later, zsh, and ksh have support for arrays and associative arrays, but these shells are not universally available (macOS stopped updating Bash at Bash 3, due to a change from GPLv2 to GPLv3, while many Linux systems don't have zsh installed out of the box). It's possible that you could write a script that would work in either Bash 4 or zsh, one of which is available on most macOS, Linux, and BSD systems these days, but it would be tough to write a shebang line that worked for such a polyglot script.</p>\n<p>Finally, writing a full fledged JSON parser in shell would be a significant enough dependency that you might as well just use an existing dependency like jq or Python instead. It's not going to be a one-liner, or even small five-line snippet, to do a good implementation.</p>\n<h3>Why not use awk, sed, or grep?</h3>\n<p>It is possible to use these tools to do some quick extraction from JSON with a known shape and formatted in a known way, such as one key per line. There are several examples of suggestions for this in other answers.</p>\n<p>However, these tools are designed for line based or record based formats; they are not designed for recursive parsing of matched delimiters with possible escape characters.</p>\n<p>So these quick and dirty solutions using awk/sed/grep are likely to be fragile, and break if some aspect of the input format changes, such as collapsing whitespace, or adding additional levels of nesting to the JSON objects, or an escaped quote within a string. A solution that is robust enough to handle all JSON input without breaking will also be fairly large and complex, and so not too much different than adding another dependency on <code>jq</code> or Python.</p>\n<p>I have had to deal with large amounts of customer data being deleted due to poor input parsing in a shell script before, so I never recommend quick and dirty methods that may be fragile in this way. If you're doing some one-off processing, see the other answers for suggestions, but I still highly recommend just using an existing tested JSON parser.</p>\n<h2>Historical notes</h2>\n<p>This answer originally recommended <a href=\"http://github.com/micha/jsawk\" rel=\"noreferrer\">jsawk</a>, which should still work, but is a little more cumbersome to use than <code>jq</code>, and depends on a standalone JavaScript interpreter being installed which is less common than a Python interpreter, so the above answers are probably preferable:</p>\n<pre><code>curl -s 'https://api.github.com/users/lambda' | jsawk -a 'return this.name'\n</code></pre>\n<p>This answer also originally used the Twitter API from the question, but that API no longer works, making it hard to copy the examples to test out, and the new Twitter API requires API keys, so I've switched to using the GitHub API which can be used easily without API keys.  The first answer for the original question would be:</p>\n<pre><code>curl 'http://twitter.com/users/username.json' | jq -r '.text'\n</code></pre>\n",
+    "tags": [
+      "json",
+      "bash",
+      "parsing",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 278356,
+      "accept_rate": 71,
+      "display_name": "Charles Duffy",
+      "link": "https://stackoverflow.com/users/14122/charles-duffy"
+    },
+    "is_accepted": true,
+    "score": 1135,
+    "creation_date": "2017-06-20T14:58:03Z",
+    "answer_id": 44656583,
+    "question_id": 44656515,
+    "share_link": "https://stackoverflow.com/a/44656583",
+    "body_markdown": "Use the `-r` (or `--raw-output`) option to emit raw strings as output:\r\n\r\n    jq -r &#39;.name&#39; &lt;json.txt",
+    "link": "https://stackoverflow.com/questions/44656515/how-to-remove-double-quotes-in-jq-output-for-parsing-json-files-in-bash/44656583#44656583",
+    "title": "How to remove double-quotes in jq output for parsing json files in bash?",
+    "body": "<p>Use the <code>-r</code> (or <code>--raw-output</code>) option to emit raw strings as output:</p>\n\n<pre><code>jq -r '.name' &lt;json.txt\n</code></pre>\n",
+    "tags": [
+      "bash",
+      "awk",
+      "sed",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 12246,
+      "display_name": "Daniel",
+      "link": "https://stackoverflow.com/users/179444/daniel"
+    },
+    "is_accepted": true,
+    "score": 655,
+    "creation_date": "2013-09-04T07:42:01Z",
+    "answer_id": 18608100,
+    "question_id": 18592173,
+    "share_link": "https://stackoverflow.com/a/18608100",
+    "body_markdown": "Adapted from this post on [Processing JSON with jq][1], you can use the [`select(bool)`][2] like this:\r\n\r\n```bash\r\n$ jq &#39;.[] | select(.location==&quot;Stockholm&quot;)&#39; json\r\n{\r\n  &quot;location&quot;: &quot;Stockholm&quot;,\r\n  &quot;name&quot;: &quot;Walt&quot;\r\n}\r\n{\r\n  &quot;location&quot;: &quot;Stockholm&quot;,\r\n  &quot;name&quot;: &quot;Donald&quot;\r\n}\r\n```\r\n\r\n[1]: https://zerokspot.com/weblog/2013/07/18/processing-json-with-jq/\r\n[2]: https://stedolan.github.io/jq/manual/#select(boolean_expression)\r\n\r\n",
+    "link": "https://stackoverflow.com/questions/18592173/select-objects-based-on-value-of-variable-in-object-using-jq/18608100#18608100",
+    "title": "Select objects based on value of variable in object using jq",
+    "body": "<p>Adapted from this post on <a href=\"https://zerokspot.com/weblog/2013/07/18/processing-json-with-jq/\" rel=\"noreferrer\">Processing JSON with jq</a>, you can use the <a href=\"https://stedolan.github.io/jq/manual/#select(boolean_expression)\" rel=\"noreferrer\"><code>select(bool)</code></a> like this:</p>\n\n<pre class=\"lang-sh prettyprint-override\"><code>$ jq '.[] | select(.location==\"Stockholm\")' json\n{\n  \"location\": \"Stockholm\",\n  \"name\": \"Walt\"\n}\n{\n  \"location\": \"Stockholm\",\n  \"name\": \"Donald\"\n}\n</code></pre>\n",
+    "tags": [
+      "json",
+      "bash",
+      "select",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 19592,
+      "accept_rate": 77,
+      "display_name": "Iain Samuel McLean Elder",
+      "link": "https://stackoverflow.com/users/111424/iain-samuel-mclean-elder"
+    },
+    "is_accepted": true,
+    "score": 651,
+    "creation_date": "2014-11-02T16:51:31Z",
+    "answer_id": 26701851,
+    "question_id": 26701538,
+    "share_link": "https://stackoverflow.com/a/26701851",
+    "body_markdown": "Very close! In your `select` expression, you have to use a pipe (`|`) before `contains`.\r\n\r\nThis filter produces the expected output.\r\n\r\n    . - map(select(.Names[] | contains (&quot;data&quot;))) | .[] .Id\r\n\r\nThe [jq Cookbook](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-key) has an example of the syntax.\r\n\r\n&gt; # Filter objects based on the contents of a key\r\n&gt; \r\n&gt; E.g., I only want objects whose genre key contains &quot;house&quot;.\r\n&gt; \r\n&gt;     $ json=&#39;[{&quot;genre&quot;:&quot;deep house&quot;}, {&quot;genre&quot;: &quot;progressive house&quot;}, {&quot;genre&quot;: &quot;dubstep&quot;}]&#39;\r\n&gt;     $ echo &quot;$json&quot; | jq -c &#39;.[] | select(.genre | contains(&quot;house&quot;))&#39;\r\n&gt;     {&quot;genre&quot;:&quot;deep house&quot;}\r\n&gt;     {&quot;genre&quot;:&quot;progressive house&quot;}\r\n\r\n[Colin D](https://stackoverflow.com/questions/26701538/how-to-filter-an-array-of-objects-based-on-values-in-an-inner-array-with-jq/26701851?noredirect=1#comment65634694_26701851) asks how to preserve the JSON structure of the array, so that the final output is a single JSON array rather than a stream of JSON objects.\r\n\r\nThe simplest way is to wrap the whole expression in an array constructor:\r\n\r\n    $ echo &quot;$json&quot; | jq -c &#39;[ .[] | select( .genre | contains(&quot;house&quot;)) ]&#39;\r\n    [{&quot;genre&quot;:&quot;deep house&quot;},{&quot;genre&quot;:&quot;progressive house&quot;}]\r\n\r\nYou can also use the map function:\r\n\r\n    $ echo &quot;$json&quot; | jq -c &#39;map(select(.genre | contains(&quot;house&quot;)))&#39;\r\n    [{&quot;genre&quot;:&quot;deep house&quot;},{&quot;genre&quot;:&quot;progressive house&quot;}]\r\n\r\nmap unpacks the input array, applies the filter to every element, and creates a new array. In other words, `map(f)` is equivalent to `[.[]|f]`.\r\n",
+    "link": "https://stackoverflow.com/questions/26701538/how-to-filter-an-array-of-objects-based-on-values-in-an-inner-array-with-jq/26701851#26701851",
+    "title": "How to filter an array of objects based on values in an inner array with jq?",
+    "body": "<p>Very close! In your <code>select</code> expression, you have to use a pipe (<code>|</code>) before <code>contains</code>.</p>\n\n<p>This filter produces the expected output.</p>\n\n<pre><code>. - map(select(.Names[] | contains (\"data\"))) | .[] .Id\n</code></pre>\n\n<p>The <a href=\"https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-key\" rel=\"noreferrer\">jq Cookbook</a> has an example of the syntax.</p>\n\n<blockquote>\n  <h1>Filter objects based on the contents of a key</h1>\n  \n  <p>E.g., I only want objects whose genre key contains \"house\".</p>\n\n<pre><code>$ json='[{\"genre\":\"deep house\"}, {\"genre\": \"progressive house\"}, {\"genre\": \"dubstep\"}]'\n$ echo \"$json\" | jq -c '.[] | select(.genre | contains(\"house\"))'\n{\"genre\":\"deep house\"}\n{\"genre\":\"progressive house\"}\n</code></pre>\n</blockquote>\n\n<p><a href=\"https://stackoverflow.com/questions/26701538/how-to-filter-an-array-of-objects-based-on-values-in-an-inner-array-with-jq/26701851?noredirect=1#comment65634694_26701851\">Colin D</a> asks how to preserve the JSON structure of the array, so that the final output is a single JSON array rather than a stream of JSON objects.</p>\n\n<p>The simplest way is to wrap the whole expression in an array constructor:</p>\n\n<pre><code>$ echo \"$json\" | jq -c '[ .[] | select( .genre | contains(\"house\")) ]'\n[{\"genre\":\"deep house\"},{\"genre\":\"progressive house\"}]\n</code></pre>\n\n<p>You can also use the map function:</p>\n\n<pre><code>$ echo \"$json\" | jq -c 'map(select(.genre | contains(\"house\")))'\n[{\"genre\":\"deep house\"},{\"genre\":\"progressive house\"}]\n</code></pre>\n\n<p>map unpacks the input array, applies the filter to every element, and creates a new array. In other words, <code>map(f)</code> is equivalent to <code>[.[]|f]</code>.</p>\n",
+    "tags": [
+      "arrays",
+      "json",
+      "select",
+      "jq",
+      "negation"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 7717,
+      "display_name": "Ken",
+      "link": "https://stackoverflow.com/users/816157/ken"
+    },
+    "is_accepted": true,
+    "score": 616,
+    "creation_date": "2014-01-25T19:50:26Z",
+    "answer_id": 21355442,
+    "question_id": 21334348,
+    "share_link": "https://stackoverflow.com/a/21355442",
+    "body_markdown": "Just throwing another solution in the mix...\r\n\r\nTry [`jq`][1], a lightweight and flexible command-line JSON processor:\r\n\r\n    jq length /tmp/test.json\r\n\r\nPrints the length of the array of objects.\r\n\r\n\r\n  [1]: http://stedolan.github.io/jq/\r\n",
+    "link": "https://stackoverflow.com/questions/21334348/how-to-count-items-in-json-object-using-command-line/21355442#21355442",
+    "title": "How to count items in JSON object using command line?",
+    "body": "<p>Just throwing another solution in the mix...</p>\n\n<p>Try <a href=\"http://stedolan.github.io/jq/\" rel=\"noreferrer\"><code>jq</code></a>, a lightweight and flexible command-line JSON processor:</p>\n\n<pre><code>jq length /tmp/test.json\n</code></pre>\n\n<p>Prints the length of the array of objects.</p>\n",
+    "tags": [
+      "json",
+      "bash",
+      "curl",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 758283,
+      "accept_rate": 90,
+      "display_name": "anubhava",
+      "link": "https://stackoverflow.com/users/548225/anubhava"
+    },
+    "is_accepted": true,
+    "score": 355,
+    "creation_date": "2014-04-16T19:36:11Z",
+    "answer_id": 23118607,
+    "question_id": 23118341,
+    "share_link": "https://stackoverflow.com/a/23118607",
+    "body_markdown": "To get the keys in the order they appear in the original JSON use:\r\n```sh\r\njq &#39;keys_unsorted&#39; file.json\r\n```\r\n\r\nIf you want the keys sorted alphanumerically, you can use:\r\n```sh\r\njq &#39;keys&#39; file.json\r\n```\r\n\r\nComplete example\r\n```sh\r\n$ cat file.json\r\n{ &quot;Created-By&quot; : &quot;Apache Maven&quot;, &quot;Build-Number&quot; : &quot;&quot;, &quot;Archiver-Version&quot; : &quot;Plexus Archiver&quot;, &quot;Build-Id&quot; : &quot;&quot;,  &quot;Build-Tag&quot; : &quot;&quot;, &quot;Built-By&quot; : &quot;cporter&quot;}\r\n\r\n$ jq &#39;keys_unsorted&#39; file.json                                         \r\n[\r\n  &quot;Created-By&quot;,\r\n  &quot;Build-Number&quot;,\r\n  &quot;Archiver-Version&quot;,\r\n  &quot;Build-Id&quot;,\r\n  &quot;Build-Tag&quot;,\r\n  &quot;Built-By&quot;\r\n]\r\n\r\n$ jq &#39;keys&#39; file.json\r\n[\r\n  &quot;Archiver-Version&quot;,\r\n  &quot;Build-Id&quot;,\r\n  &quot;Build-Number&quot;,\r\n  &quot;Build-Tag&quot;,\r\n  &quot;Built-By&quot;,\r\n  &quot;Created-By&quot;\r\n]\r\n```",
+    "link": "https://stackoverflow.com/questions/23118341/how-to-get-key-names-from-json-using-jq/23118607#23118607",
+    "title": "How to get key names from JSON using jq",
+    "body": "<p>To get the keys in the order they appear in the original JSON use:</p>\n<pre class=\"lang-bash prettyprint-override\"><code>jq 'keys_unsorted' file.json\n</code></pre>\n<p>If you want the keys sorted alphanumerically, you can use:</p>\n<pre class=\"lang-bash prettyprint-override\"><code>jq 'keys' file.json\n</code></pre>\n<p>Complete example</p>\n<pre class=\"lang-bash prettyprint-override\"><code>$ cat file.json\n{ &quot;Created-By&quot; : &quot;Apache Maven&quot;, &quot;Build-Number&quot; : &quot;&quot;, &quot;Archiver-Version&quot; : &quot;Plexus Archiver&quot;, &quot;Build-Id&quot; : &quot;&quot;,  &quot;Build-Tag&quot; : &quot;&quot;, &quot;Built-By&quot; : &quot;cporter&quot;}\n\n$ jq 'keys_unsorted' file.json                                         \n[\n  &quot;Created-By&quot;,\n  &quot;Build-Number&quot;,\n  &quot;Archiver-Version&quot;,\n  &quot;Build-Id&quot;,\n  &quot;Build-Tag&quot;,\n  &quot;Built-By&quot;\n]\n\n$ jq 'keys' file.json\n[\n  &quot;Archiver-Version&quot;,\n  &quot;Build-Id&quot;,\n  &quot;Build-Number&quot;,\n  &quot;Build-Tag&quot;,\n  &quot;Built-By&quot;,\n  &quot;Created-By&quot;\n]\n</code></pre>\n",
+    "tags": [
+      "json",
+      "shell",
+      "unix",
+      "key",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 494548,
+      "display_name": "chepner",
+      "link": "https://stackoverflow.com/users/1126841/chepner"
+    },
+    "is_accepted": true,
+    "score": 391,
+    "creation_date": "2015-10-20T21:38:23Z",
+    "answer_id": 33247259,
+    "question_id": 33247228,
+    "share_link": "https://stackoverflow.com/a/33247259",
+    "body_markdown": "You need to supply a filter as an argument. To pass the JSON through unmodified other than the pretty printing `jq` provides by default, use the identity filter `.`:\r\n\r\n    curl -s https://api.github.com/users/octocat/repos | jq &#39;.&#39; | cat",
+    "link": "https://stackoverflow.com/questions/33247228/how-to-use-jq-in-a-shell-pipeline/33247259#33247259",
+    "title": "How to use `jq` in a shell pipeline?",
+    "body": "<p>You need to supply a filter as an argument. To pass the JSON through unmodified other than the pretty printing <code>jq</code> provides by default, use the identity filter <code>.</code>:</p>\n\n<pre><code>curl -s https://api.github.com/users/octocat/repos | jq '.' | cat\n</code></pre>\n",
+    "tags": [
+      "shell",
+      "pipe",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 104330,
+      "display_name": "peak",
+      "link": "https://stackoverflow.com/users/997358/peak"
+    },
+    "is_accepted": true,
+    "score": 359,
+    "creation_date": "2016-10-13T17:42:40Z",
+    "answer_id": 40027637,
+    "question_id": 40027395,
+    "share_link": "https://stackoverflow.com/a/40027637",
+    "body_markdown": "Consider also passing in the shell variable (EMAILID) as a jq variable (here also EMAILID, for the sake of illustration):\r\n\r\n       projectID=$(jq -r --arg EMAILID &quot;$EMAILID&quot; &#39;\r\n            .resource[]\r\n            | select(.username==$EMAILID) \r\n            | .id&#39; file.json)\r\n\r\n\r\n\r\n### Postscript\r\n\r\nFor the record, another possibility would be to use jq&#39;s `env` function for accessing environment variables.  For example, consider this sequence of bash commands:\r\n\r\n    EMAILID=foo@bar.com  # not exported\r\n    EMAILID=&quot;$EMAILID&quot; jq -n &#39;env.EMAILID&#39;\r\n\r\nThe output is a JSON string:\r\n\r\n    &quot;foo@bar.com&quot;\r\n\r\n\r\n### shell arrays\r\nUnfortunately, shell arrays are a different kettle of fish.\r\nHere are two SO resources regarding the ingestion of such arrays:\r\n\r\nhttps://stackoverflow.com/questions/61588841/jq-create-json-array-using-bash-array-with-space\r\n\r\nhttps://stackoverflow.com/questions/49184557/convert-bash-array-to-json-array-and-insert-to-file-using-jq",
+    "link": "https://stackoverflow.com/questions/40027395/passing-bash-variable-to-jq/40027637#40027637",
+    "title": "Passing bash variable to jq",
+    "body": "<p>Consider also passing in the shell variable (EMAILID) as a jq variable (here also EMAILID, for the sake of illustration):</p>\n<pre><code>   projectID=$(jq -r --arg EMAILID &quot;$EMAILID&quot; '\n        .resource[]\n        | select(.username==$EMAILID) \n        | .id' file.json)\n</code></pre>\n<h3>Postscript</h3>\n<p>For the record, another possibility would be to use jq's <code>env</code> function for accessing environment variables.  For example, consider this sequence of bash commands:</p>\n<pre><code>EMAILID=foo@bar.com  # not exported\nEMAILID=&quot;$EMAILID&quot; jq -n 'env.EMAILID'\n</code></pre>\n<p>The output is a JSON string:</p>\n<pre><code>&quot;foo@bar.com&quot;\n</code></pre>\n<h3>shell arrays</h3>\n<p>Unfortunately, shell arrays are a different kettle of fish.\nHere are two SO resources regarding the ingestion of such arrays:</p>\n<p><a href=\"https://stackoverflow.com/questions/61588841/jq-create-json-array-using-bash-array-with-space\">JQ - create JSON array using bash array with space</a></p>\n<p><a href=\"https://stackoverflow.com/questions/49184557/convert-bash-array-to-json-array-and-insert-to-file-using-jq\">Convert bash array to json array and insert to file using jq</a></p>\n",
+    "tags": [
+      "json",
+      "bash",
+      "environment-variables",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 5427,
+      "display_name": "Simo Kinnunen",
+      "link": "https://stackoverflow.com/users/1540573/simo-kinnunen"
+    },
+    "is_accepted": true,
+    "score": 279,
+    "creation_date": "2014-07-23T07:27:13Z",
+    "answer_id": 24904276,
+    "question_id": 19529688,
+    "share_link": "https://stackoverflow.com/a/24904276",
+    "body_markdown": "Since 1.4 this is now possible with the `*` operator. When given two objects, it will merge them recursively. For example,\r\n\r\n    jq -s &#39;.[0] * .[1]&#39; file1 file2\r\n\r\n**Important: Note the `-s (--slurp)` flag, which puts files in the same array.**\r\n\r\nWould get you:\r\n\r\n    {\r\n      &quot;value1&quot;: 200,\r\n      &quot;timestamp&quot;: 1382461861,\r\n      &quot;value&quot;: {\r\n        &quot;aaa&quot;: {\r\n          &quot;value1&quot;: &quot;v1&quot;,\r\n          &quot;value2&quot;: &quot;v2&quot;,\r\n          &quot;value3&quot;: &quot;v3&quot;,\r\n          &quot;value4&quot;: 4\r\n        },\r\n        &quot;bbb&quot;: {\r\n          &quot;value1&quot;: &quot;v1&quot;,\r\n          &quot;value2&quot;: &quot;v2&quot;,\r\n          &quot;value3&quot;: &quot;v3&quot;\r\n        },\r\n        &quot;ccc&quot;: {\r\n          &quot;value1&quot;: &quot;v1&quot;,\r\n          &quot;value2&quot;: &quot;v2&quot;\r\n        },\r\n        &quot;ddd&quot;: {\r\n          &quot;value3&quot;: &quot;v3&quot;,\r\n          &quot;value4&quot;: 4\r\n        }\r\n      },\r\n      &quot;status&quot;: 200\r\n    }\r\n\r\nIf you also want to get rid of the other keys (like your expected result), one way to do it is this:\r\n\r\n    jq -s &#39;.[0] * .[1] | {value: .value}&#39; file1 file2\r\n\r\nOr the presumably somewhat more efficient (because it doesn&#39;t merge any other values):\r\n\r\n    jq -s &#39;.[0].value * .[1].value | {value: .}&#39; file1 file2",
+    "link": "https://stackoverflow.com/questions/19529688/how-to-merge-2-json-objects-from-2-files-using-jq/24904276#24904276",
+    "title": "How to merge 2 JSON objects from 2 files using jq?",
+    "body": "<p>Since 1.4 this is now possible with the <code>*</code> operator. When given two objects, it will merge them recursively. For example,</p>\n\n<pre><code>jq -s '.[0] * .[1]' file1 file2\n</code></pre>\n\n<p><strong>Important: Note the <code>-s (--slurp)</code> flag, which puts files in the same array.</strong></p>\n\n<p>Would get you:</p>\n\n<pre><code>{\n  \"value1\": 200,\n  \"timestamp\": 1382461861,\n  \"value\": {\n    \"aaa\": {\n      \"value1\": \"v1\",\n      \"value2\": \"v2\",\n      \"value3\": \"v3\",\n      \"value4\": 4\n    },\n    \"bbb\": {\n      \"value1\": \"v1\",\n      \"value2\": \"v2\",\n      \"value3\": \"v3\"\n    },\n    \"ccc\": {\n      \"value1\": \"v1\",\n      \"value2\": \"v2\"\n    },\n    \"ddd\": {\n      \"value3\": \"v3\",\n      \"value4\": 4\n    }\n  },\n  \"status\": 200\n}\n</code></pre>\n\n<p>If you also want to get rid of the other keys (like your expected result), one way to do it is this:</p>\n\n<pre><code>jq -s '.[0] * .[1] | {value: .value}' file1 file2\n</code></pre>\n\n<p>Or the presumably somewhat more efficient (because it doesn't merge any other values):</p>\n\n<pre><code>jq -s '.[0].value * .[1].value | {value: .}' file1 file2\n</code></pre>\n",
+    "tags": [
+      "json",
+      "shell",
+      "command-line",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 128831,
+      "accept_rate": 86,
+      "display_name": "Jeff Mercado",
+      "link": "https://stackoverflow.com/users/390278/jeff-mercado"
+    },
+    "is_accepted": true,
+    "score": 196,
+    "creation_date": "2015-06-24T21:44:01Z",
+    "answer_id": 31037640,
+    "question_id": 31034746,
+    "share_link": "https://stackoverflow.com/a/31037640",
+    "body_markdown": "You set values of an object using the `=` operator.  `|=` on the other hand is used to update a value.  It&#39;s a subtle but important difference.  The context of the filters changes.\r\n\r\nSince you are setting a property to a constant value, use the `=` operator.\r\n\r\n    .shipping.local = false\r\n\r\nJust note that when setting a value to a property, it doesn&#39;t necessarily have to exist.  You can add new values easily this way.\r\n\r\n    .shipping.local = false | .shipping.canada = false | .shipping.mexico = true",
+    "link": "https://stackoverflow.com/questions/31034746/how-do-i-update-a-single-value-in-a-json-document-using-jq/31037640#31037640",
+    "title": "How do I update a single value in a json document using jq?",
+    "body": "<p>You set values of an object using the <code>=</code> operator.  <code>|=</code> on the other hand is used to update a value.  It's a subtle but important difference.  The context of the filters changes.</p>\n\n<p>Since you are setting a property to a constant value, use the <code>=</code> operator.</p>\n\n<pre><code>.shipping.local = false\n</code></pre>\n\n<p>Just note that when setting a value to a property, it doesn't necessarily have to exist.  You can add new values easily this way.</p>\n\n<pre><code>.shipping.local = false | .shipping.canada = false | .shipping.mexico = true\n</code></pre>\n",
+    "tags": [
+      "json",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "display_name": "user3899165"
+    },
+    "is_accepted": true,
+    "score": 47,
+    "creation_date": "2015-08-11T04:28:24Z",
+    "answer_id": 31933234,
+    "question_id": 31930041,
+    "share_link": "https://stackoverflow.com/a/31933234",
+    "body_markdown": "Since jq&#39;s comparison already compares objects without taking into account key ordering, all that&#39;s left is to sort all lists inside the object before comparing them. Assuming your two files are named `a.json` and `b.json`, on the latest jq nightly:\r\n\r\n    jq --argfile a a.json --argfile b b.json -n &#39;($a | (.. | arrays) |= sort) as $a | ($b | (.. | arrays) |= sort) as $b | $a == $b&#39;\r\n\r\nThis program should return &quot;true&quot; or &quot;false&quot; depending on whether or not the objects are equal using the definition of equality you ask for.\r\n\r\nEDIT: The `(.. | arrays) |= sort` construct doesn&#39;t actually work as expected on some edge cases. [This GitHub issue](https://github.com/stedolan/jq/issues/893) explains why and provides some alternatives, such as:\r\n\r\n    def post_recurse(f): def r: (f | select(. != null) | r), .; r; def post_recurse: post_recurse(.[]?); (post_recurse | arrays) |= sort\r\n\r\nApplied to the jq invocation above:\r\n\r\n    jq --argfile a a.json --argfile b b.json -n &#39;def post_recurse(f): def r: (f | select(. != null) | r), .; r; def post_recurse: post_recurse(.[]?); ($a | (post_recurse | arrays) |= sort) as $a | ($b | (post_recurse | arrays) |= sort) as $b | $a == $b&#39;",
+    "link": "https://stackoverflow.com/questions/31930041/using-jq-or-alternative-command-line-tools-to-compare-json-files/31933234#31933234",
+    "title": "Using jq or alternative command line tools to compare JSON files",
+    "body": "<p>Since jq's comparison already compares objects without taking into account key ordering, all that's left is to sort all lists inside the object before comparing them. Assuming your two files are named <code>a.json</code> and <code>b.json</code>, on the latest jq nightly:</p>\n\n<pre><code>jq --argfile a a.json --argfile b b.json -n '($a | (.. | arrays) |= sort) as $a | ($b | (.. | arrays) |= sort) as $b | $a == $b'\n</code></pre>\n\n<p>This program should return \"true\" or \"false\" depending on whether or not the objects are equal using the definition of equality you ask for.</p>\n\n<p>EDIT: The <code>(.. | arrays) |= sort</code> construct doesn't actually work as expected on some edge cases. <a href=\"https://github.com/stedolan/jq/issues/893\" rel=\"noreferrer\">This GitHub issue</a> explains why and provides some alternatives, such as:</p>\n\n<pre><code>def post_recurse(f): def r: (f | select(. != null) | r), .; r; def post_recurse: post_recurse(.[]?); (post_recurse | arrays) |= sort\n</code></pre>\n\n<p>Applied to the jq invocation above:</p>\n\n<pre><code>jq --argfile a a.json --argfile b b.json -n 'def post_recurse(f): def r: (f | select(. != null) | r), .; r; def post_recurse: post_recurse(.[]?); ($a | (post_recurse | arrays) |= sort) as $a | ($b | (post_recurse | arrays) |= sort) as $b | $a == $b'\n</code></pre>\n",
+    "tags": [
+      "json",
+      "diff",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 54320,
+      "display_name": "jwodder",
+      "link": "https://stackoverflow.com/users/744178/jwodder"
+    },
+    "is_accepted": true,
+    "score": 292,
+    "creation_date": "2016-02-02T13:48:25Z",
+    "answer_id": 35155249,
+    "question_id": 35154684,
+    "share_link": "https://stackoverflow.com/a/35155249",
+    "body_markdown": "jq has the [`fromjson`](https://stedolan.github.io/jq/manual/v1.5/#Convertto/fromJSON) builtin for this:\r\n\r\n    jq &#39;.c | fromjson | .id&#39; myFile.json\r\n\r\n`fromjson` was added in version 1.4.",
+    "link": "https://stackoverflow.com/questions/35154684/how-to-parse-a-json-string-with-jq-or-other-alternatives/35155249#35155249",
+    "title": "how to parse a JSON String with jq (or other alternatives)?",
+    "body": "<p>jq has the <a href=\"https://stedolan.github.io/jq/manual/v1.5/#Convertto/fromJSON\" rel=\"noreferrer\"><code>fromjson</code></a> builtin for this:</p>\n\n<pre><code>jq '.c | fromjson | .id' myFile.json\n</code></pre>\n\n<p><code>fromjson</code> was added in version 1.4.</p>\n",
+    "tags": [
+      "json",
+      "string",
+      "sed",
+      "escaping",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 104330,
+      "display_name": "peak",
+      "link": "https://stackoverflow.com/users/997358/peak"
+    },
+    "is_accepted": true,
+    "score": 243,
+    "creation_date": "2015-12-11T15:58:52Z",
+    "answer_id": 34227629,
+    "question_id": 34226370,
+    "share_link": "https://stackoverflow.com/a/34227629",
+    "body_markdown": "To get the top-level keys as a stream, you can use the [built-in function][1] `keys[]`.  So one solution to your particular problem would be:\r\n\r\n    jq -r &#39;keys[] as $k | &quot;\\($k), \\(.[$k] | .ip)&quot;&#39; \r\n\r\n`keys` produces the key names in sorted order; if you want them in the original order, use `keys_unsorted`.\r\n\r\nAnother alternative, which produces keys in the original order, is: \r\n\r\n    jq -r &#39;to_entries[] | &quot;\\(.key), \\(.value | .ip)&quot;&#39;\r\n\r\n### CSV and TSV output\r\n\r\nThe @csv and @tsv filters might also be worth considering here, e.g.\r\n\r\n    jq -r &#39;to_entries[] | [.key, .value.ip] | @tsv&#39;\r\n\r\nproduces:\r\n\r\n    host1\t10.1.2.3\r\n    host2\t10.1.2.2\r\n    host3\t10.1.18.1\r\n\r\n### Embedded objects\r\nIf the keys of interest are embedded as in the following example, the jq filter would have to be modified along the lines shown.\r\n\r\nInput:\r\n\r\n```json\r\n{\r\n  &quot;myhosts&quot;: {\r\n    &quot;host1&quot;: { &quot;ip&quot;: &quot;10.1.2.3&quot; },\r\n    &quot;host2&quot;: { &quot;ip&quot;: &quot;10.1.2.2&quot; },\r\n    &quot;host3&quot;: { &quot;ip&quot;: &quot;10.1.18.1&quot; }\r\n  }\r\n}\r\n```\r\n\r\nModification:\r\n\r\n```\r\njq -r &#39;.myhosts | keys[] as $k | &quot;\\($k), \\(.[$k] | .ip)&quot;&#39;\r\n```\r\n\r\n  [1]: https://stedolan.github.io/jq/manual/#Builtinoperatorsandfunctions",
+    "link": "https://stackoverflow.com/questions/34226370/jq-print-key-and-value-for-each-entry-in-an-object/34227629#34227629",
+    "title": "jq: print key and value for each entry in an object",
+    "body": "<p>To get the top-level keys as a stream, you can use the <a href=\"https://stedolan.github.io/jq/manual/#Builtinoperatorsandfunctions\" rel=\"noreferrer\">built-in function</a> <code>keys[]</code>.  So one solution to your particular problem would be:</p>\n\n<pre><code>jq -r 'keys[] as $k | \"\\($k), \\(.[$k] | .ip)\"' \n</code></pre>\n\n<p><code>keys</code> produces the key names in sorted order; if you want them in the original order, use <code>keys_unsorted</code>.</p>\n\n<p>Another alternative, which produces keys in the original order, is: </p>\n\n<pre><code>jq -r 'to_entries[] | \"\\(.key), \\(.value | .ip)\"'\n</code></pre>\n\n<h3>CSV and TSV output</h3>\n\n<p>The @csv and @tsv filters might also be worth considering here, e.g.</p>\n\n<pre><code>jq -r 'to_entries[] | [.key, .value.ip] | @tsv'\n</code></pre>\n\n<p>produces:</p>\n\n<pre><code>host1   10.1.2.3\nhost2   10.1.2.2\nhost3   10.1.18.1\n</code></pre>\n\n<h3>Embedded objects</h3>\n\n<p>If the keys of interest are embedded as in the following example, the jq filter would have to be modified along the lines shown.</p>\n\n<p>Input:</p>\n\n<pre><code>{\n  \"myhosts\": {\n    \"host1\": { \"ip\": \"10.1.2.3\" },\n    \"host2\": { \"ip\": \"10.1.2.2\" },\n    \"host3\": { \"ip\": \"10.1.18.1\" }\n  }\n}\n</code></pre>\n\n<p>Modification:</p>\n\n<pre><code>jq -r '.myhosts | keys[] as $k | \"\\($k), \\(.[$k] | .ip)\"'\n</code></pre>\n",
+    "tags": [
+      "json",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 5502,
+      "accept_rate": 83,
+      "display_name": "hmedia1",
+      "link": "https://stackoverflow.com/users/3544399/hmedia1"
+    },
+    "is_accepted": true,
+    "score": 244,
+    "creation_date": "2016-11-03T08:09:44Z",
+    "answer_id": 40396556,
+    "question_id": 40396445,
+    "share_link": "https://stackoverflow.com/a/40396556",
+    "body_markdown": "**`-c`** is what you likely need\r\n\r\nUsing the output you posted above, you can process it further:\r\n\r\n &lt;pre&gt;\r\njq **-c** . input\r\n&lt;/pre&gt;\r\n\r\nTo Give;\r\n\r\n\r\n    {&quot;key&quot;:&quot;SEA-739&quot;,&quot;status&quot;:&quot;Open&quot;,&quot;assignee&quot;:null}\r\n    {&quot;key&quot;:&quot;SEA-738&quot;,&quot;status&quot;:&quot;Resolved&quot;,&quot;assignee&quot;:&quot;user2@mycompany.com&quot;}\r\n\r\nOr you can just change your original command\r\n&lt;/pre&gt;\r\n\r\n  &lt;/pre&gt;\r\n\r\n**FROM**\r\n\r\n &lt;pre&gt;\r\njq **-r** &#39;(.issues[] | {key, status: .fields.status.name, assignee: .fields.assignee.emailAddress})&#39;\r\n&lt;/pre&gt;\r\n\r\n&lt;/pre&gt; \r\n**TO**\r\n\r\n &lt;pre&gt;jq **-c** &#39;(.issues[] | {key, status: .fields.status.name, assignee: .fields.assignee.emailAddress})&#39;\r\n&lt;/pre&gt;\r\n",
+    "link": "https://stackoverflow.com/questions/40396445/get-outputs-from-jq-on-a-single-line/40396556#40396556",
+    "title": "Get outputs from jq on a single line",
+    "body": "<p><strong><code>-c</code></strong> is what you likely need</p>\n\n<p>Using the output you posted above, you can process it further:</p>\n\n<p><pre>\njq <strong>-c</strong> . input\n</pre></p>\n\n<p>To Give;</p>\n\n<pre><code>{\"key\":\"SEA-739\",\"status\":\"Open\",\"assignee\":null}\n{\"key\":\"SEA-738\",\"status\":\"Resolved\",\"assignee\":\"user2@mycompany.com\"}\n</code></pre>\n\n<p>Or you can just change your original command\n</p>\n\n<p></p>\n\n<p><strong>FROM</strong></p>\n\n<p><pre>\njq <strong>-r</strong> '(.issues[] | {key, status: .fields.status.name, assignee: .fields.assignee.emailAddress})'\n</pre></p>\n\n<p> \n<strong>TO</strong></p>\n\n<p><pre>jq <strong>-c</strong> '(.issues[] | {key, status: .fields.status.name, assignee: .fields.assignee.emailAddress})'\n</pre></p>\n",
+    "tags": [
+      "json",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 2449,
+      "display_name": "Anthony Battaglia",
+      "link": "https://stackoverflow.com/users/4946481/anthony-battaglia"
+    },
+    "is_accepted": true,
+    "score": 183,
+    "creation_date": "2016-06-08T19:02:09Z",
+    "answer_id": 37710802,
+    "question_id": 37710718,
+    "share_link": "https://stackoverflow.com/a/37710802",
+    "body_markdown": "Use [parentheses](https://stedolan.github.io/jq/manual/#Parenthesis) around the string concatenation code:\r\n\r\n    echo &#39;{&quot;channel&quot;: &quot;youtube&quot;, &quot;profile_type&quot;: &quot;video&quot;, &quot;member_key&quot;: &quot;hello&quot;}&#39; \\\r\n     | jq &#39;{channel: (.profile_type + &quot;.&quot; + .channel)}&#39;",
+    "link": "https://stackoverflow.com/questions/37710718/concat-2-fields-in-json-using-jq/37710802#37710802",
+    "title": "Concat 2 fields in JSON using jq",
+    "body": "<p>Use <a href=\"https://stedolan.github.io/jq/manual/#Parenthesis\" rel=\"noreferrer\">parentheses</a> around the string concatenation code:</p>\n<pre><code>echo '{&quot;channel&quot;: &quot;youtube&quot;, &quot;profile_type&quot;: &quot;video&quot;, &quot;member_key&quot;: &quot;hello&quot;}' \\\n | jq '{channel: (.profile_type + &quot;.&quot; + .channel)}'\n</code></pre>\n",
+    "tags": [
+      "json",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 21306,
+      "accept_rate": 74,
+      "display_name": "sjsam",
+      "link": "https://stackoverflow.com/users/1620779/sjsam"
+    },
+    "is_accepted": true,
+    "score": 111,
+    "creation_date": "2016-08-25T07:46:20Z",
+    "answer_id": 39139478,
+    "question_id": 39139107,
+    "share_link": "https://stackoverflow.com/a/39139478",
+    "body_markdown": "Why not something like:\r\n\r\n    echo &#39;[{\r\n        &quot;name&quot;: &quot;George&quot;,\r\n        &quot;id&quot;: 12,\r\n        &quot;email&quot;: &quot;george@domain.example&quot;\r\n    }, {\r\n        &quot;name&quot;: &quot;Jack&quot;,\r\n        &quot;id&quot;: 18,\r\n        &quot;email&quot;: &quot;jack@domain.example&quot;\r\n    }, {\r\n        &quot;name&quot;: &quot;Joe&quot;,\r\n        &quot;id&quot;: 19,\r\n        &quot;email&quot;: &quot;joe@domain.example&quot;\r\n    }]&#39; | jq -r &#39;.[] | &quot;\\(.id)\\t\\(.name)&quot;&#39;\r\n\r\nOutput\r\n\r\n    12\tGeorge\r\n    18\tJack\r\n    19\tJoe\r\n\r\n___\r\n\r\n**Edit 1 :** For fine grained formatting use tools like `awk`\r\n\r\n     echo &#39;[{\r\n        &quot;name&quot;: &quot;George&quot;,\r\n        &quot;id&quot;: 12,\r\n        &quot;email&quot;: &quot;george@domain.example&quot;\r\n    }, {\r\n        &quot;name&quot;: &quot;Jack&quot;,\r\n        &quot;id&quot;: 18,\r\n        &quot;email&quot;: &quot;jack@domain.example&quot;\r\n    }, {\r\n        &quot;name&quot;: &quot;Joe&quot;,\r\n        &quot;id&quot;: 19,\r\n        &quot;email&quot;: &quot;joe@domain.example&quot;\r\n    }]&#39; | jq -r &#39;.[] | [.id, .name] | @csv&#39; | awk -v FS=&quot;,&quot; &#39;BEGIN{print &quot;ID\\tName&quot;;print &quot;============&quot;}{printf &quot;%s\\t%s%s&quot;,$1,$2,ORS}&#39;\r\n    ID\tName\r\n    ============\r\n    12\t&quot;George&quot;\r\n    18\t&quot;Jack&quot;\r\n    19\t&quot;Joe&quot;\r\n\r\n____\r\n\r\n**Edit 2 :** In reply to\r\n\r\n&gt; There&#39;s no way I can get a variable containing an array straight\r\n&gt; from jq?\r\n\r\nWhy not?\r\n\r\nA bit involved example( in fact modified from yours ) where email is changed to an array demonstrates this\r\n\r\n    echo &#39;[{\r\n        &quot;name&quot;: &quot;George&quot;,\r\n        &quot;id&quot;: 20,\r\n        &quot;email&quot;: [ &quot;george@domain1.example&quot; , &quot;george@domain2.example&quot; ]\r\n    }, {\r\n        &quot;name&quot;: &quot;Jack&quot;,\r\n        &quot;id&quot;: 18,\r\n        &quot;email&quot;: [ &quot;jack@domain3.example&quot; , &quot;jack@domain5.example&quot; ]\r\n    }, {\r\n        &quot;name&quot;: &quot;Joe&quot;,\r\n        &quot;id&quot;: 19,\r\n        &quot;email&quot;: [ &quot;joe@domain.example&quot; ]\r\n    }]&#39; | jq -r &#39;.[] | .email&#39;\r\n\r\n**Output**\r\n\r\n    [\r\n      &quot;george@domain1.example&quot;,\r\n      &quot;george@domain2.example&quot;\r\n    ]\r\n    [\r\n      &quot;jack@domain3.example&quot;,\r\n      &quot;jack@domain5.example&quot;\r\n    ]\r\n    [\r\n      &quot;joe@domain.example&quot;\r\n    ]\r\n\r\n",
+    "link": "https://stackoverflow.com/questions/39139107/how-to-format-a-json-string-as-a-table-using-jq/39139478#39139478",
+    "title": "How to format a JSON string as a table using jq?",
+    "body": "<p>Why not something like:</p>\n<pre><code>echo '[{\n    &quot;name&quot;: &quot;George&quot;,\n    &quot;id&quot;: 12,\n    &quot;email&quot;: &quot;george@domain.example&quot;\n}, {\n    &quot;name&quot;: &quot;Jack&quot;,\n    &quot;id&quot;: 18,\n    &quot;email&quot;: &quot;jack@domain.example&quot;\n}, {\n    &quot;name&quot;: &quot;Joe&quot;,\n    &quot;id&quot;: 19,\n    &quot;email&quot;: &quot;joe@domain.example&quot;\n}]' | jq -r '.[] | &quot;\\(.id)\\t\\(.name)&quot;'\n</code></pre>\n<p>Output</p>\n<pre><code>12  George\n18  Jack\n19  Joe\n</code></pre>\n<hr />\n<p><strong>Edit 1 :</strong> For fine grained formatting use tools like <code>awk</code></p>\n<pre><code> echo '[{\n    &quot;name&quot;: &quot;George&quot;,\n    &quot;id&quot;: 12,\n    &quot;email&quot;: &quot;george@domain.example&quot;\n}, {\n    &quot;name&quot;: &quot;Jack&quot;,\n    &quot;id&quot;: 18,\n    &quot;email&quot;: &quot;jack@domain.example&quot;\n}, {\n    &quot;name&quot;: &quot;Joe&quot;,\n    &quot;id&quot;: 19,\n    &quot;email&quot;: &quot;joe@domain.example&quot;\n}]' | jq -r '.[] | [.id, .name] | @csv' | awk -v FS=&quot;,&quot; 'BEGIN{print &quot;ID\\tName&quot;;print &quot;============&quot;}{printf &quot;%s\\t%s%s&quot;,$1,$2,ORS}'\nID  Name\n============\n12  &quot;George&quot;\n18  &quot;Jack&quot;\n19  &quot;Joe&quot;\n</code></pre>\n<hr />\n<p><strong>Edit 2 :</strong> In reply to</p>\n<blockquote>\n<p>There's no way I can get a variable containing an array straight\nfrom jq?</p>\n</blockquote>\n<p>Why not?</p>\n<p>A bit involved example( in fact modified from yours ) where email is changed to an array demonstrates this</p>\n<pre><code>echo '[{\n    &quot;name&quot;: &quot;George&quot;,\n    &quot;id&quot;: 20,\n    &quot;email&quot;: [ &quot;george@domain1.example&quot; , &quot;george@domain2.example&quot; ]\n}, {\n    &quot;name&quot;: &quot;Jack&quot;,\n    &quot;id&quot;: 18,\n    &quot;email&quot;: [ &quot;jack@domain3.example&quot; , &quot;jack@domain5.example&quot; ]\n}, {\n    &quot;name&quot;: &quot;Joe&quot;,\n    &quot;id&quot;: 19,\n    &quot;email&quot;: [ &quot;joe@domain.example&quot; ]\n}]' | jq -r '.[] | .email'\n</code></pre>\n<p><strong>Output</strong></p>\n<pre><code>[\n  &quot;george@domain1.example&quot;,\n  &quot;george@domain2.example&quot;\n]\n[\n  &quot;jack@domain3.example&quot;,\n  &quot;jack@domain5.example&quot;\n]\n[\n  &quot;joe@domain.example&quot;\n]\n</code></pre>\n",
+    "tags": [
+      "json",
+      "bash",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 8949,
+      "display_name": "zeppelin",
+      "link": "https://stackoverflow.com/users/2788297/zeppelin"
+    },
+    "is_accepted": true,
+    "score": 112,
+    "creation_date": "2017-03-10T11:16:00Z",
+    "answer_id": 42717073,
+    "question_id": 42716734,
+    "share_link": "https://stackoverflow.com/a/42717073",
+    "body_markdown": "AFAIK `jq` does not support in-place editing, so you must redirect to a temporary file first and then replace your original file with it, or use `sponge` utility from the moreutils package, like that:\r\n\r\n    jq &#39;.address = &quot;abcde&quot;&#39; test.json|sponge test.json\r\n\r\nThere are other techniques to &quot;redirect to the same file&quot;, like saving your output in a variable e.t.c. &quot;Unix &amp; Linux StackExchange&quot; is a good place to start, if you want to learn more about this.",
+    "link": "https://stackoverflow.com/questions/42716734/modify-a-key-value-in-a-json-using-jq-in-place/42717073#42717073",
+    "title": "Modify a key-value in a json using jq in-place",
+    "body": "<p>AFAIK <code>jq</code> does not support in-place editing, so you must redirect to a temporary file first and then replace your original file with it, or use <code>sponge</code> utility from the moreutils package, like that:</p>\n\n<pre><code>jq '.address = \"abcde\"' test.json|sponge test.json\n</code></pre>\n\n<p>There are other techniques to \"redirect to the same file\", like saving your output in a variable e.t.c. \"Unix &amp; Linux StackExchange\" is a good place to start, if you want to learn more about this.</p>\n",
+    "tags": [
+      "json",
+      "bash",
+      "shell",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 5502,
+      "display_name": "aaaaaa123456789",
+      "link": "https://stackoverflow.com/users/2058293/aaaaaa123456789"
+    },
+    "is_accepted": true,
+    "score": 136,
+    "creation_date": "2016-08-30T13:22:17Z",
+    "answer_id": 39228718,
+    "question_id": 39228500,
+    "share_link": "https://stackoverflow.com/a/39228718",
+    "body_markdown": "If you just want to extract the `name` fields, the command you&#39;re looking for is `jq &#39;.example.&quot;sub-example&quot; | .[] | .name&#39;`. If you want to keep the names in an array, wrap the whole `jq` expression in square brackets.",
+    "link": "https://stackoverflow.com/questions/39228500/extract-a-specific-field-from-json-output-using-jq/39228718#39228718",
+    "title": "Extract a specific field from JSON output using jq",
+    "body": "<p>If you just want to extract the <code>name</code> fields, the command you're looking for is <code>jq '.example.\"sub-example\" | .[] | .name'</code>. If you want to keep the names in an array, wrap the whole <code>jq</code> expression in square brackets.</p>\n",
+    "tags": [
+      "json",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 12409,
+      "accept_rate": 89,
+      "display_name": "max taldykin",
+      "link": "https://stackoverflow.com/users/147057/max-taldykin"
+    },
+    "is_accepted": true,
+    "score": 187,
+    "creation_date": "2013-12-10T08:56:10Z",
+    "answer_id": 20489951,
+    "question_id": 19573517,
+    "share_link": "https://stackoverflow.com/a/20489951",
+    "body_markdown": "You can use the [select][1] function to get only required entries:\r\n\r\n    jq &#39;select(.geo != null)&#39; all.json\r\n\r\n\r\n  [1]: https://stedolan.github.io/jq/manual/#select(boolean_expression)",
+    "link": "https://stackoverflow.com/questions/19573517/jq-conditional-output/20489951#20489951",
+    "title": "jq Conditional output",
+    "body": "<p>You can use the <a href=\"https://stedolan.github.io/jq/manual/#select(boolean_expression)\">select</a> function to get only required entries:</p>\n\n<pre><code>jq 'select(.geo != null)' all.json\n</code></pre>\n",
+    "tags": [
+      "json",
+      "command-line",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 79378,
+      "accept_rate": 100,
+      "display_name": "Inian",
+      "link": "https://stackoverflow.com/users/5291015/inian"
+    },
+    "is_accepted": true,
+    "score": 167,
+    "creation_date": "2017-02-15T12:01:21Z",
+    "answer_id": 42248841,
+    "question_id": 42245288,
+    "share_link": "https://stackoverflow.com/a/42248841",
+    "body_markdown": "The `|= .+ ` part in the filter adds a new element to the existing array. You can use `jq` with filter like:\r\n\r\n    jq &#39;.data.messages[3] |= . + {\r\n          &quot;date&quot;: &quot;2010-01-07T19:55:99.999Z&quot;, \r\n          &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;, \r\n          &quot;status&quot;: &quot;OKKK&quot;, \r\n          &quot;message&quot;: &quot;metadata loaded into iRODS successfullyyyyy&quot;\r\n    }&#39; inputJson\r\n\r\nTo avoid using the hardcoded length value `3` and dynamically add a new element, use `. | length` which returns the length, which can be used as the next array index, i.e.,\r\n\r\n    jq &#39;.data.messages[.data.messages| length] |= . + {\r\n          &quot;date&quot;: &quot;2010-01-07T19:55:99.999Z&quot;, \r\n          &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;, \r\n          &quot;status&quot;: &quot;OKKK&quot;, \r\n          &quot;message&quot;: &quot;metadata loaded into iRODS successfullyyyyy&quot;\r\n    }&#39; inputJson\r\n\r\n(or) as per peak&#39;s suggestion in the comments, using the `+=` operator alone\r\n\r\n    jq &#39;.data.messages += [{\r\n         &quot;date&quot;: &quot;2010-01-07T19:55:99.999Z&quot;,\r\n         &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;, \r\n         &quot;status&quot;: &quot;OKKK&quot;, \r\n         &quot;message&quot;: &quot;metadata loaded into iRODS successfullyyyyy&quot;\r\n    }]&#39;\r\n\r\nwhich produces the output you need:\r\n\r\n    {\r\n      &quot;report&quot;: &quot;1.0&quot;,\r\n      &quot;data&quot;: {\r\n        &quot;date&quot;: &quot;2010-01-07&quot;,\r\n        &quot;messages&quot;: [\r\n          {\r\n            &quot;date&quot;: &quot;2010-01-07T19:58:42.949Z&quot;,\r\n            &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;,\r\n            &quot;status&quot;: &quot;OK&quot;,\r\n            &quot;message&quot;: &quot;metadata loaded into iRODS successfully&quot;\r\n          },\r\n          {\r\n            &quot;date&quot;: &quot;2010-01-07T20:22:46.949Z&quot;,\r\n            &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;,\r\n            &quot;status&quot;: &quot;NOK&quot;,\r\n            &quot;message&quot;: &quot;metadata duplicated into iRODS&quot;\r\n          },\r\n          {\r\n            &quot;date&quot;: &quot;2010-01-07T22:11:55.949Z&quot;,\r\n            &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;,\r\n            &quot;status&quot;: &quot;NOK&quot;,\r\n            &quot;message&quot;: &quot;metadata was not validated by XSD schema&quot;\r\n          },\r\n          {\r\n            &quot;date&quot;: &quot;2010-01-07T19:55:99.999Z&quot;,\r\n            &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;,\r\n            &quot;status&quot;: &quot;OKKK&quot;,\r\n            &quot;message&quot;: &quot;metadata loaded into iRODS successfullyyyyy&quot;\r\n          }\r\n        ]\r\n      }\r\n    }\r\n\r\nUse [jq-play](https://jqplay.org/) to dry-run your `jq-filter` and optimize any way you want.",
+    "link": "https://stackoverflow.com/questions/42245288/add-new-element-to-existing-json-array-with-jq/42248841#42248841",
+    "title": "Add new element to existing JSON array with jq",
+    "body": "<p>The <code>|= .+ </code> part in the filter adds a new element to the existing array. You can use <code>jq</code> with filter like:</p>\n<pre><code>jq '.data.messages[3] |= . + {\n      &quot;date&quot;: &quot;2010-01-07T19:55:99.999Z&quot;, \n      &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;, \n      &quot;status&quot;: &quot;OKKK&quot;, \n      &quot;message&quot;: &quot;metadata loaded into iRODS successfullyyyyy&quot;\n}' inputJson\n</code></pre>\n<p>To avoid using the hardcoded length value <code>3</code> and dynamically add a new element, use <code>. | length</code> which returns the length, which can be used as the next array index, i.e.,</p>\n<pre><code>jq '.data.messages[.data.messages| length] |= . + {\n      &quot;date&quot;: &quot;2010-01-07T19:55:99.999Z&quot;, \n      &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;, \n      &quot;status&quot;: &quot;OKKK&quot;, \n      &quot;message&quot;: &quot;metadata loaded into iRODS successfullyyyyy&quot;\n}' inputJson\n</code></pre>\n<p>(or) as per peak's suggestion in the comments, using the <code>+=</code> operator alone</p>\n<pre><code>jq '.data.messages += [{\n     &quot;date&quot;: &quot;2010-01-07T19:55:99.999Z&quot;,\n     &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;, \n     &quot;status&quot;: &quot;OKKK&quot;, \n     &quot;message&quot;: &quot;metadata loaded into iRODS successfullyyyyy&quot;\n}]'\n</code></pre>\n<p>which produces the output you need:</p>\n<pre><code>{\n  &quot;report&quot;: &quot;1.0&quot;,\n  &quot;data&quot;: {\n    &quot;date&quot;: &quot;2010-01-07&quot;,\n    &quot;messages&quot;: [\n      {\n        &quot;date&quot;: &quot;2010-01-07T19:58:42.949Z&quot;,\n        &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;,\n        &quot;status&quot;: &quot;OK&quot;,\n        &quot;message&quot;: &quot;metadata loaded into iRODS successfully&quot;\n      },\n      {\n        &quot;date&quot;: &quot;2010-01-07T20:22:46.949Z&quot;,\n        &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;,\n        &quot;status&quot;: &quot;NOK&quot;,\n        &quot;message&quot;: &quot;metadata duplicated into iRODS&quot;\n      },\n      {\n        &quot;date&quot;: &quot;2010-01-07T22:11:55.949Z&quot;,\n        &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;,\n        &quot;status&quot;: &quot;NOK&quot;,\n        &quot;message&quot;: &quot;metadata was not validated by XSD schema&quot;\n      },\n      {\n        &quot;date&quot;: &quot;2010-01-07T19:55:99.999Z&quot;,\n        &quot;xml&quot;: &quot;xml_samplesheet_2017_01_07_run_09.xml&quot;,\n        &quot;status&quot;: &quot;OKKK&quot;,\n        &quot;message&quot;: &quot;metadata loaded into iRODS successfullyyyyy&quot;\n      }\n    ]\n  }\n}\n</code></pre>\n<p>Use <a href=\"https://jqplay.org/\" rel=\"noreferrer\">jq-play</a> to dry-run your <code>jq-filter</code> and optimize any way you want.</p>\n",
+    "tags": [
+      "arrays",
+      "json",
+      "bash",
+      "jq"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 1238870,
+      "accept_rate": 100,
+      "display_name": "VonC",
+      "link": "https://stackoverflow.com/users/6309/vonc"
+    },
+    "is_accepted": true,
+    "score": 87,
+    "creation_date": "2018-12-29T08:22:36Z",
+    "answer_id": 53967916,
+    "question_id": 53967693,
+    "share_link": "https://stackoverflow.com/a/53967916",
+    "body_markdown": "Using `jq-win64.exe` from [`github.com/stedolan/jq/releases`][1], I get\r\n\r\n    vonc@voncav MINGW64 /d/prgs/dl\r\n    $ ./jq-win64.exe --version\r\n    jq-1.6\r\n    \r\n    vonc@voncav MINGW64 /d/prgs/dl\r\n    $ echo &#39;{&quot;foo&quot;: 0}&#39; | ./jq-win64.exe .\r\n    {\r\n      &quot;foo&quot;: 0\r\n    }\r\n\r\nSo it does work, but it then depends on the json document you are parsing with it.  \r\nIf that json document is not well-formed, that would generate the error you see.\r\n\r\nIn your bash session, you can define (or add to your `~/.bashrc`) an alias:\r\n\r\n    alias jq=/path/to/jq-win64.exe\r\n\r\nThat way, you don&#39;t need to use `./jq`, but directly `jq`.\r\n\r\n    $ echo &#39;{&quot;foo&quot;: 0}&#39; | jq\r\n\r\nIn my case:\r\n\r\n    vonc@voncav:/$ alias jq=/mnt/d/dwnl/jq-win64.exe\r\n    vonc@voncav:/$ echo &#39;{&quot;foo&quot;: 0}&#39; | jq\r\n    {\r\n      &quot;foo&quot;: 0\r\n    }\r\n\r\n  [1]: https://github.com/stedolan/jq/releases\r\n\r\n\r\n",
+    "link": "https://stackoverflow.com/questions/53967693/how-to-run-jq-from-gitbash-in-windows/53967916#53967916",
+    "title": "How to run jq from gitbash in windows?",
+    "body": "<p>Using <code>jq-win64.exe</code> from <a href=\"https://github.com/stedolan/jq/releases\" rel=\"noreferrer\"><code>github.com/stedolan/jq/releases</code></a>, I get</p>\n\n<pre><code>vonc@voncav MINGW64 /d/prgs/dl\n$ ./jq-win64.exe --version\njq-1.6\n\nvonc@voncav MINGW64 /d/prgs/dl\n$ echo '{\"foo\": 0}' | ./jq-win64.exe .\n{\n  \"foo\": 0\n}\n</code></pre>\n\n<p>So it does work, but it then depends on the json document you are parsing with it.<br>\nIf that json document is not well-formed, that would generate the error you see.</p>\n\n<p>In your bash session, you can define (or add to your <code>~/.bashrc</code>) an alias:</p>\n\n<pre><code>alias jq=/path/to/jq-win64.exe\n</code></pre>\n\n<p>That way, you don't need to use <code>./jq</code>, but directly <code>jq</code>.</p>\n\n<pre><code>$ echo '{\"foo\": 0}' | jq\n</code></pre>\n\n<p>In my case:</p>\n\n<pre><code>vonc@voncav:/$ alias jq=/mnt/d/dwnl/jq-win64.exe\nvonc@voncav:/$ echo '{\"foo\": 0}' | jq\n{\n  \"foo\": 0\n}\n</code></pre>\n",
+    "tags": [
+      "bash",
+      "jq",
+      "git-bash"
+    ]
+  },
+  {
+    "owner": {
+      "reputation": 151210,
+      "accept_rate": 100,
+      "display_name": "hek2mgl",
+      "link": "https://stackoverflow.com/users/171318/hek2mgl"
+    },
+    "is_accepted": true,
+    "score": 172,
+    "creation_date": "2015-12-31T09:45:37Z",
+    "answer_id": 34544406,
+    "question_id": 34543829,
+    "share_link": "https://stackoverflow.com/a/34544406",
+    "body_markdown": "It should be:\r\n\r\n    jq &#39;.[].aux[].def&#39; file.json\r\n\r\n`.[]` iterates over the outer array, `.aux[]` then iterates over the the `aux` array of every node and `.def` prints their `.def` property.\r\n\r\nThis will output:\r\n\r\n    &quot;I want this&quot;\r\n\r\nIf you want to get rid of the double quotes pass `-r` (`--raw`) to `jq`:\r\n\r\n    jq -r &#39;.[].aux[].def&#39; file.json\r\n\r\nOutput:\r\n\r\n    I want this",
+    "link": "https://stackoverflow.com/questions/34543829/jq-cannot-index-array-with-string/34544406#34544406",
+    "title": "jq: Cannot index array with string",
+    "body": "<p>It should be:</p>\n\n<pre><code>jq '.[].aux[].def' file.json\n</code></pre>\n\n<p><code>.[]</code> iterates over the outer array, <code>.aux[]</code> then iterates over the the <code>aux</code> array of every node and <code>.def</code> prints their <code>.def</code> property.</p>\n\n<p>This will output:</p>\n\n<pre><code>\"I want this\"\n</code></pre>\n\n<p>If you want to get rid of the double quotes pass <code>-r</code> (<code>--raw</code>) to <code>jq</code>:</p>\n\n<pre><code>jq -r '.[].aux[].def' file.json\n</code></pre>\n\n<p>Output:</p>\n\n<pre><code>I want this\n</code></pre>\n",
+    "tags": [
+      "json",
+      "jq"
+    ]
+  }
+]
