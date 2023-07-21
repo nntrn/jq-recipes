@@ -1,13 +1,15 @@
 #
-# https://github.com/nntrn/jq-recipes
+#   INSTALL
+#     $ mkdir -p ~/.jq && cd $_
+#     $ curl -O https://nntrn.github.io/jq-recipes/recipes.jq
 #
-# USAGE
-#     $ mkdir -p ~/.jq
-#     $ curl --output-dir https://nntrn.github.io/jq-recipes/recipes.jq
-#     $ jq 'include "recipes"; [funcname]'
+#   USAGE
+#     $ jq 'include "recipes"; [..] '
 #
 
-############################## jq-recipes/general/reduce.md ##############################
+###########################################################################
+# general/reduce.md  
+###########################################################################
 
 def tocsv:
   .[0] as $cols | .[1:]
@@ -16,17 +18,25 @@ def tocsv:
   | with_entries({ "key": .value,"value": $row[.key]})
   );
 
-############################## jq-recipes/general/wrangle.md ##############################
+###########################################################################
+# general/wrangle.md  
+###########################################################################
 
 def s: [splits(" +")];
 
-############################## jq-recipes/general/codepoints.md ##############################
+###########################################################################
+# general/codepoints.md  
+###########################################################################
 
-def smart_squotes($s): $s | if (test("[\\s\\n\\t]";"x")) then "\([39]|implode)\($s)\([39]|implode)" else $s end;
+def smart_squotes($s):
+  $s | if (test("[\\s\\n\\t]";"x")) then "\([39]|implode)\($s)\([39]|implode)" else $s end;
 
-def smart_dquotes($s): $s | if (test("[\\s\\n\\t]";"x")) then "\($s|@json)" else $s end;
+def smart_dquotes($s):
+  $s | if (test("[\\s\\n\\t]";"x")) then "\($s|@json)" else $s end;
 
-############################## jq-recipes/functions/barcharts.md ##############################
+###########################################################################
+# functions/barcharts.md  
+###########################################################################
 
 def barchart($key):
   length as $total
@@ -55,40 +65,45 @@ def barchart($key):
   | flatten
   | join("\n");
 
-def generate:
+def run_barchart:
   . as $data
   | (.[0]|keys) as $cols
   | ($cols | map(. as $col | $data | barchart($col)) | join("\n")) as $barcharts
-  | [
-      $barcharts,
-      "",
-      "+" * (($barcharts|split("\n")|max_by(length))|length),
-      "data from \(input_filename)",
-       "+" * (($barcharts|split("\n")|max_by(length))|length)
-    ]
+  | [ $barcharts ]
   | flatten| join("\n")
 ;
 
-############################## jq-recipes/functions/summary.md ##############################
+###########################################################################
+# functions/summary.md  
+###########################################################################
 
 def grouped_summary($item):
   {"\($item)":group_by(.[$item])|map({"\(.[0][$item])":length})|add};
 
 def summary:
-  [(.[0]|keys)[] as $keys | grouped_summary($keys)]
+  [ (.[0]|keys)[] as $keys | grouped_summary($keys)]
   | add
   | to_entries
-  | map(del(select((.value|keys[0]|length) > 100 )) | del(select((.value|keys|length) > 400 )))
+  | map(
+      del(select(((.value//"")|keys[0]|length) > 100)) |
+      del(select(((.value//"")|keys|length) > 400))
+    )
   | map(select(.))
   | from_entries;
 
 def summary2:
   . as $data
   | (.[0]|keys)
-  | map(. as $item| {key: $item, value: ($data|map(.[$item])|group_by(.)|map({"\(.[0])": length}) )|add } )
-  | map(select((.value|to_entries|length)< (.90 * ($data|length)) ));
+  | map(. as $item | {
+      key: $item,
+      value: ($data|map(.[$item])|group_by(.)|map({"\(.[0])": length}))|add
+    })
+  | map(select((.value|to_entries|length)< (.90 * ($data|length))))
+  | from_entries;
 
-############################## jq-recipes/functions/json2csv.md ##############################
+###########################################################################
+# functions/json2csv.md  
+###########################################################################
 
 def json2csv:
   (map(keys) | add | unique) as $cols
@@ -96,24 +111,44 @@ def json2csv:
   | $cols, $rows[]
   | @csv;
 
-############################## jq-recipes/functions/flatten.md ##############################
+###########################################################################
+# functions/flatten.md  
+###########################################################################
 
-def flat_object: [paths(scalars) as $path | {"key": $path | join("_"), "value": getpath($path)}] | from_entries;
+def flat_object:
+  [paths(scalars) as $path
+  | {"key": $path | join("_"), "value": getpath($path)}]
+  | from_entries;
 
-def flat_array: map( flat_object );
+def flat_array:
+  map( flat_object );
 
-############################## jq-recipes/functions/describe.md ##############################
+###########################################################################
+# functions/describe.md  
+###########################################################################
 
 def describe:
   walk(
     if (type == "object" or type == "array")
     then (if (type == "array") then ([limit(1;.[])]) else . end)
-    else (if (type == "string") and (test("^https?")) then "url" else ((.|fromdate|"date")? // type) end)
+    else (
+      if (type == "string") and (test("^https?"))
+      then "url"
+      else ((.|fromdate|"date")? // type)
+      end
+      )
     end
   );
 
-############################## jq-recipes/functions/read-history.md ##############################
+###########################################################################
+# functions/read-history.md  
+###########################################################################
 
-def history: 
-  map( if test("#[0-9]{10,12}") then "\(.|gsub("#";"")|tonumber|todate)" else "\t\(.)\n" end ) | join("");
+def history:
+  map(
+    if test("#[0-9]{10,12}")
+    then "\(.|gsub("#";"")|tonumber|todate)"
+    else "\t\(.)\n"
+    end
+  ) | join("");
 

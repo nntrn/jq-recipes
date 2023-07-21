@@ -17,6 +17,7 @@ jq -n 'reduce inputs as $s (.; .[input_filename|gsub(".json";"")|split("/")|last
 ```jq
 group_by(.[$key]) | map({"\(.[0][$key])": length}) | add
 ```
+
 ```console
 $ jq --arg key Status 'group_by(.[$key]) | map({"\(.[0][$key])": length}) | add'
 {
@@ -32,6 +33,7 @@ $ jq --arg key Status 'group_by(.[$key]) | map({"\(.[0][$key])": length}) | add'
 ```jq
 paths(scalars) as $p | "\($p|join("."))=\(getpath($p))"
 ```
+
 ```console
 $ jq -r 'paths(scalars) as $p | "\($p|join("."))=\(getpath($p))"' data/titanic.json
 0.Survived=0
@@ -87,4 +89,5 @@ _source.statistics.space_1.template2.current_ship_status=sent
 _source.statistics.space_1.template2.current_ship_date=4324242
 _source.statistics.space_1.template2.checked_payload=0
 ```
+
 [[Source]](https://stackoverflow.com/a/55277881)

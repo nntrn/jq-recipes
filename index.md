@@ -11,8 +11,8 @@ nav_exclude: true
 [**Download recipes.jq**](https://nntrn.github.io/jq-recipes/recipes.jq)
 
 ```console
-$ mkdir -p ~/.jq
-$ curl --output-dir ~/.jq https://nntrn.github.io/jq-recipes/jqrecipes.jq
+$ mkdir -p ~/.jq && cd $_
+$ curl -O https://nntrn.github.io/jq-recipes/recipes.jq
 ```
 
 ## Usage
@@ -21,7 +21,6 @@ $ curl --output-dir ~/.jq https://nntrn.github.io/jq-recipes/jqrecipes.jq
 jq 'include "recipes"; <funcname>' <jsonfile>
 ```
 
-
-<details open=false>
-<pre>{% include_relative jqrecipes.jq %}</pre>
+<details>
+<pre>{% include_relative recipes.jq %}</pre>
 </details>

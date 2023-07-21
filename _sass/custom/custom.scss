@@ -35,7 +35,6 @@ hr{margin:1.4rem 0}
 .search-result.active,.search-result:hover{background-color:#eee}
 .site-nav{padding-top:1rem}
 .site-title{padding-right:2rem;font-weight:700;padding-left:1rem}
-.main-content-wrap{padding-right:1.5rem;padding-left:1.5rem}
 .side-bar{background:#fff}
 .nav-list .nav-list-item .nav-list-link{padding-left:2rem;margin:0}
 .nav-list,.site-title{margin:auto}
@@ -43,7 +42,6 @@ hr{margin:1.4rem 0}
 .search-result-highlight{font-weight:700;color:#2379de}
 .site-title:hover{background-image:unset;color:#aaa}
 .main-header{top:0;position:sticky;z-index:1000;background:#fff}
-.site-footer{margin:auto;width:100%}
 .site-nav{padding-top:0;padding-bottom:0;margin:1em 0}
 .site-button{height:fit-content;padding:1em;margin:0}
 h1,h2,h3,h4{font-weight:700;letter-spacing:-.5px}
@@ -99,6 +97,7 @@ p+p{margin-top:0}
 @media (min-width:66.5rem){
 .main{max-width:80vw;margin-left:max(20vw,300px)}
 .side-bar{min-width:max(20vw,300px)}
+.site-footer,.site-header,.site-nav{width:100%}
 }
 @media (min-width:50rem){
 .main-content-wrap{padding-top:1rem}
@@ -126,4 +125,6 @@ td{vertical-align:top}
 table pre{background:#fff;color:#222}
 .main-content h2{margin-top:.5em}
 :not(pre,.highlight)>code{font-size:85%;font-weight:500!important}
-.nav-list .nav-list-item .nav-list-expander{right:.5em;padding:.2em .5rem}
+.nav-list-expander{height:30px!important;padding:1%!important}
+.nav-list-expander svg{width:20px!important;height:20px!important}
+.nav-list-expander+.nav-list-link{height:30px!important;display:flex;margin:auto}

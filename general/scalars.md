@@ -1,6 +1,7 @@
 # Scalars
 
 {: .data }
+
 > ```sh
 > curl -o events.json 'https://api.github.com/users/nntrn/events/public?per_page=3'
 > ```
@@ -75,7 +76,6 @@ jq '. as $data | [path(..| select(scalars))] | map({ (.|join(".")): (. as $path 
 }</pre>
 </details>
 
-
 ## Target URLs
 
 Select paths that begin with `https://`
@@ -101,45 +101,43 @@ jq '. as $data | [path(..| select(scalars and (tostring | test("^https://";"x"))
 }</pre>
 </details>
 
-
 ---
-
 
 ### Breakdown
 
 Adapted from [5 Useful jq Commands to Parse JSON on the CLI](https://www.fabian-keller.de/blog/5-useful-jq-commands-parse-json-cli/):
 
-* first store a reference to the complete data set - we'll need this later
+- first store a reference to the complete data set - we'll need this later
 
   ```sh
   jq '. as $data | .' events.json
   ```
 
-* now with `..` traverse the whole tree applying the path() function to retrieve the location
+- now with `..` traverse the whole tree applying the path() function to retrieve the location
 
   ```sh
   jq '. as $data | [path(..)]' events.json
   ```
 
-* we want to select only paths that are scalars (i.e. leaf nodes) and that match the regexp "merge"
+- we want to select only paths that are scalars (i.e. leaf nodes) and that match the regexp "merge"
 
   ```sh
   jq '. as $data | [path(..| select(scalars and (tostring | test("merge", "ixn")))) ]' events.json
   ```
 
-* now that we have all the paths with matches, lets map them to an object with the key being a string representation of the key
+- now that we have all the paths with matches, lets map them to an object with the key being a string representation of the key
 
   ```sh
   jq '. as $data | [path(..| select(scalars and (tostring | test("merge", "ixn")))) ] | map({ (.|join(".")): "static" })' events.json
   ```
 
-* using the `getpath` function we can pop in the original value at the path (i.e. the scalar containing the match)
+- using the `getpath` function we can pop in the original value at the path (i.e. the scalar containing the match)
 
   ```sh
   jq '. as $data | [path(..| select(scalars and (tostring | test("merge", "ixn")))) ] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) })' events.json
   ```
 
-* finally `reduce` all key-value matches to a single object
+- finally `reduce` all key-value matches to a single object
 
   ```sh
   jq '. as $data | [path(..| select(scalars and (tostring | test("merge", "ixn")))) ] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) }) | reduce .[] as $item ({}; . * $item)' events.json

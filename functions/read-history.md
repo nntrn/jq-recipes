@@ -3,18 +3,23 @@
 Compile timestamps in `.bash_history` for all users
 
 ```jq
-def history: 
-  map( if test("#[0-9]{10,12}") then "\(.|gsub("#";"")|tonumber|todate)" else "\t\(.)\n" end ) | join("");
+def history:
+  map(
+    if test("#[0-9]{10,12}")
+    then "\(.|gsub("#";"")|tonumber|todate)"
+    else "\t\(.)\n"
+    end
+  ) | join("");
 ```
 
-Requires root privileges 
+Requires root privileges
 
 ```sh
-head -n 100 /home/*/.bash_history | 
+head -n 100 /home/*/.bash_history |
   jq -Rs -r 'include "jqrecipes"; split("\n") | history'
 ```
 
-Output: 
+Output:
 
 ```
         ==> /home/svc_prddbaasawx/.bash_history <==

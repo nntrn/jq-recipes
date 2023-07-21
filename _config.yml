@@ -35,10 +35,8 @@ github_username: nntrn
 
 collections:
   functions:
-    name: Functions
     output: true
   general:
-    name: General
     output: true
 
 defaults:
