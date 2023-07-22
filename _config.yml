@@ -1,5 +1,5 @@
 title: "JQ Recipes"
-description: Code snippets for jq, command-line JSON processor
+description: snippets for working with jq
 baseurl: "/jq-recipes"
 url: "https://nntrn.github.io"
 repository: nntrn/jq-recipes
@@ -32,12 +32,6 @@ kramdown:
   toc_levels: 2..2
 
 github_username: nntrn
-
-collections:
-  functions:
-    output: true
-  general:
-    output: true
 
 defaults:
   - scope:
