@@ -1,6 +1,6 @@
-body{font-family:sans-serif;font-size:14px}
+body{font-family:sans-serif;font-size:14px;overflow-x:hidden}
 div.highlighter-rouge div.highlight{padding:0;display:block}
-pre{line-height:100%;overflow-x:scroll;background:#383942;color:#fff;white-space:pre-wrap;word-break:keep-all;user-select:all}
+pre{line-height:100%;overflow-x:scroll;color:#0064ff;background:#0064ff17;white-space:pre-wrap;word-break:keep-all;user-select:all}
 code,pre{font-family:monospace;font-weight:400;font-size:12px;line-height:120%}
 div.highlight code,pre>code{padding:calc(1em + 6px)}
 details pre{background:0 0;color:inherit}
@@ -73,7 +73,7 @@ h1,h2,h3,h4{font-weight:700;letter-spacing:-.5px}
 .search-result{display:flex;flex-direction:column;padding:0 0;box-sizing:border-box}
 .search-result-title{padding:1em;height:100%;vertical-align:top;color:#333;font-weight:550;font-family:helvetica,sans-serif}
 .search-result-highlight{font-weight:500;color:#0064ff;background:#0064ff17;padding:0 4px;line-height:90%;box-shadow:0 0 0 1px #0064ff17}
-pre~.highlighter-rouge{margin-top:0}
+pre~.highlighter-rouge{margin-top:.75rem}
 pre~p{margin-top:2em;margin-bottom:.5em}
 p+p{margin-top:0}
 .search-result-doc.search-result-doc-parent{opacity:1}
@@ -119,12 +119,15 @@ button .copy-icon{width:12px;height:12px;margin:auto}
 blockquote pre,blockquote pre .highlight{background:#fff!important}
 blockquote .highlighter-rouge{background:#fff!important;margin-bottom:0;padding-bottom:0}
 :not(pre,figure)>code{padding:unset;font-weight:unset;background-color:#ffe6f1;border:unset;border-radius:0;color:#e3116c;text-decoration:unset;text-decoration-color:#fff}
-.nav-list{display:flex;flex-direction:column;gap:1em}
+.nav-list{display:flex;flex-direction:column;gap:.7em}
 .search-result-previews{border-left:none}
 td{vertical-align:top}
 table pre{background:#fff;color:#222}
 .main-content h2{margin-top:.5em}
 :not(pre,.highlight)>code{font-size:85%;font-weight:500!important}
-.nav-list-expander{height:30px!important;padding:1%!important}
+.nav-list-expander{/*! height: 30px !important; */width:min-content!important;line-height:80%!important;height:min-content!important;margin:auto!important;margin-right:.5em!important;padding:3px!important}
 .nav-list-expander svg{width:20px!important;height:20px!important}
-.nav-list-expander+.nav-list-link{height:30px!important;display:flex;margin:auto}
+.nav-list-expander+.nav-list-link{height:1em!important;display:flex;margin:auto}
+.nav-list-link+ul.nav-list{margin-top:1em}
+.site-footer{display:flex;flex-flow:column;gap:.5em;padding-bottom:.5em}
+.site-footer svg{opacity:.7}
