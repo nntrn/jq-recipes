@@ -35,11 +35,11 @@ github_username: nntrn
 
 defaults:
   - scope:
-      path: "functions/*.md"
+      path: "./functions/*.md"
     values:
       parent: "Functions"
   - scope:
-      path: "general/*.md"
+      path: "./general/*.md"
     values:
       parent: "General"
   - scope:
@@ -47,6 +47,10 @@ defaults:
     values:
       has_children: true
       layout: "default"
+  - scope:
+      path: "recipes.jq"
+    values:
+      output: true
 
 plugins:
   - jekyll-remote-theme
