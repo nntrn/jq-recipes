@@ -1,144 +1,170 @@
 # Scalars
 
-{: .data }
+Scalars are variables that hold an *individual* value (strings, integers, and booleans). If it's not an object or array &mdash; it's most likely a scalar
 
-> ```sh
-> curl -o events.json 'https://api.github.com/users/nntrn/events/public?per_page=3'
-> ```
+{:data}
+[sample-github-events.json](../data/sample-github-events.json)
+
+
+## Extract
+
+```jq
+map(with_entries(select(.value|scalars)))
+```
 
 ## Flatten
 
-```sh
-jq '. as $data | [path(..| select(scalars))] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) }) | add' events.json
+```jq
+. as $data
+| [path(..|select(scalars))]
+| map({ (.|join(".")): (. as $path | .=$data | getpath($path)) })
+| add
 ```
 
-<details><summary>Output</summary>
-<pre>{
-  "0.id": "30296500963",
-  "0.type": "WatchEvent",
+```console
+$ jq '. as $data | [path(..| select(scalars))] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) }) | add' sample-github-events.json
+
+{
+  "0.id": "30572272710",
+  "0.type": "CreateEvent",
   "0.actor.id": 17685332,
   "0.actor.login": "nntrn",
   "0.actor.display_login": "nntrn",
   "0.actor.gravatar_id": "",
   "0.actor.url": "https://api.github.com/users/nntrn",
   "0.actor.avatar_url": "https://avatars.githubusercontent.com/u/17685332?",
-  "0.repo.id": 58597275,
-  "0.repo.name": "rbarton65/espnff",
-  "0.repo.url": "https://api.github.com/repos/rbarton65/espnff",
-  "0.payload.action": "started",
+  "0.repo.id": 582752600,
+  "0.repo.name": "nntrn/jq-recipes",
+  "0.repo.url": "https://api.github.com/repos/nntrn/jq-recipes",
+  "0.payload.ref": "master",
+  "0.payload.ref_type": "branch",
+  "0.payload.master_branch": "main",
+  "0.payload.pusher_type": "user",
   "0.public": true,
-  "0.created_at": "2023-07-09T22:47:44Z",
-  "1.id": "30291015875",
-  "1.type": "WatchEvent",
-  "1.actor.id": 17685332,
-  "1.actor.login": "nntrn",
-  "1.actor.display_login": "nntrn",
-  "1.actor.gravatar_id": "",
-  "1.actor.url": "https://api.github.com/users/nntrn",
-  "1.actor.avatar_url": "https://avatars.githubusercontent.com/u/17685332?",
-  "1.repo.id": 295774370,
-  "1.repo.name": "mdn/content",
-  "1.repo.url": "https://api.github.com/repos/mdn/content",
-  "1.payload.action": "started",
-  "1.public": true,
-  "1.created_at": "2023-07-09T09:29:27Z",
-  "1.org.id": 7565578,
-  "1.org.login": "mdn",
-  "1.org.gravatar_id": "",
-  "1.org.url": "https://api.github.com/orgs/mdn",
-  "1.org.avatar_url": "https://avatars.githubusercontent.com/u/7565578?",
-  "2.id": "30289290731",
-  "2.type": "PushEvent",
-  "2.actor.id": 17685332,
-  "2.actor.login": "nntrn",
-  "2.actor.display_login": "nntrn",
-  "2.actor.gravatar_id": "",
-  "2.actor.url": "https://api.github.com/users/nntrn",
-  "2.actor.avatar_url": "https://avatars.githubusercontent.com/u/17685332?",
-  "2.repo.id": 582752600,
-  "2.repo.name": "nntrn/jq-recipes",
-  "2.repo.url": "https://api.github.com/repos/nntrn/jq-recipes",
-  "2.payload.repository_id": 582752600,
-  "2.payload.push_id": 14253402957,
-  "2.payload.size": 1,
-  "2.payload.distinct_size": 1,
-  "2.payload.ref": "refs/heads/devel",
-  "2.payload.head": "937e0ead5286f02581c05bc866730c1621f29e19",
-  "2.payload.before": "218054bd5f7e02956ca0be5448fd652d3891f229",
-  "2.payload.commits.0.sha": "937e0ead5286f02581c05bc866730c1621f29e19",
-  "2.payload.commits.0.author.email": "17685332+nntrn@users.noreply.github.com",
-  "2.payload.commits.0.author.name": "nntrn",
-  "2.payload.commits.0.message": "Update search result style",
-  "2.payload.commits.0.distinct": true,
-  "2.payload.commits.0.url": "https://api.github.com/repos/nntrn/jq-recipes/commits/937e0ead5286f02581c05bc866730c1621f29e19",
-  "2.public": true,
-  "2.created_at": "2023-07-09T04:15:24Z"
-}</pre>
-</details>
+  "0.created_at": "2023-07-21T00:01:11Z"
+}
+```
 
 ## Target URLs
 
 Select paths that begin with `https://`
 
-```sh
-jq '. as $data | [path(..| select(scalars and (tostring | test("^https://";"x"))))] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) })|add' events.json
+```jq
+. as $data
+| [path(..| select(scalars and (tostring | test("^https://";"x"))))]
+| map({ (.|join(".")): (. as $path | .=$data | getpath($path)) })
+| add
 ```
 
-<details><summary>Output</summary>
-<pre>{
+```console
+$ jq '. as $data | [path(..| select(scalars and (tostring | test("^https://";"x"))))] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) })|add' sample-github-events.json
+
+{
   "0.actor.url": "https://api.github.com/users/nntrn",
   "0.actor.avatar_url": "https://avatars.githubusercontent.com/u/17685332?",
-  "0.repo.url": "https://api.github.com/repos/rbarton65/espnff",
-  "1.actor.url": "https://api.github.com/users/nntrn",
-  "1.actor.avatar_url": "https://avatars.githubusercontent.com/u/17685332?",
-  "1.repo.url": "https://api.github.com/repos/mdn/content",
-  "1.org.url": "https://api.github.com/orgs/mdn",
-  "1.org.avatar_url": "https://avatars.githubusercontent.com/u/7565578?",
-  "2.actor.url": "https://api.github.com/users/nntrn",
-  "2.actor.avatar_url": "https://avatars.githubusercontent.com/u/17685332?",
-  "2.repo.url": "https://api.github.com/repos/nntrn/jq-recipes",
-  "2.payload.commits.0.url": "https://api.github.com/repos/nntrn/jq-recipes/commits/937e0ead5286f02581c05bc866730c1621f29e19"
-}</pre>
-</details>
+  "0.repo.url": "https://api.github.com/repos/nntrn/jq-recipes"
+}
+```
 
 ---
 
-### Breakdown
-
 Adapted from [5 Useful jq Commands to Parse JSON on the CLI](https://www.fabian-keller.de/blog/5-useful-jq-commands-parse-json-cli/):
 
-- first store a reference to the complete data set - we'll need this later
 
-  ```sh
-  jq '. as $data | .' events.json
-  ```
+### path
+now with \``..`\`, traverse with `path`
 
-- now with `..` traverse the whole tree applying the path() function to retrieve the location
+```console
+$ jq -c '. as $data | [path(..)][]' sample-github-events.json
 
-  ```sh
-  jq '. as $data | [path(..)]' events.json
-  ```
+[]
+[0]
+[0,"id"]
+[0,"type"]
+[0,"actor"]
+[0,"actor","id"]
+[0,"actor","login"]
+[0,"actor","display_login"]
+[0,"actor","gravatar_id"]
+[0,"actor","url"]
+[0,"actor","avatar_url"]
+[0,"repo"]
+[0,"repo","id"]
+[0,"repo","name"]
+[0,"repo","url"]
+[0,"payload"]
+[0,"payload","ref"]
+[0,"payload","ref_type"]
+[0,"payload","master_branch"]
+[0,"payload","description"]
+[0,"payload","pusher_type"]
+[0,"public"]
+[0,"created_at"]
+```
 
-- we want to select only paths that are scalars (i.e. leaf nodes) and that match the regexp "merge"
+### select
+Select only paths that contain `nntrn` (github username) in the value
 
-  ```sh
-  jq '. as $data | [path(..| select(scalars and (tostring | test("merge", "ixn")))) ]' events.json
-  ```
+```console
+$ jq -c '. as $data | [path(..| select(scalars and (tostring | test( "nntrn")))) ][]' sample-github-events.json
 
-- now that we have all the paths with matches, lets map them to an object with the key being a string representation of the key
+[0,"actor","login"]
+[0,"actor","display_login"]
+[0,"actor","url"]
+[0,"repo","name"]
+[0,"repo","url"]
+```
 
-  ```sh
-  jq '. as $data | [path(..| select(scalars and (tostring | test("merge", "ixn")))) ] | map({ (.|join(".")): "static" })' events.json
-  ```
+### getpath
 
-- using the `getpath` function we can pop in the original value at the path (i.e. the scalar containing the match)
+```console
+$ jq '. as $data | [path(..| select(scalars and (tostring | test("nntrn")))) ] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) })' data/sample-github-events.json
 
-  ```sh
-  jq '. as $data | [path(..| select(scalars and (tostring | test("merge", "ixn")))) ] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) })' events.json
-  ```
+[
+  {
+    "0.actor.login": "nntrn"
+  },
+  {
+    "0.actor.display_login": "nntrn"
+  },
+  {
+    "0.actor.url": "https://api.github.com/users/nntrn"
+  },
+  {
+    "0.repo.name": "nntrn/jq-recipes"
+  },
+  {
+    "0.repo.url": "https://api.github.com/repos/nntrn/jq-recipes"
+  }
+]
+```
 
-- finally `reduce` all key-value matches to a single object
+### reduce
+`reduce` all key-value matches to a single object
 
-  ```sh
-  jq '. as $data | [path(..| select(scalars and (tostring | test("merge", "ixn")))) ] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) }) | reduce .[] as $item ({}; . * $item)' events.json
-  ```
+```console
+$ jq '. as $data | [path(..| select(scalars and (tostring | test("nntrn")))) ] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) }) | reduce .[] as $item ({}; . * $item)' data/sample-github-events.json
+
+{
+  "0.actor.login": "nntrn",
+  "0.actor.display_login": "nntrn",
+  "0.actor.url": "https://api.github.com/users/nntrn",
+  "0.repo.name": "nntrn/jq-recipes",
+  "0.repo.url": "https://api.github.com/repos/nntrn/jq-recipes"
+}
+```
+
+### add
+`add` can also be used in this case
+
+```console
+$ jq '. as $data | [path(..| select(scalars and (tostring | test("nntrn")))) ] | map({ (.|join(".")): (. as $path | .=$data | getpath($path)) })|add' data/sample-github-events.json
+
+{
+  "0.actor.login": "nntrn",
+  "0.actor.display_login": "nntrn",
+  "0.actor.url": "https://api.github.com/users/nntrn",
+  "0.repo.name": "nntrn/jq-recipes",
+  "0.repo.url": "https://api.github.com/repos/nntrn/jq-recipes"
+}
+````
