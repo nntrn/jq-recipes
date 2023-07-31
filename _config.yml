@@ -12,7 +12,7 @@ markdown: kramdown
 permalink: pretty
 enable_copy_code_button: true
 
-favicon_ico: "/assets/favicon.svg"
+favicon_ico: "/assets/favicon.ico"
 
 search_enabled: true
 search:
@@ -58,7 +58,7 @@ plugins:
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/nntrn/jq-recipes"
-gh_edit_branch: "master"
+gh_edit_branch: "staging"
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree"
 
