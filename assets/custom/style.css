@@ -1,6 +1,6 @@
 body{font-family:sans-serif;font-size:14px;overflow-x:hidden}
 div.highlighter-rouge div.highlight{padding:0;display:block}
-pre{line-height:100%;overflow-x:scroll;color:#0064ff;background:#0064ff17;white-space:pre-wrap;word-break:keep-all;user-select:all}
+pre{line-height:100%;overflow-x:scroll;color:#0064ff;background:#0064ff17;white-space:pre-wrap;word-break:keep-all}
 code,pre{font-family:monospace;font-weight:400;font-size:12px;line-height:120%}
 div.highlight code,pre>code{padding:calc(1em + 6px)}
 details pre{background:0 0;color:inherit}
@@ -48,7 +48,6 @@ h1,h2,h3,h4{font-weight:700;letter-spacing:-.5px}
 .nav-list .nav-list-item .nav-list-link.active{color:#111;text-transform:uppercase}
 .nav-list .nav-list-item .nav-list-link{padding:1px 1.5rem;margin-bottom:1px}
 .nav-list .nav-list-item .nav-list-link.active{font-weight:unset}
-.highlight code{user-select:all!important}
 .highlight .go,.highlight .gp{user-select:none}
 .aux-nav{padding-right:0}
 .icon{color:#bbb}
