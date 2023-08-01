@@ -1,5 +1,6 @@
 # Working with `inputs`
 
+**DATA**: [tmp.tsv](../data/tmp.tsv)
 
 ```console
 $ jq -R 'inputs' data/tmp.tsv
@@ -16,7 +17,7 @@ $  jq -c -R 'split("[\\s\\t]+";"x")' data/tmp.tsv
 ["4","5","6"]
 ```
 
-````console
+```console
 $ jq -R 'split("[\\s\\t]+";"x") as $h | [$h,inputs]' data/tmp.tsv
 
 [
@@ -28,4 +29,4 @@ $ jq -R 'split("[\\s\\t]+";"x") as $h | [$h,inputs]' data/tmp.tsv
   "1   2   3",
   "4   5   6"
 ]
-````
+```
