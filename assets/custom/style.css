@@ -129,3 +129,6 @@ table pre{background:#fff;color:#222}
 .nav-list-link+ul.nav-list{margin-top:1em}
 .site-footer{display:flex;flex-flow:column;gap:.5em;padding-bottom:.5em}
 .site-footer svg{opacity:.7}
+.table-wrapper{all:unset}
+table { width:unset;min-width:unset }
+th{text-align:left}
