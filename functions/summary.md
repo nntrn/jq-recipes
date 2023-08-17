@@ -15,6 +15,14 @@ def summary:
   | map(select(.))
   | from_entries;
 
+def summary_wip:
+  [ (.[0]|keys)[] as $keys | grouped_summary($keys)]
+  | add
+  | to_entries
+  #| map(del(select(((.value//"")|keys|length) > 400)))
+  | map(select(.)|{key,count:(.value|length)})
+  #| map(.value |= to_entries);
+
 # possibly a better solution
 def summary2:
   . as $data
