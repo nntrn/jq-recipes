@@ -5,7 +5,7 @@ url: "https://nntrn.github.io"
 repository: nntrn/jq-recipes
 recipes_file: recipes.jq
 
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.5.4
 heading_anchors: false
 color_scheme: custom
 markdown: kramdown
