@@ -2,7 +2,7 @@
 
 ```jq
 def grouped_summary($item):
-  {"\($item)":group_by(.[$item])|map({"\(.[0][$item])":length})|add};
+  {"\($item? // "blank")":group_by(.[$item])|map({"\(.[0][$item]? // "blank")":length})|add};
 
 def summary:
   [ (.[0]|keys)[] as $keys | grouped_summary($keys)]
@@ -10,7 +10,7 @@ def summary:
   | to_entries
   | map(
       del(select(((.value//"")|keys[0]|length) > 100)) |
-      del(select(((.value//"")|keys|length) > 400))
+      del(select(((.value//"")|values|length) > 400))
     )
   | map(select(.))
   | from_entries;

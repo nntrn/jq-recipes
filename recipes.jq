@@ -8,6 +8,42 @@
 #
 
 ###########################################################################
+# general/reduce.md  
+###########################################################################
+
+def tocsv:
+  .[0] as $cols | .[1:]
+  | map(. as $row
+  | $cols
+  | with_entries({ "key": .value,"value": $row[.key]})
+  );
+
+###########################################################################
+# general/wrangle.md  
+###########################################################################
+
+def s: [splits(" +")];
+
+###########################################################################
+# general/codepoints.md  
+###########################################################################
+
+def smart_squotes($s):
+  $s | if (test("[\\s\\n\\t]";"x")) then "\([39]|implode)\($s)\([39]|implode)" else $s end;
+
+def smart_dquotes($s):
+  $s | if (test("[\\s\\n\\t]";"x")) then "\($s|@json)" else $s end;
+
+###########################################################################
+# functions/pick.md  
+###########################################################################
+
+def pick(stream):
+  . as $in
+  | reduce path(stream) as $a (null;
+      setpath($a; $in|getpath($a)) );
+
+###########################################################################
 # functions/barcharts.md  
 ###########################################################################
 
@@ -47,6 +83,77 @@ def run_barchart:
 ;
 
 ###########################################################################
+# functions/summary.md  
+###########################################################################
+
+def grouped_summary($item):
+  {"\($item? // "blank")":group_by(.[$item])|map({"\(.[0][$item]? // "blank")":length})|add};
+
+def summary:
+  [ (.[0]|keys)[] as $keys | grouped_summary($keys)]
+  | add
+  | to_entries
+  | map(
+      del(select(((.value//"")|keys[0]|length) > 100)) |
+      del(select(((.value//"")|values|length) > 400))
+    )
+  | map(select(.))
+  | from_entries;
+
+def summary_wip:
+  [ (.[0]|keys)[] as $keys | grouped_summary($keys)]
+  | add
+  | to_entries
+  #| map(del(select(((.value//"")|keys|length) > 400)))
+  | map(select(.)|{key,count:(.value|length)})
+  #| map(.value |= to_entries);
+
+def summary2:
+  . as $data
+  | (.[0]|keys)
+  | map(. as $item | {
+      key: $item,
+      value: ($data|map(.[$item])|group_by(.)|map({"\(.[0])": length}))|add
+    })
+  | map(select((.value|to_entries|length)< (.90 * ($data|length))))
+  | from_entries;
+
+###########################################################################
+# functions/json2csv.md  
+###########################################################################
+
+def json2csv:
+  (map(keys) | add | unique) as $cols
+  | map(. as $row | $cols | map($row[.])) as $rows
+  | $cols, $rows[]
+  | @csv;
+
+###########################################################################
+# functions/github-api.md  
+###########################################################################
+
+def github_raw_url:
+  [
+    "curl --create-dirs -o \(.repository.full_name)/\(.path) ",
+    (.html_url|gsub("/github.com";"/raw.githubusercontent.com")|gsub("/blob/"; "/")),
+    (if .repository.private then " -H \"Authorization: Bearer $GITHUB_TOKEN\"" else "" end)
+  ]
+  | join("")
+;
+
+###########################################################################
+# functions/flatten.md  
+###########################################################################
+
+def flat_object:
+  [paths(scalars) as $path
+  | {"key": $path | join("_"), "value": getpath($path)}]
+  | from_entries;
+
+def flat_array:
+  map( flat_object );
+
+###########################################################################
 # functions/describe.md  
 ###########################################################################
 
@@ -64,50 +171,6 @@ def describe:
   );
 
 ###########################################################################
-# functions/flatten.md  
-###########################################################################
-
-def flat_object:
-  [paths(scalars) as $path
-  | {"key": $path | join("_"), "value": getpath($path)}]
-  | from_entries;
-
-def flat_array:
-  map( flat_object );
-
-###########################################################################
-# functions/github-api.md  
-###########################################################################
-
-def github_raw_url:
-  [
-    "curl --create-dirs -o \(.repository.full_name)/\(.path) ",
-    (.html_url|gsub("/github.com";"/raw.githubusercontent.com")|gsub("/blob/"; "/")),
-    (if .repository.private then " -H \"Authorization: Bearer $GITHUB_TOKEN\"" else "" end)
-  ]
-  | join("")
-;
-
-###########################################################################
-# functions/json2csv.md  
-###########################################################################
-
-def json2csv:
-  (map(keys) | add | unique) as $cols
-  | map(. as $row | $cols | map($row[.])) as $rows
-  | $cols, $rows[]
-  | @csv;
-
-###########################################################################
-# functions/pick.md  
-###########################################################################
-
-def pick(stream):
-  . as $in
-  | reduce path(stream) as $a (null;
-      setpath($a; $in|getpath($a)) );
-
-###########################################################################
 # functions/read-history.md  
 ###########################################################################
 
@@ -118,59 +181,4 @@ def history:
     else "\t\(.)\n"
     end
   ) | join("");
-
-###########################################################################
-# functions/summary.md  
-###########################################################################
-
-def grouped_summary($item):
-  {"\($item)":group_by(.[$item])|map({"\(.[0][$item])":length})|add};
-
-def summary:
-  [ (.[0]|keys)[] as $keys | grouped_summary($keys)]
-  | add
-  | to_entries
-  | map(
-      del(select(((.value//"")|keys[0]|length) > 100)) |
-      del(select(((.value//"")|keys|length) > 400))
-    )
-  | map(select(.))
-  | from_entries;
-
-def summary2:
-  . as $data
-  | (.[0]|keys)
-  | map(. as $item | {
-      key: $item,
-      value: ($data|map(.[$item])|group_by(.)|map({"\(.[0])": length}))|add
-    })
-  | map(select((.value|to_entries|length)< (.90 * ($data|length))))
-  | from_entries;
-
-###########################################################################
-# general/codepoints.md  
-###########################################################################
-
-def smart_squotes($s):
-  $s | if (test("[\\s\\n\\t]";"x")) then "\([39]|implode)\($s)\([39]|implode)" else $s end;
-
-def smart_dquotes($s):
-  $s | if (test("[\\s\\n\\t]";"x")) then "\($s|@json)" else $s end;
-
-###########################################################################
-# general/reduce.md  
-###########################################################################
-
-def tocsv:
-  .[0] as $cols | .[1:]
-  | map(. as $row
-  | $cols
-  | with_entries({ "key": .value,"value": $row[.key]})
-  );
-
-###########################################################################
-# general/wrangle.md  
-###########################################################################
-
-def s: [splits(" +")];
 
