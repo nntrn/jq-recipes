@@ -21,7 +21,7 @@ def summary_wip:
   | to_entries
   #| map(del(select(((.value//"")|keys|length) > 400)))
   | map(select(.)|{key,count:(.value|length)})
-  #| map(.value |= to_entries);
+  | map(.value |= to_entries);
 
 # possibly a better solution
 def summary2:
@@ -71,4 +71,3 @@ $ jq 'include "recipes"; summary2' data/titanic2.json
   }
 }
 ```
-

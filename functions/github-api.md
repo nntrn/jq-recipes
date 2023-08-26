@@ -6,9 +6,7 @@ def github_raw_url:
     "curl --create-dirs -o \(.repository.full_name)/\(.path) ",
     (.html_url|gsub("/github.com";"/raw.githubusercontent.com")|gsub("/blob/"; "/")),
     (if .repository.private then " -H \"Authorization: Bearer $GITHUB_TOKEN\"" else "" end)
-  ]
-  | join("")
-;
+  ] | join("");
 ```
 
 ```sh
