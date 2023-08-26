@@ -6,19 +6,24 @@ SCRIPT=$(realpath $0)
 cd ${SCRIPT%/*} || exit 1
 cd $(git rev-parse --show-toplevel) || exit 1
 
-RECIPES_PATH=recipes.jq
+JQFILE=recipes.jq
 
-recipes() {
-  BORDER="###########################################################################"
-  echo "#
-#   INSTALL
-#     $ mkdir -p ~/.jq && cd \$_
-#     $ curl -O https://nntrn.github.io/jq-recipes/${RECIPES_PATH}
+GHPAGE_URL=https://nntrn.github.io/jq-recipes
+
+BORDER="##########################################################################################"
+
+BANNER="#
+#  INSTALL
+#    $ curl --create-dirs -o ~/.jq/recipes.jq ${GHPAGE_URL}/${JQFILE}
 #
-#   USAGE
-#     $ jq 'include \"${RECIPES_PATH%.jq}\"; [..] '
-#
-"
+#  USAGE
+#    $ jq 'include \"${JQFILE%.jq}\"; [..] '
+#"
+
+build() {
+  echo "$BORDER"
+  echo "$BANNER"
+  echo "$BORDER"
   head -n 1000 $(grep --include "*.md" -rlE '^def ' .) |
     sed 's,^`.*,,g; s,<==$,\n,g' |
     sed -nE '/^==>|^def/,/^$/p' |
@@ -26,4 +31,5 @@ recipes() {
     sed "s,<BORDER>,$BORDER,g"
 }
 
-recipes | tee $RECIPES_PATH
+build | tee $JQFILE
+jq -nr -L . 'include "recipes"; try error("has error") catch ""'

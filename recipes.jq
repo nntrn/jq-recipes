@@ -1,51 +1,15 @@
+##########################################################################################
 #
-#   INSTALL
-#     $ mkdir -p ~/.jq && cd $_
-#     $ curl -O https://nntrn.github.io/jq-recipes/recipes.jq
+#  INSTALL
+#    $ curl --create-dirs -o ~/.jq/recipes.jq https://nntrn.github.io/jq-recipes/recipes.jq
 #
-#   USAGE
-#     $ jq 'include "recipes"; [..] '
+#  USAGE
+#    $ jq 'include "recipes"; [..] '
 #
-
-###########################################################################
-# general/reduce.md  
-###########################################################################
-
-def tocsv:
-  .[0] as $cols | .[1:]
-  | map(. as $row
-  | $cols
-  | with_entries({ "key": .value,"value": $row[.key]})
-  );
-
-###########################################################################
-# general/wrangle.md  
-###########################################################################
-
-def s: [splits(" +")];
-
-###########################################################################
-# general/codepoints.md  
-###########################################################################
-
-def smart_squotes($s):
-  $s | if (test("[\\s\\n\\t]";"x")) then "\([39]|implode)\($s)\([39]|implode)" else $s end;
-
-def smart_dquotes($s):
-  $s | if (test("[\\s\\n\\t]";"x")) then "\($s|@json)" else $s end;
-
-###########################################################################
-# functions/pick.md  
-###########################################################################
-
-def pick(stream):
-  . as $in
-  | reduce path(stream) as $a (null;
-      setpath($a; $in|getpath($a)) );
-
-###########################################################################
+##########################################################################################
+##########################################################################################
 # functions/barcharts.md  
-###########################################################################
+##########################################################################################
 
 def barchart($key):
   length as $total
@@ -82,9 +46,80 @@ def run_barchart:
   | flatten| join("\n")
 ;
 
-###########################################################################
+##########################################################################################
+# functions/describe.md  
+##########################################################################################
+
+def describe:
+  walk(
+    if (type == "object" or type == "array")
+    then (if (type == "array") then ([limit(1;.[])]) else . end)
+    else (
+      if (type == "string") and (test("^https?"))
+      then "url"
+      else ((.|fromdate|"date")? // type)
+      end
+      )
+    end
+  );
+
+##########################################################################################
+# functions/flatten.md  
+##########################################################################################
+
+def flat_object:
+  [paths(scalars) as $path
+  | {"key": $path | join("_"), "value": getpath($path)}]
+  | from_entries;
+
+def flat_array:
+  map( flat_object );
+
+##########################################################################################
+# functions/github-api.md  
+##########################################################################################
+
+def github_raw_url:
+  [
+    "curl --create-dirs -o \(.repository.full_name)/\(.path) ",
+    (.html_url|gsub("/github.com";"/raw.githubusercontent.com")|gsub("/blob/"; "/")),
+    (if .repository.private then " -H \"Authorization: Bearer $GITHUB_TOKEN\"" else "" end)
+  ] | join("");
+
+##########################################################################################
+# functions/json2csv.md  
+##########################################################################################
+
+def json2csv:
+  (map(keys) | add | unique) as $cols
+  | map(. as $row | $cols | map($row[.])) as $rows
+  | $cols, $rows[]
+  | @csv;
+
+##########################################################################################
+# functions/pick.md  
+##########################################################################################
+
+def pick(stream):
+  . as $in
+  | reduce path(stream) as $a (null;
+      setpath($a; $in|getpath($a)) );
+
+##########################################################################################
+# functions/read-history.md  
+##########################################################################################
+
+def history:
+  map(
+    if test("#[0-9]{10,12}")
+    then "\(.|gsub("#";"")|tonumber|todate)"
+    else "\t\(.)\n"
+    end
+  ) | join("");
+
+##########################################################################################
 # functions/summary.md  
-###########################################################################
+##########################################################################################
 
 def grouped_summary($item):
   {"\($item? // "blank")":group_by(.[$item])|map({"\(.[0][$item]? // "blank")":length})|add};
@@ -106,7 +141,7 @@ def summary_wip:
   | to_entries
   #| map(del(select(((.value//"")|keys|length) > 400)))
   | map(select(.)|{key,count:(.value|length)})
-  #| map(.value |= to_entries);
+  | map(.value |= to_entries);
 
 def summary2:
   . as $data
@@ -118,67 +153,30 @@ def summary2:
   | map(select((.value|to_entries|length)< (.90 * ($data|length))))
   | from_entries;
 
-###########################################################################
-# functions/json2csv.md  
-###########################################################################
+##########################################################################################
+# general/codepoints.md  
+##########################################################################################
 
-def json2csv:
-  (map(keys) | add | unique) as $cols
-  | map(. as $row | $cols | map($row[.])) as $rows
-  | $cols, $rows[]
-  | @csv;
+def smart_squotes($s):
+  $s | if (test("[\\s\\n\\t]";"x")) then "\([39]|implode)\($s)\([39]|implode)" else $s end;
 
-###########################################################################
-# functions/github-api.md  
-###########################################################################
+def smart_dquotes($s):
+  $s | if (test("[\\s\\n\\t]";"x")) then "\($s|@json)" else $s end;
 
-def github_raw_url:
-  [
-    "curl --create-dirs -o \(.repository.full_name)/\(.path) ",
-    (.html_url|gsub("/github.com";"/raw.githubusercontent.com")|gsub("/blob/"; "/")),
-    (if .repository.private then " -H \"Authorization: Bearer $GITHUB_TOKEN\"" else "" end)
-  ]
-  | join("")
-;
+##########################################################################################
+# general/reduce.md  
+##########################################################################################
 
-###########################################################################
-# functions/flatten.md  
-###########################################################################
-
-def flat_object:
-  [paths(scalars) as $path
-  | {"key": $path | join("_"), "value": getpath($path)}]
-  | from_entries;
-
-def flat_array:
-  map( flat_object );
-
-###########################################################################
-# functions/describe.md  
-###########################################################################
-
-def describe:
-  walk(
-    if (type == "object" or type == "array")
-    then (if (type == "array") then ([limit(1;.[])]) else . end)
-    else (
-      if (type == "string") and (test("^https?"))
-      then "url"
-      else ((.|fromdate|"date")? // type)
-      end
-      )
-    end
+def tocsv:
+  .[0] as $cols | .[1:]
+  | map(. as $row
+  | $cols
+  | with_entries({ "key": .value,"value": $row[.key]})
   );
 
-###########################################################################
-# functions/read-history.md  
-###########################################################################
+##########################################################################################
+# general/wrangle.md  
+##########################################################################################
 
-def history:
-  map(
-    if test("#[0-9]{10,12}")
-    then "\(.|gsub("#";"")|tonumber|todate)"
-    else "\t\(.)\n"
-    end
-  ) | join("");
+def s: [splits(" +")];
 
