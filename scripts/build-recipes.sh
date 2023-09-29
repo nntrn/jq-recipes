@@ -1,30 +1,29 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2046
 
+JQFILE=recipes.jq
 SCRIPT=$(realpath $0)
 
 cd ${SCRIPT%/*} || exit 1
 cd $(git rev-parse --show-toplevel) || exit 1
 
-JQFILE=recipes.jq
-
-GHPAGE_URL=https://nntrn.github.io/jq-recipes
-
-BORDER="##########################################################################################"
-
 BANNER="#
 #  INSTALL
-#    $ curl --create-dirs -o ~/.jq/recipes.jq ${GHPAGE_URL}/${JQFILE}
+#    $ curl -O https://nntrn.github.io/jq-recipes/recipes.jq
 #
 #  USAGE
 #    $ jq 'include \"${JQFILE%.jq}\"; [..] '
+#
+#  SOURCE
+#    https://github.com/nntrn/jq-recipes
 #"
 
+BORDER="##########################################################################################"
+
 build() {
-  echo "$BORDER"
   echo "$BANNER"
-  echo "$BORDER"
-  head -n 1000 $(grep --include "*.md" -rlE '^def ' .) |
+  echo
+  head -n 1000 $(grep --include "*.md" -rlE '^def ' . | sort) |
     sed 's,^`.*,,g; s,<==$,\n,g' |
     sed -nE '/^==>|^def/,/^$/p' |
     sed -E 's,^==> \./(.*)$,<BORDER>\n# \1 \n<BORDER>,g' |
