@@ -1,0 +1,302 @@
+[
+  {
+    "Continent": "Asia",
+    "Country": "China",
+    "City": "Shanghai",
+    "Population": 24256800
+  },
+  {
+    "Continent": "Asia",
+    "Country": "Pakistan",
+    "City": "Karachi",
+    "Population": 23500000
+  },
+  {
+    "Continent": "Asia",
+    "Country": "China",
+    "City": "Beijing",
+    "Population": 21516000
+  },
+  {
+    "Continent": "Asia",
+    "Country": "India",
+    "City": "Delhi",
+    "Population": 16787941
+  },
+  {
+    "Continent": "Asia",
+    "Country": "China",
+    "City": "Tianjin",
+    "Population": 15200000
+  },
+  {
+    "Continent": "Asia",
+    "Country": "Japan",
+    "City": "Tokyo",
+    "Population": 13513734
+  },
+  {
+    "Continent": "Asia",
+    "Country": "China",
+    "City": "Guangzhou",
+    "Population": 13080500
+  },
+  {
+    "Continent": "Asia",
+    "Country": "India",
+    "City": "Mumbai",
+    "Population": 12442373
+  },
+  {
+    "Continent": "Asia",
+    "Country": "China",
+    "City": "Shenzhen",
+    "Population": 10467400
+  },
+  {
+    "Continent": "Asia",
+    "Country": "Indonesia",
+    "City": "Jakarta",
+    "Population": 10075310
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Nigeria",
+    "City": "Lagos",
+    "Population": 17578000
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Egypt",
+    "City": "Cairo",
+    "Population": 11001000
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Democratic Republic of the Congo",
+    "City": "Kinshasa-Brazzaville",
+    "Population": 8754000
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Somalia",
+    "City": "Mogadishu",
+    "Population": 6346000
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Sudan",
+    "City": "Khartoum-Omdurman",
+    "Population": 5172000
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Angola",
+    "City": "Luanda",
+    "Population": 4772000
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Egypt",
+    "City": "Alexandria",
+    "Population": 4387000
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Tanzania",
+    "City": "Dar es Salaam",
+    "Population": 4364541
+  },
+  {
+    "Continent": "Africa",
+    "Country": "Ivory Coast",
+    "City": "Abidjan",
+    "Population": 4125000
+  },
+  {
+    "Continent": "Africa",
+    "Country": "South Africa",
+    "City": "Greater Johannesburg",
+    "Population": 3670000
+  },
+  {
+    "Continent": "Europe",
+    "Country": "Turkey",
+    "City": "Istanbul",
+    "Population": 14025646
+  },
+  {
+    "Continent": "Europe",
+    "Country": "Russia",
+    "City": "Moscow",
+    "Population": 12330126
+  },
+  {
+    "Continent": "Europe",
+    "Country": "United Kingdom",
+    "City": "London",
+    "Population": 8673713
+  },
+  {
+    "Continent": "Europe",
+    "Country": "Russia",
+    "City": "Saint Petersburg",
+    "Population": 5225690
+  },
+  {
+    "Continent": "Europe",
+    "Country": "Germany",
+    "City": "Berlin",
+    "Population": 3562166
+  },
+  {
+    "Continent": "Europe",
+    "Country": "Spain",
+    "City": "Madrid",
+    "Population": 3165235
+  },
+  {
+    "Continent": "Europe",
+    "Country": "Ukraine",
+    "City": "Kiev",
+    "Population": 2909491
+  },
+  {
+    "Continent": "Europe",
+    "Country": "Italy",
+    "City": "Rome",
+    "Population": 2874038
+  },
+  {
+    "Continent": "Europe",
+    "Country": "France",
+    "City": "Paris",
+    "Population": 2241346
+  },
+  {
+    "Continent": "Europe",
+    "Country": "Belarus",
+    "City": "Minsk",
+    "Population": 1949400
+  },
+  {
+    "Continent": "North America",
+    "Country": "Mexico",
+    "City": "Mexico City",
+    "Population": 8918653
+  },
+  {
+    "Continent": "North America",
+    "Country": "United States",
+    "City": "New York City",
+    "Population": 8550405
+  },
+  {
+    "Continent": "North America",
+    "Country": "United States",
+    "City": "Los Angeles",
+    "Population": 3971883
+  },
+  {
+    "Continent": "North America",
+    "Country": "Canada",
+    "City": "Toronto",
+    "Population": 2826498
+  },
+  {
+    "Continent": "North America",
+    "Country": "United States",
+    "City": "Chicago",
+    "Population": 2720546
+  },
+  {
+    "Continent": "North America",
+    "Country": "United States",
+    "City": "Houston",
+    "Population": 2296224
+  },
+  {
+    "Continent": "North America",
+    "Country": "Cuba",
+    "City": "Havana",
+    "Population": 2117625
+  },
+  {
+    "Continent": "North America",
+    "Country": "Canada",
+    "City": "Montreal",
+    "Population": 1753034
+  },
+  {
+    "Continent": "North America",
+    "Country": "Mexico",
+    "City": "Ecatepec de Morelos",
+    "Population": 1677678
+  },
+  {
+    "Continent": "North America",
+    "Country": "United States",
+    "City": "Philadelphia",
+    "Population": 1567442
+  },
+  {
+    "Continent": "South America",
+    "Country": "Brazil",
+    "City": "São Paulo",
+    "Population": 11967825
+  },
+  {
+    "Continent": "South America",
+    "Country": "Peru",
+    "City": "Lima",
+    "Population": 8894412
+  },
+  {
+    "Continent": "South America",
+    "Country": "Colombia",
+    "City": "Bogotá",
+    "Population": 7862277
+  },
+  {
+    "Continent": "South America",
+    "Country": "Brazil",
+    "City": "Rio de Janeiro",
+    "Population": 6476631
+  },
+  {
+    "Continent": "South America",
+    "Country": "Chile",
+    "City": "Santiago",
+    "Population": 5507282
+  },
+  {
+    "Continent": "South America",
+    "Country": "Venezuela",
+    "City": "Caracas",
+    "Population": 3289886
+  },
+  {
+    "Continent": "South America",
+    "Country": "Argentina",
+    "City": "Buenos Aires",
+    "Population": 3054267
+  },
+  {
+    "Continent": "South America",
+    "Country": "Brazil",
+    "City": "Salvador",
+    "Population": 2921087
+  },
+  {
+    "Continent": "South America",
+    "Country": "Brazil",
+    "City": "Brasília",
+    "Population": 2914830
+  },
+  {
+    "Continent": "South America",
+    "Country": "Brazil",
+    "City": "Fortaleza",
+    "Population": 2591188
+  }
+]

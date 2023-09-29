@@ -1,0 +1,1577 @@
+[
+  {
+    "country": "Afghanistan",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 31056997,
+    "Area_square_miles": 647500,
+    "GDP_per_capita": 700
+  },
+  {
+    "country": "Albania",
+    "Region": "EASTERN EUROPE",
+    "Population": 3581655,
+    "Area_square_miles": 28748,
+    "GDP_per_capita": 4500
+  },
+  {
+    "country": "Algeria",
+    "Region": "NORTHERN AFRICA",
+    "Population": 32930091,
+    "Area_square_miles": 2381740,
+    "GDP_per_capita": 6000
+  },
+  {
+    "country": "American Samoa",
+    "Region": "OCEANIA",
+    "Population": 57794,
+    "Area_square_miles": 199,
+    "GDP_per_capita": 8000
+  },
+  {
+    "country": "Andorra",
+    "Region": "WESTERN EUROPE",
+    "Population": 71201,
+    "Area_square_miles": 468,
+    "GDP_per_capita": 19000
+  },
+  {
+    "country": "Angola",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 12127071,
+    "Area_square_miles": 1246700,
+    "GDP_per_capita": 1900
+  },
+  {
+    "country": "Anguilla",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 13477,
+    "Area_square_miles": 102,
+    "GDP_per_capita": 8600
+  },
+  {
+    "country": "Antigua & Barbuda",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 69108,
+    "Area_square_miles": 443,
+    "GDP_per_capita": 11000
+  },
+  {
+    "country": "Argentina",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 39921833,
+    "Area_square_miles": 2766890,
+    "GDP_per_capita": 11200
+  },
+  {
+    "country": "Armenia",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 2976372,
+    "Area_square_miles": 29800,
+    "GDP_per_capita": 3500
+  },
+  {
+    "country": "Aruba",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 71891,
+    "Area_square_miles": 193,
+    "GDP_per_capita": 28000
+  },
+  {
+    "country": "Australia",
+    "Region": "OCEANIA",
+    "Population": 20264082,
+    "Area_square_miles": 7686850,
+    "GDP_per_capita": 29000
+  },
+  {
+    "country": "Austria",
+    "Region": "WESTERN EUROPE",
+    "Population": 8192880,
+    "Area_square_miles": 83870,
+    "GDP_per_capita": 30000
+  },
+  {
+    "country": "Azerbaijan",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 7961619,
+    "Area_square_miles": 86600,
+    "GDP_per_capita": 3400
+  },
+  {
+    "country": "Bahamas",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 303770,
+    "Area_square_miles": 13940,
+    "GDP_per_capita": 16700
+  },
+  {
+    "country": "Bahrain",
+    "Region": "NEAR EAST",
+    "Population": 698585,
+    "Area_square_miles": 665,
+    "GDP_per_capita": 16900
+  },
+  {
+    "country": "Bangladesh",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 147365352,
+    "Area_square_miles": 144000,
+    "GDP_per_capita": 1900
+  },
+  {
+    "country": "Barbados",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 279912,
+    "Area_square_miles": 431,
+    "GDP_per_capita": 15700
+  },
+  {
+    "country": "Belarus",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 10293011,
+    "Area_square_miles": 207600,
+    "GDP_per_capita": 6100
+  },
+  {
+    "country": "Belgium",
+    "Region": "WESTERN EUROPE",
+    "Population": 10379067,
+    "Area_square_miles": 30528,
+    "GDP_per_capita": 29100
+  },
+  {
+    "country": "Belize",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 287730,
+    "Area_square_miles": 22966,
+    "GDP_per_capita": 4900
+  },
+  {
+    "country": "Benin",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 7862944,
+    "Area_square_miles": 112620,
+    "GDP_per_capita": 1100
+  },
+  {
+    "country": "Bermuda",
+    "Region": "NORTHERN AMERICA",
+    "Population": 65773,
+    "Area_square_miles": 53,
+    "GDP_per_capita": 36000
+  },
+  {
+    "country": "Bhutan",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 2279723,
+    "Area_square_miles": 47000,
+    "GDP_per_capita": 1300
+  },
+  {
+    "country": "Bolivia",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 8989046,
+    "Area_square_miles": 1098580,
+    "GDP_per_capita": 2400
+  },
+  {
+    "country": "Bosnia & Herzegovina",
+    "Region": "EASTERN EUROPE",
+    "Population": 4498976,
+    "Area_square_miles": 51129,
+    "GDP_per_capita": 6100
+  },
+  {
+    "country": "Botswana",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 1639833,
+    "Area_square_miles": 600370,
+    "GDP_per_capita": 9000
+  },
+  {
+    "country": "Brazil",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 188078227,
+    "Area_square_miles": 8511965,
+    "GDP_per_capita": 7600
+  },
+  {
+    "country": "British Virgin Is.",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 23098,
+    "Area_square_miles": 153,
+    "GDP_per_capita": 16000
+  },
+  {
+    "country": "Brunei",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 379444,
+    "Area_square_miles": 5770,
+    "GDP_per_capita": 18600
+  },
+  {
+    "country": "Bulgaria",
+    "Region": "EASTERN EUROPE",
+    "Population": 7385367,
+    "Area_square_miles": 110910,
+    "GDP_per_capita": 7600
+  },
+  {
+    "country": "Burkina Faso",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 13902972,
+    "Area_square_miles": 274200,
+    "GDP_per_capita": 1100
+  },
+  {
+    "country": "Burma",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 47382633,
+    "Area_square_miles": 678500,
+    "GDP_per_capita": 1800
+  },
+  {
+    "country": "Burundi",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 8090068,
+    "Area_square_miles": 27830,
+    "GDP_per_capita": 600
+  },
+  {
+    "country": "Cambodia",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 13881427,
+    "Area_square_miles": 181040,
+    "GDP_per_capita": 1900
+  },
+  {
+    "country": "Cameroon",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 17340702,
+    "Area_square_miles": 475440,
+    "GDP_per_capita": 1800
+  },
+  {
+    "country": "Canada",
+    "Region": "NORTHERN AMERICA",
+    "Population": 33098932,
+    "Area_square_miles": 9984670,
+    "GDP_per_capita": 29800
+  },
+  {
+    "country": "Cape Verde",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 420979,
+    "Area_square_miles": 4033,
+    "GDP_per_capita": 1400
+  },
+  {
+    "country": "Cayman Islands",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 45436,
+    "Area_square_miles": 262,
+    "GDP_per_capita": 35000
+  },
+  {
+    "country": "Central African Rep.",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 4303356,
+    "Area_square_miles": 622984,
+    "GDP_per_capita": 1100
+  },
+  {
+    "country": "Chad",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 9944201,
+    "Area_square_miles": 1284000,
+    "GDP_per_capita": 1200
+  },
+  {
+    "country": "Chile",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 16134219,
+    "Area_square_miles": 756950,
+    "GDP_per_capita": 9900
+  },
+  {
+    "country": "China",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 1313973713,
+    "Area_square_miles": 9596960,
+    "GDP_per_capita": 5000
+  },
+  {
+    "country": "Colombia",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 43593035,
+    "Area_square_miles": 1138910,
+    "GDP_per_capita": 6300
+  },
+  {
+    "country": "Comoros",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 690948,
+    "Area_square_miles": 2170,
+    "GDP_per_capita": 700
+  },
+  {
+    "country": "Congo",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 62660551,
+    "Area_square_miles": 2345410,
+    "GDP_per_capita": 700
+  },
+  {
+    "country": "Cook Islands",
+    "Region": "OCEANIA",
+    "Population": 21388,
+    "Area_square_miles": 240,
+    "GDP_per_capita": 5000
+  },
+  {
+    "country": "Costa Rica",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 4075261,
+    "Area_square_miles": 51100,
+    "GDP_per_capita": 9100
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 17654843,
+    "Area_square_miles": 322460,
+    "GDP_per_capita": 1400
+  },
+  {
+    "country": "Croatia",
+    "Region": "EASTERN EUROPE",
+    "Population": 4494749,
+    "Area_square_miles": 56542,
+    "GDP_per_capita": 10600
+  },
+  {
+    "country": "Cuba",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 11382820,
+    "Area_square_miles": 110860,
+    "GDP_per_capita": 2900
+  },
+  {
+    "country": "Cyprus",
+    "Region": "NEAR EAST",
+    "Population": 784301,
+    "Area_square_miles": 9250,
+    "GDP_per_capita": 19200
+  },
+  {
+    "country": "Czech Republic",
+    "Region": "EASTERN EUROPE",
+    "Population": 10235455,
+    "Area_square_miles": 78866,
+    "GDP_per_capita": 15700
+  },
+  {
+    "country": "Denmark",
+    "Region": "WESTERN EUROPE",
+    "Population": 5450661,
+    "Area_square_miles": 43094,
+    "GDP_per_capita": 31100
+  },
+  {
+    "country": "Djibouti",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 486530,
+    "Area_square_miles": 23000,
+    "GDP_per_capita": 1300
+  },
+  {
+    "country": "Dominica",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 68910,
+    "Area_square_miles": 754,
+    "GDP_per_capita": 5400
+  },
+  {
+    "country": "Dominican Republic",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 9183984,
+    "Area_square_miles": 48730,
+    "GDP_per_capita": 6000
+  },
+  {
+    "country": "East Timor",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 1062777,
+    "Area_square_miles": 15007,
+    "GDP_per_capita": 500
+  },
+  {
+    "country": "Ecuador",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 13547510,
+    "Area_square_miles": 283560,
+    "GDP_per_capita": 3300
+  },
+  {
+    "country": "Egypt",
+    "Region": "NORTHERN AFRICA",
+    "Population": 78887007,
+    "Area_square_miles": 1001450,
+    "GDP_per_capita": 4000
+  },
+  {
+    "country": "El Salvador",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 6822378,
+    "Area_square_miles": 21040,
+    "GDP_per_capita": 4800
+  },
+  {
+    "country": "Equatorial Guinea",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 540109,
+    "Area_square_miles": 28051,
+    "GDP_per_capita": 2700
+  },
+  {
+    "country": "Eritrea",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 4786994,
+    "Area_square_miles": 121320,
+    "GDP_per_capita": 700
+  },
+  {
+    "country": "Estonia",
+    "Region": "BALTICS",
+    "Population": 1324333,
+    "Area_square_miles": 45226,
+    "GDP_per_capita": 12300
+  },
+  {
+    "country": "Ethiopia",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 74777981,
+    "Area_square_miles": 1127127,
+    "GDP_per_capita": 700
+  },
+  {
+    "country": "Faroe Islands",
+    "Region": "WESTERN EUROPE",
+    "Population": 47246,
+    "Area_square_miles": 1399,
+    "GDP_per_capita": 22000
+  },
+  {
+    "country": "Fiji",
+    "Region": "OCEANIA",
+    "Population": 905949,
+    "Area_square_miles": 18270,
+    "GDP_per_capita": 5800
+  },
+  {
+    "country": "Finland",
+    "Region": "WESTERN EUROPE",
+    "Population": 5231372,
+    "Area_square_miles": 338145,
+    "GDP_per_capita": 27400
+  },
+  {
+    "country": "France",
+    "Region": "WESTERN EUROPE",
+    "Population": 60876136,
+    "Area_square_miles": 547030,
+    "GDP_per_capita": 27600
+  },
+  {
+    "country": "French Guiana",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 199509,
+    "Area_square_miles": 91000,
+    "GDP_per_capita": 8300
+  },
+  {
+    "country": "French Polynesia",
+    "Region": "OCEANIA",
+    "Population": 274578,
+    "Area_square_miles": 4167,
+    "GDP_per_capita": 17500
+  },
+  {
+    "country": "Gabon",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 1424906,
+    "Area_square_miles": 267667,
+    "GDP_per_capita": 5500
+  },
+  {
+    "country": "Gambia",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 1641564,
+    "Area_square_miles": 11300,
+    "GDP_per_capita": 1700
+  },
+  {
+    "country": "Gaza Strip",
+    "Region": "NEAR EAST",
+    "Population": 1428757,
+    "Area_square_miles": 360,
+    "GDP_per_capita": 600
+  },
+  {
+    "country": "Georgia",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 4661473,
+    "Area_square_miles": 69700,
+    "GDP_per_capita": 2500
+  },
+  {
+    "country": "Germany",
+    "Region": "WESTERN EUROPE",
+    "Population": 82422299,
+    "Area_square_miles": 357021,
+    "GDP_per_capita": 27600
+  },
+  {
+    "country": "Ghana",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 22409572,
+    "Area_square_miles": 239460,
+    "GDP_per_capita": 2200
+  },
+  {
+    "country": "Gibraltar",
+    "Region": "WESTERN EUROPE",
+    "Population": 27928,
+    "Area_square_miles": 7,
+    "GDP_per_capita": 17500
+  },
+  {
+    "country": "Greece",
+    "Region": "WESTERN EUROPE",
+    "Population": 10688058,
+    "Area_square_miles": 131940,
+    "GDP_per_capita": 20000
+  },
+  {
+    "country": "Greenland",
+    "Region": "NORTHERN AMERICA",
+    "Population": 56361,
+    "Area_square_miles": 2166086,
+    "GDP_per_capita": 20000
+  },
+  {
+    "country": "Grenada",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 89703,
+    "Area_square_miles": 344,
+    "GDP_per_capita": 5000
+  },
+  {
+    "country": "Guadeloupe",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 452776,
+    "Area_square_miles": 1780,
+    "GDP_per_capita": 8000
+  },
+  {
+    "country": "Guam",
+    "Region": "OCEANIA",
+    "Population": 171019,
+    "Area_square_miles": 541,
+    "GDP_per_capita": 21000
+  },
+  {
+    "country": "Guatemala",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 12293545,
+    "Area_square_miles": 108890,
+    "GDP_per_capita": 4100
+  },
+  {
+    "country": "Guernsey",
+    "Region": "WESTERN EUROPE",
+    "Population": 65409,
+    "Area_square_miles": 78,
+    "GDP_per_capita": 20000
+  },
+  {
+    "country": "Guinea",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 9690222,
+    "Area_square_miles": 245857,
+    "GDP_per_capita": 2100
+  },
+  {
+    "country": "Guinea-Bissau",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 1442029,
+    "Area_square_miles": 36120,
+    "GDP_per_capita": 800
+  },
+  {
+    "country": "Guyana",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 767245,
+    "Area_square_miles": 214970,
+    "GDP_per_capita": 4000
+  },
+  {
+    "country": "Haiti",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 8308504,
+    "Area_square_miles": 27750,
+    "GDP_per_capita": 1600
+  },
+  {
+    "country": "Honduras",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 7326496,
+    "Area_square_miles": 112090,
+    "GDP_per_capita": 2600
+  },
+  {
+    "country": "Hong Kong",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 6940432,
+    "Area_square_miles": 1092,
+    "GDP_per_capita": 28800
+  },
+  {
+    "country": "Hungary",
+    "Region": "EASTERN EUROPE",
+    "Population": 9981334,
+    "Area_square_miles": 93030,
+    "GDP_per_capita": 13900
+  },
+  {
+    "country": "Iceland",
+    "Region": "WESTERN EUROPE",
+    "Population": 299388,
+    "Area_square_miles": 103000,
+    "GDP_per_capita": 30900
+  },
+  {
+    "country": "India",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 1095351995,
+    "Area_square_miles": 3287590,
+    "GDP_per_capita": 2900
+  },
+  {
+    "country": "Indonesia",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 245452739,
+    "Area_square_miles": 1919440,
+    "GDP_per_capita": 3200
+  },
+  {
+    "country": "Iran",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 68688433,
+    "Area_square_miles": 1648000,
+    "GDP_per_capita": 7000
+  },
+  {
+    "country": "Iraq",
+    "Region": "NEAR EAST",
+    "Population": 26783383,
+    "Area_square_miles": 437072,
+    "GDP_per_capita": 1500
+  },
+  {
+    "country": "Republic of Ireland",
+    "Region": "WESTERN EUROPE",
+    "Population": 4062235,
+    "Area_square_miles": 70280,
+    "GDP_per_capita": 29600
+  },
+  {
+    "country": "Isle of Man",
+    "Region": "WESTERN EUROPE",
+    "Population": 75441,
+    "Area_square_miles": 572,
+    "GDP_per_capita": 21000
+  },
+  {
+    "country": "Israel",
+    "Region": "NEAR EAST",
+    "Population": 6352117,
+    "Area_square_miles": 20770,
+    "GDP_per_capita": 19800
+  },
+  {
+    "country": "Italy",
+    "Region": "WESTERN EUROPE",
+    "Population": 58133509,
+    "Area_square_miles": 301230,
+    "GDP_per_capita": 26700
+  },
+  {
+    "country": "Jamaica",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 2758124,
+    "Area_square_miles": 10991,
+    "GDP_per_capita": 3900
+  },
+  {
+    "country": "Japan",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 127463611,
+    "Area_square_miles": 377835,
+    "GDP_per_capita": 28200
+  },
+  {
+    "country": "Jersey",
+    "Region": "WESTERN EUROPE",
+    "Population": 91084,
+    "Area_square_miles": 116,
+    "GDP_per_capita": 24800
+  },
+  {
+    "country": "Jordan",
+    "Region": "NEAR EAST",
+    "Population": 5906760,
+    "Area_square_miles": 92300,
+    "GDP_per_capita": 4300
+  },
+  {
+    "country": "Kazakhstan",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 15233244,
+    "Area_square_miles": 2717300,
+    "GDP_per_capita": 6300
+  },
+  {
+    "country": "Kenya",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 34707817,
+    "Area_square_miles": 582650,
+    "GDP_per_capita": 1000
+  },
+  {
+    "country": "Kiribati",
+    "Region": "OCEANIA",
+    "Population": 105432,
+    "Area_square_miles": 811,
+    "GDP_per_capita": 800
+  },
+  {
+    "country": "North Korea",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 23113019,
+    "Area_square_miles": 120540,
+    "GDP_per_capita": 1300
+  },
+  {
+    "country": "South Korea",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 48846823,
+    "Area_square_miles": 98480,
+    "GDP_per_capita": 17800
+  },
+  {
+    "country": "Kuwait",
+    "Region": "NEAR EAST",
+    "Population": 2418393,
+    "Area_square_miles": 17820,
+    "GDP_per_capita": 19000
+  },
+  {
+    "country": "Kyrgyzstan",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 5213898,
+    "Area_square_miles": 198500,
+    "GDP_per_capita": 1600
+  },
+  {
+    "country": "Laos",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 6368481,
+    "Area_square_miles": 236800,
+    "GDP_per_capita": 1700
+  },
+  {
+    "country": "Latvia",
+    "Region": "BALTICS",
+    "Population": 2274735,
+    "Area_square_miles": 64589,
+    "GDP_per_capita": 10200
+  },
+  {
+    "country": "Lebanon",
+    "Region": "NEAR EAST",
+    "Population": 3874050,
+    "Area_square_miles": 10400,
+    "GDP_per_capita": 4800
+  },
+  {
+    "country": "Lesotho",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 2022331,
+    "Area_square_miles": 30355,
+    "GDP_per_capita": 3000
+  },
+  {
+    "country": "Liberia",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 3042004,
+    "Area_square_miles": 111370,
+    "GDP_per_capita": 1000
+  },
+  {
+    "country": "Libya",
+    "Region": "NORTHERN AFRICA",
+    "Population": 5900754,
+    "Area_square_miles": 1759540,
+    "GDP_per_capita": 6400
+  },
+  {
+    "country": "Liechtenstein",
+    "Region": "WESTERN EUROPE",
+    "Population": 33987,
+    "Area_square_miles": 160,
+    "GDP_per_capita": 25000
+  },
+  {
+    "country": "Lithuania",
+    "Region": "BALTICS",
+    "Population": 3585906,
+    "Area_square_miles": 65200,
+    "GDP_per_capita": 11400
+  },
+  {
+    "country": "Luxembourg",
+    "Region": "WESTERN EUROPE",
+    "Population": 474413,
+    "Area_square_miles": 2586,
+    "GDP_per_capita": 55100
+  },
+  {
+    "country": "Macau",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 453125,
+    "Area_square_miles": 28,
+    "GDP_per_capita": 19400
+  },
+  {
+    "country": "Macedonia",
+    "Region": "EASTERN EUROPE",
+    "Population": 2050554,
+    "Area_square_miles": 25333,
+    "GDP_per_capita": 6700
+  },
+  {
+    "country": "Madagascar",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 18595469,
+    "Area_square_miles": 587040,
+    "GDP_per_capita": 800
+  },
+  {
+    "country": "Malawi",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 13013926,
+    "Area_square_miles": 118480,
+    "GDP_per_capita": 600
+  },
+  {
+    "country": "Malaysia",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 24385858,
+    "Area_square_miles": 329750,
+    "GDP_per_capita": 9000
+  },
+  {
+    "country": "Maldives",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 359008,
+    "Area_square_miles": 300,
+    "GDP_per_capita": 3900
+  },
+  {
+    "country": "Mali",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 11716829,
+    "Area_square_miles": 1240000,
+    "GDP_per_capita": 900
+  },
+  {
+    "country": "Malta",
+    "Region": "WESTERN EUROPE",
+    "Population": 400214,
+    "Area_square_miles": 316,
+    "GDP_per_capita": 17700
+  },
+  {
+    "country": "Marshall Islands",
+    "Region": "OCEANIA",
+    "Population": 60422,
+    "Area_square_miles": 11854,
+    "GDP_per_capita": 1600
+  },
+  {
+    "country": "Martinique",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 436131,
+    "Area_square_miles": 1100,
+    "GDP_per_capita": 14400
+  },
+  {
+    "country": "Mauritania",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 3177388,
+    "Area_square_miles": 1030700,
+    "GDP_per_capita": 1800
+  },
+  {
+    "country": "Mauritius",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 1240827,
+    "Area_square_miles": 2040,
+    "GDP_per_capita": 11400
+  },
+  {
+    "country": "Mayotte",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 201234,
+    "Area_square_miles": 374,
+    "GDP_per_capita": 2600
+  },
+  {
+    "country": "Mexico",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 107449525,
+    "Area_square_miles": 1972550,
+    "GDP_per_capita": 9000
+  },
+  {
+    "country": "Micronesia",
+    "Region": "OCEANIA",
+    "Population": 108004,
+    "Area_square_miles": 702,
+    "GDP_per_capita": 2000
+  },
+  {
+    "country": "Moldova",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 4466706,
+    "Area_square_miles": 33843,
+    "GDP_per_capita": 1800
+  },
+  {
+    "country": "Monaco",
+    "Region": "WESTERN EUROPE",
+    "Population": 32543,
+    "Area_square_miles": 2,
+    "GDP_per_capita": 27000
+  },
+  {
+    "country": "Mongolia",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 2832224,
+    "Area_square_miles": 1564116,
+    "GDP_per_capita": 1800
+  },
+  {
+    "country": "Montserrat",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 9439,
+    "Area_square_miles": 102,
+    "GDP_per_capita": 3400
+  },
+  {
+    "country": "Morocco",
+    "Region": "NORTHERN AFRICA",
+    "Population": 33241259,
+    "Area_square_miles": 446550,
+    "GDP_per_capita": 4000
+  },
+  {
+    "country": "Mozambique",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 19686505,
+    "Area_square_miles": 801590,
+    "GDP_per_capita": 1200
+  },
+  {
+    "country": "Namibia",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 2044147,
+    "Area_square_miles": 825418,
+    "GDP_per_capita": 7200
+  },
+  {
+    "country": "Nauru",
+    "Region": "OCEANIA",
+    "Population": 13287,
+    "Area_square_miles": 21,
+    "GDP_per_capita": 5000
+  },
+  {
+    "country": "Nepal",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 28287147,
+    "Area_square_miles": 147181,
+    "GDP_per_capita": 1400
+  },
+  {
+    "country": "Netherlands",
+    "Region": "WESTERN EUROPE",
+    "Population": 16491461,
+    "Area_square_miles": 41526,
+    "GDP_per_capita": 28600
+  },
+  {
+    "country": "Netherlands Antilles",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 221736,
+    "Area_square_miles": 960,
+    "GDP_per_capita": 11400
+  },
+  {
+    "country": "New Caledonia",
+    "Region": "OCEANIA",
+    "Population": 219246,
+    "Area_square_miles": 19060,
+    "GDP_per_capita": 15000
+  },
+  {
+    "country": "New Zealand",
+    "Region": "OCEANIA",
+    "Population": 4076140,
+    "Area_square_miles": 268680,
+    "GDP_per_capita": 21600
+  },
+  {
+    "country": "Nicaragua",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 5570129,
+    "Area_square_miles": 129494,
+    "GDP_per_capita": 2300
+  },
+  {
+    "country": "Niger",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 12525094,
+    "Area_square_miles": 1267000,
+    "GDP_per_capita": 800
+  },
+  {
+    "country": "Nigeria",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 131859731,
+    "Area_square_miles": 923768,
+    "GDP_per_capita": 900
+  },
+  {
+    "country": "N. Mariana Islands",
+    "Region": "OCEANIA",
+    "Population": 82459,
+    "Area_square_miles": 477,
+    "GDP_per_capita": 12500
+  },
+  {
+    "country": "Norway",
+    "Region": "WESTERN EUROPE",
+    "Population": 4610820,
+    "Area_square_miles": 323802,
+    "GDP_per_capita": 37800
+  },
+  {
+    "country": "Oman",
+    "Region": "NEAR EAST",
+    "Population": 3102229,
+    "Area_square_miles": 212460,
+    "GDP_per_capita": 13100
+  },
+  {
+    "country": "Pakistan",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 165803560,
+    "Area_square_miles": 803940,
+    "GDP_per_capita": 2100
+  },
+  {
+    "country": "Palau",
+    "Region": "OCEANIA",
+    "Population": 20579,
+    "Area_square_miles": 458,
+    "GDP_per_capita": 9000
+  },
+  {
+    "country": "Panama",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 3191319,
+    "Area_square_miles": 78200,
+    "GDP_per_capita": 6300
+  },
+  {
+    "country": "Papua New Guinea",
+    "Region": "OCEANIA",
+    "Population": 5670544,
+    "Area_square_miles": 462840,
+    "GDP_per_capita": 2200
+  },
+  {
+    "country": "Paraguay",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 6506464,
+    "Area_square_miles": 406750,
+    "GDP_per_capita": 4700
+  },
+  {
+    "country": "Peru",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 28302603,
+    "Area_square_miles": 1285220,
+    "GDP_per_capita": 5100
+  },
+  {
+    "country": "Philippines",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 89468677,
+    "Area_square_miles": 300000,
+    "GDP_per_capita": 4600
+  },
+  {
+    "country": "Poland",
+    "Region": "EASTERN EUROPE",
+    "Population": 38536869,
+    "Area_square_miles": 312685,
+    "GDP_per_capita": 11100
+  },
+  {
+    "country": "Portugal",
+    "Region": "WESTERN EUROPE",
+    "Population": 10605870,
+    "Area_square_miles": 92391,
+    "GDP_per_capita": 18000
+  },
+  {
+    "country": "Puerto Rico",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 3927188,
+    "Area_square_miles": 13790,
+    "GDP_per_capita": 16800
+  },
+  {
+    "country": "Qatar",
+    "Region": "NEAR EAST",
+    "Population": 885359,
+    "Area_square_miles": 11437,
+    "GDP_per_capita": 21500
+  },
+  {
+    "country": "Reunion",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 787584,
+    "Area_square_miles": 2517,
+    "GDP_per_capita": 5800
+  },
+  {
+    "country": "Romania",
+    "Region": "EASTERN EUROPE",
+    "Population": 22303552,
+    "Area_square_miles": 237500,
+    "GDP_per_capita": 7000
+  },
+  {
+    "country": "Russia",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 142893540,
+    "Area_square_miles": 17075200,
+    "GDP_per_capita": 8900
+  },
+  {
+    "country": "Rwanda",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 8648248,
+    "Area_square_miles": 26338,
+    "GDP_per_capita": 1300
+  },
+  {
+    "country": "Saint Helena",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 7502,
+    "Area_square_miles": 413,
+    "GDP_per_capita": 2500
+  },
+  {
+    "country": "Saint Kitts & Nevis",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 39129,
+    "Area_square_miles": 261,
+    "GDP_per_capita": 8800
+  },
+  {
+    "country": "Saint Lucia",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 168458,
+    "Area_square_miles": 616,
+    "GDP_per_capita": 5400
+  },
+  {
+    "country": "St Pierre & Miquelon",
+    "Region": "NORTHERN AMERICA",
+    "Population": 7026,
+    "Area_square_miles": 242,
+    "GDP_per_capita": 6900
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 117848,
+    "Area_square_miles": 389,
+    "GDP_per_capita": 2900
+  },
+  {
+    "country": "Samoa",
+    "Region": "OCEANIA",
+    "Population": 176908,
+    "Area_square_miles": 2944,
+    "GDP_per_capita": 5600
+  },
+  {
+    "country": "San Marino",
+    "Region": "WESTERN EUROPE",
+    "Population": 29251,
+    "Area_square_miles": 61,
+    "GDP_per_capita": 34600
+  },
+  {
+    "country": "Sao Tome & Principe",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 193413,
+    "Area_square_miles": 1001,
+    "GDP_per_capita": 1200
+  },
+  {
+    "country": "Saudi Arabia",
+    "Region": "NEAR EAST",
+    "Population": 27019731,
+    "Area_square_miles": 1960582,
+    "GDP_per_capita": 11800
+  },
+  {
+    "country": "Senegal",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 11987121,
+    "Area_square_miles": 196190,
+    "GDP_per_capita": 1600
+  },
+  {
+    "country": "Serbia",
+    "Region": "EASTERN EUROPE",
+    "Population": 9396411,
+    "Area_square_miles": 88361,
+    "GDP_per_capita": 2200
+  },
+  {
+    "country": "Seychelles",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 81541,
+    "Area_square_miles": 455,
+    "GDP_per_capita": 7800
+  },
+  {
+    "country": "Sierra Leone",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 6005250,
+    "Area_square_miles": 71740,
+    "GDP_per_capita": 500
+  },
+  {
+    "country": "Singapore",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 4492150,
+    "Area_square_miles": 693,
+    "GDP_per_capita": 23700
+  },
+  {
+    "country": "Slovakia",
+    "Region": "EASTERN EUROPE",
+    "Population": 5439448,
+    "Area_square_miles": 48845,
+    "GDP_per_capita": 13300
+  },
+  {
+    "country": "Slovenia",
+    "Region": "EASTERN EUROPE",
+    "Population": 2010347,
+    "Area_square_miles": 20273,
+    "GDP_per_capita": 19000
+  },
+  {
+    "country": "Solomon Islands",
+    "Region": "OCEANIA",
+    "Population": 552438,
+    "Area_square_miles": 28450,
+    "GDP_per_capita": 1700
+  },
+  {
+    "country": "Somalia",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 8863338,
+    "Area_square_miles": 637657,
+    "GDP_per_capita": 500
+  },
+  {
+    "country": "South Africa",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 44187637,
+    "Area_square_miles": 1219912,
+    "GDP_per_capita": 10700
+  },
+  {
+    "country": "Spain",
+    "Region": "WESTERN EUROPE",
+    "Population": 40397842,
+    "Area_square_miles": 504782,
+    "GDP_per_capita": 22000
+  },
+  {
+    "country": "Sri Lanka",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 20222240,
+    "Area_square_miles": 65610,
+    "GDP_per_capita": 3700
+  },
+  {
+    "country": "Sudan",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 41236378,
+    "Area_square_miles": 2505810,
+    "GDP_per_capita": 1900
+  },
+  {
+    "country": "Suriname",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 439117,
+    "Area_square_miles": 163270,
+    "GDP_per_capita": 4000
+  },
+  {
+    "country": "Swaziland",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 1136334,
+    "Area_square_miles": 17363,
+    "GDP_per_capita": 4900
+  },
+  {
+    "country": "Sweden",
+    "Region": "WESTERN EUROPE",
+    "Population": 9016596,
+    "Area_square_miles": 449964,
+    "GDP_per_capita": 26800
+  },
+  {
+    "country": "Switzerland",
+    "Region": "WESTERN EUROPE",
+    "Population": 7523934,
+    "Area_square_miles": 41290,
+    "GDP_per_capita": 32700
+  },
+  {
+    "country": "Syria",
+    "Region": "NEAR EAST",
+    "Population": 18881361,
+    "Area_square_miles": 185180,
+    "GDP_per_capita": 3300
+  },
+  {
+    "country": "Taiwan",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 23036087,
+    "Area_square_miles": 35980,
+    "GDP_per_capita": 23400
+  },
+  {
+    "country": "Tajikistan",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 7320815,
+    "Area_square_miles": 143100,
+    "GDP_per_capita": 1000
+  },
+  {
+    "country": "Tanzania",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 37445392,
+    "Area_square_miles": 945087,
+    "GDP_per_capita": 600
+  },
+  {
+    "country": "Thailand",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 64631595,
+    "Area_square_miles": 514000,
+    "GDP_per_capita": 7400
+  },
+  {
+    "country": "Togo",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 5548702,
+    "Area_square_miles": 56785,
+    "GDP_per_capita": 1500
+  },
+  {
+    "country": "Tonga",
+    "Region": "OCEANIA",
+    "Population": 114689,
+    "Area_square_miles": 748,
+    "GDP_per_capita": 2200
+  },
+  {
+    "country": "Trinidad & Tobago",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 1065842,
+    "Area_square_miles": 5128,
+    "GDP_per_capita": 9500
+  },
+  {
+    "country": "Tunisia",
+    "Region": "NORTHERN AFRICA",
+    "Population": 10175014,
+    "Area_square_miles": 163610,
+    "GDP_per_capita": 6900
+  },
+  {
+    "country": "Turkey",
+    "Region": "NEAR EAST",
+    "Population": 70413958,
+    "Area_square_miles": 780580,
+    "GDP_per_capita": 6700
+  },
+  {
+    "country": "Turkmenistan",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 5042920,
+    "Area_square_miles": 488100,
+    "GDP_per_capita": 5800
+  },
+  {
+    "country": "Turks & Caicos Is",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 21152,
+    "Area_square_miles": 430,
+    "GDP_per_capita": 9600
+  },
+  {
+    "country": "Tuvalu",
+    "Region": "OCEANIA",
+    "Population": 11810,
+    "Area_square_miles": 26,
+    "GDP_per_capita": 1100
+  },
+  {
+    "country": "Uganda",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 28195754,
+    "Area_square_miles": 236040,
+    "GDP_per_capita": 1400
+  },
+  {
+    "country": "Ukraine",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 46710816,
+    "Area_square_miles": 603700,
+    "GDP_per_capita": 5400
+  },
+  {
+    "country": "United Arab Emirates",
+    "Region": "NEAR EAST",
+    "Population": 2602713,
+    "Area_square_miles": 82880,
+    "GDP_per_capita": 23200
+  },
+  {
+    "country": "United Kingdom",
+    "Region": "WESTERN EUROPE",
+    "Population": 60609153,
+    "Area_square_miles": 244820,
+    "GDP_per_capita": 27700
+  },
+  {
+    "country": "United States of America",
+    "Region": "NORTHERN AMERICA",
+    "Population": 298444215,
+    "Area_square_miles": 9631420,
+    "GDP_per_capita": 37800
+  },
+  {
+    "country": "Uruguay",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 3431932,
+    "Area_square_miles": 176220,
+    "GDP_per_capita": 12800
+  },
+  {
+    "country": "Uzbekistan",
+    "Region": "C.W. OF IND. STATES",
+    "Population": 27307134,
+    "Area_square_miles": 447400,
+    "GDP_per_capita": 1700
+  },
+  {
+    "country": "Vanuatu",
+    "Region": "OCEANIA",
+    "Population": 208869,
+    "Area_square_miles": 12200,
+    "GDP_per_capita": 2900
+  },
+  {
+    "country": "Venezuela",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 25730435,
+    "Area_square_miles": 912050,
+    "GDP_per_capita": 4800
+  },
+  {
+    "country": "Vietnam",
+    "Region": "ASIA (EX. NEAR EAST)",
+    "Population": 84402966,
+    "Area_square_miles": 329560,
+    "GDP_per_capita": 2500
+  },
+  {
+    "country": "Virgin Islands",
+    "Region": "LATIN AMER. & CARIB",
+    "Population": 108605,
+    "Area_square_miles": 1910,
+    "GDP_per_capita": 17200
+  },
+  {
+    "country": "Wallis and Futuna",
+    "Region": "OCEANIA",
+    "Population": 16025,
+    "Area_square_miles": 274,
+    "GDP_per_capita": 3700
+  },
+  {
+    "country": "West Bank",
+    "Region": "NEAR EAST",
+    "Population": 2460492,
+    "Area_square_miles": 5860,
+    "GDP_per_capita": 800
+  },
+  {
+    "country": "Yemen",
+    "Region": "NEAR EAST",
+    "Population": 21456188,
+    "Area_square_miles": 527970,
+    "GDP_per_capita": 800
+  },
+  {
+    "country": "Zambia",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 11502010,
+    "Area_square_miles": 752614,
+    "GDP_per_capita": 800
+  },
+  {
+    "country": "Zimbabwe",
+    "Region": "SUB-SAHARAN AFRICA",
+    "Population": 12236805,
+    "Area_square_miles": 390580,
+    "GDP_per_capita": 1900
+  }
+]

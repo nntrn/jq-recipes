@@ -1,0 +1,7098 @@
+[
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Owen Harris Braund",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. John Bradley (Florence Briggs Thayer) Cumings",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Laina Heikkinen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Jacques Heath (Lily May Peel) Futrelle",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Henry Allen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. James Moran",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Timothy J McCarthy",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Gosta Leonard Palsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Oscar W (Elisabeth Vilhelmina Berg) Johnson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Nicholas (Adele Achem) Nasser",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Marguerite Rut Sandstrom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Elizabeth Bonnell",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Henry Saundercock",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Anders Johan Andersson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 5
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Hulda Amanda Adolfina Vestrom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. (Mary D Kingcome) Hewlett",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Eugene Rice",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mr. Charles Eugene Williams",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Julius (Emelia Maria Vandemoortele) Vander Planke",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Fatima Masselmani",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Joseph J Fynney",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mr. Lawrence Beesley",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Anna McGowan",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. William Thompson Sloper",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Torborg Danira Palsson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Carl Oscar (Selma Augusta Emilia Johansson) Asplund",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 5
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Farred Chehab Emir",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Charles Alexander Fortune",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Ellen O'Dwyer",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Lalio Todoroff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Don. Manuel E Uruchurtu",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. William Augustus (Marie Eugenie) Spencer",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Mary Agatha Glynn",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Edward H Wheadon",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Edgar Joseph Meyer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Alexander Oskar Holverson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Hanna Mamee",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ernest Charles Cann",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Augusta Maria Vander Planke",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Jamila Nicola-Yarred",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Johan (Johanna Persdotter Larsson) Ahlin",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mrs. William John Robert (Dorothy Ann Wonnacott) Turpin",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Simonne Marie Anne Andree Laroche",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Margaret Delia Devaney",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William John Rogers",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Denis Lennon",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Bridget O'Driscoll",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Youssef Samaan",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Josef (Josefine Franchi) Arnold-Franchi",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Juha Niilo Panula",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Richard Cater Nosworthy",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Henry Sleeper (Myna Haxtun) Harper",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Lizzie (Elizabeth Anne Wilkinson) Faunthorpe",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Engelhart Cornelius Ostby",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Hugh Woolner",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Emily Rugg",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Mansouer Novel",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Constance Mirium West",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. William Frederick Goodwin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 5,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Orsen Sirayanian",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Amelie Icard",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Henry Birkhardt Harris",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Harald Skoog",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Albert A Stewart",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Gerios Moubarek",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. (Elizabeth Ramell) Nye",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ernest James Crease",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Erna Alexandra Andersson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Vincenz Kink",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Stephen Curnow Jenkin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Lillian Amy Goodwin",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 5,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Ambrose Jr Hood",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Apostolos Chronopoulos",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Lee Bing",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Sigurd Hansen Moen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ivan Staneff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Rahamin Haim Moutal",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. Alden Gates Caldwell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Elizabeth Dowdell",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Achille Waelens",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Jan Baptist Sheerlinck",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Brigdet Delia McDermott",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Francisco M Carrau",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Bertha Ilett",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Karl Alfred (Maria Mathilda Gustafsson) Backstrom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Neal Ford",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 3
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Selman Francis Slocovski",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Mabel Helen Fortune",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Francesco Celotti",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Emil Christmann",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Paul Edvin Andreasson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Herbert Fuller Chaffee",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Bertram Frank Dean",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Daniel Coxon",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Charles Joseph Shorney",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. George B Goldschmidt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. William Bertram Greenfield",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. John T (Ada Julia Bone) Doling",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Sinai Kantor",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Matilda Petranec",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Pastcho Petroff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Richard Frasar White",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Gustaf Joel Johansson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Anders Vilhelm Gustafsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Stoytcho Mionoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Anna Kristine Salkjelsvik",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Albert Johan Moss",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Tido Rekic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Bertha Moran",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Walter Chamberlain Porter",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Hileni Zabour",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. David John Barton",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Katriina Jussila",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Malake Attalah",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Edvard Pekoniemi",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Patrick Connors",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. William John Robert Turpin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Quigg Edmond Baxter",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Ellis Anna Maria Andersson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Stanley George Hickman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Leonard Charles Moore",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Nicholas Nasser",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Susan Webber",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Percival Wayland White",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Elias Nicola-Yarred",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Martin McMahon",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Fridtjof Arne Madsen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Anna Peter",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johan Ekstrom",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jozef Drazenoic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Domingos Fernandeo Coelho",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Alexander A (Grace Charity Laury) Robins",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Leopold (Mathilde Francoise Pede) Weisz",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Samuel James Hayden Sobey",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Emile Richard",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Helen Monypeny Newsom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Jacques Heath Futrelle",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Olaf Elon Osen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Victor Giglio",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Joseph (Sultana) Boulos",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Anna Sofia Nysten",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Pekka Pietari (Elin Matilda Dolck) Hakkarainen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jeremiah Burke",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Edgardo Samuel Andrew",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Joseph Charles Nicholls",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. August Edvard Andersson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Robina Maggie Ford",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Michel Navratil",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Rev. Thomas Roussel Davids Byles",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Rev. Robert James Bateman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Thomas (Edith Wearne) Pears",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Alfonzo Meo",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Austin Blyler van Billiard",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ole Martin Olsen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Charles Duane Williams",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Katherine Gilnagh",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Harry Corn",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Mile Smiljanic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Thomas Henry Sage",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 8,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Hatfield Cribb",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. James (Elizabeth Inglis Milne) Watt",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Viktor Bengtsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jovo Calic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Eino Viljami Panula",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Frank John William Goldsmith",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. (Edith Martha Bowerman) Chibnall",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. William (Anna Bernhardina Karlsson) Skoog",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 4
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. John D Baumann",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Lee Ling",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Wyckoff Van der hoef",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Arthur Rice",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Eleanor Ileen Johnson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Antti Wilhelm Sivola",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. James Clinch Smith",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Klas Albin Klasen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Henry Forbes Lefebre",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Miss. Ann Elizabeth Isham",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Reginald Hale",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Lionel Leonard",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Constance Gladys Sage",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 8,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Rene Pernot",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Clarence Gustaf Hugo Asplund",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. Richard F Becker",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Luise Gretchen Kink-Heilmann",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Hugh Roscoe Rood",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Thomas (Johanna Godfrey) O'Brien",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Charles Hallace Romaine",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Bourke",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Stjepan Turcin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. (Rosa) Pinsky",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. William Carbines",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Carla Christine Nielsine Andersen-Jensen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. Michel M Navratil",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. James Joseph (Margaret Tobin) Brown",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Elise Lurette",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Robert Mernagh",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Karl Siegwart Andreas Olsen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Margaret Madigan",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Miss. Henriette Yrois",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Nestor Cyriel Vande Walle",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Frederick Sage",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 8,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jakob Alfred Johanson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Gerious Youseff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Gurshon Cohen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Telma Matilda Strom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Karl Alfred Backstrom",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Nassef Cassem Albimona",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Helen Carr",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Henry Blank",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ahmed Ali",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Clear Annie Cameron",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Henry Perkin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Hans Kristensen Givard",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Philip Kiernan",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Madeleine Newell",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Eliina Honkanen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Sidney Samuel Jacobsohn",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Albina Bazzani",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Walter Harris",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Victor Francis Sunderland",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. James H Bracken",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. George Henry Green",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Christo Nenkoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Frederick Maxfield Hoyt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Karl Ivar Sven Berglund",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mr. William John Mellors",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Hall Lovell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Arne Jonas Fahlstrom",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Mathilde Lefebre",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Henry Birkhardt (Irene Wallach) Harris",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Bengt Edvin Larsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Ernst Adolf Sjostedt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Lillian Gertrud Asplund",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Robert William Norman Leyson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Alice Phoebe Harknett",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Stephen Hold",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Marjorie Collyer",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Frederick William Pengelly",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. George Henry Hunt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Thamine Zabour",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Katherine Murphy",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Reginald Charles Coleridge",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Matti Alexanteri Maenpaa",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Sleiman Attalah",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Dr. William Edward Minahan",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Agda Thorilda Viktoria Lindahl",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. William (Anna) Hamalainen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Richard Leonard Beckwith",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Rev. Ernest Courtenay Carter",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. James George Reed",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Wilhelm (Elna Matilda Persson) Strom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. William Thomas Stead",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Arthur Lobb",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Viktor (Helena Wilhelmina) Rosblom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Darwis (Hanne Youssef Razi) Touma",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Gertrude Maybelle Thorne",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Gladys Cherry",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Anna Ward",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. (Lutie Davis) Parrish",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Edvin Rojj Felix Asplund",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Emil Taussig",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. William Harrison",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Delia Henry",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. David Reeves",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ernesti Arvid Panula",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Ernst Ulrik Persson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. William Thompson (Edith Junkins) Graham",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Amelia Bissette",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Alexander Cairns",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. William Henry Tornquist",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. (Elizabeth Anne Maidment) Mellinger",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Charles H Natsch",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Hanora Healy",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Kornelia Theodosia Andrews",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Augusta Charlotta Lindblom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Francis Parkes",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Eric Rice",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Stanton (Rosa Hunt) Abbott",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Frank Duane",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Nils Johan Goransson Olsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Alfons de Pelsmaeker",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Edward Arthur Dorking",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Richard William Smith",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ivan Stankovic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Theodore de Mulder",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Penko Naidenoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mr. Masabumi Hosono",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Kate Connolly",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Ellen Barber",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Dickinson H (Helen Walton) Bishop",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Rene Jacques Levy",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Aloisia Haas",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ivan Mineff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Ervin G Lewy",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Mansour Hanna",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Miss. Helen Loraine Allison",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Adolphe Saalfeld",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. James (Helene DeLaudeniere Chaput) Baxter",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Anna Katherine Kelly",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Bernard McCoy",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Cahoone Jr Johnson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Nora A Keane",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Howard Hugh Williams",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Master. Hudson Trevor Allison",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Margaret Fleming",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Victor de Satode (Maria Josefa Perez de Soto y Vallejo) Penasco y Castellana",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Samuel Abelson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Laura Mabel Francatelli",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Margaret Bechstein Hays",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Emily Borie Ryerson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mrs. William (Anna Sylfven) Lahtinen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ignjac Hendekovic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Benjamin Hart",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Helmina Josefina Nilsson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Sinai (Miriam Sternin) Kantor",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Dr. Ernest Moraweck",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Mary Natalie Wick",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Frederic Oakley (Margaretta Corning Stone) Spedden",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Samuel Dennis",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Yoto Danoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Hilda Mary Slayter",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Albert Francis (Sylvia Mae Harbaugh) Caldwell",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. George John Jr Sage",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 8,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Marie Grice Young",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johan Hansen Nysveen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. (Ada E Hall) Ball",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Frank John (Emily Alice Brown) Goldsmith",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Jean Gertrude Hippach",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Agnes McCoy",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Austen Partner",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. George Edward Graham",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Leo Edmondus Vander Planke",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Henry William (Clara Heinsheimer) Frauenthal",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Mitto Denkoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Thomas Clinton Pears",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Elizabeth Margaret Burns",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Karl Edwart Dahl",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Stephen Weart Blackwell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. Edmond Roger Navratil",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Alice Elizabeth Fortune",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Erik Gustaf Collander",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Charles Frederick Waddington Sedgwick",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Stanley Hubert Fox",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Amelia Brown",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Marion Elsie Smith",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Thomas Henry (Mary E Finck) Davison",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. William Loch Coutts",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jovan Dimic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Nils Martin Odahl",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Fletcher Fellows Williams-Lambert",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Tannous Elias",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Josef Arnold-Franchi",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Wazli Yousif",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Leo Peter Vanden Steen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Elsie Edith Bowerman",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Miss. Annie Clemmer Funk",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Mary McGovern",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Helen Mary Mockler",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Wilhelm Skoog",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 4
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Sebastiano del Carlo",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. (Catherine David) Barbara",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Adola Asim",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Thomas O'Brien",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Mauritz Nils Martin Adahl",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Frank Manley (Anna Sophia Atkinson) Warren",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. (Mantoura Boulos) Moussa",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Annie Jermyn",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mme. Leontine Pauline Aubart",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. George Achilles Harder",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jakob Alfred Wiklund",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Thomas Beavan",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Sante Ringhini",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Stina Viola Palsson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Edgar Joseph (Leila Saks) Meyer",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Aurora Adelia Landergren",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Harry Elkins Widener",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Tannous Betros",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Karl Gideon Gustafsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Rosalie Bidois",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Maria Nakid",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Juho Tikkanen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Alexander Oskar (Mary Aline Towner) Holverson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Vasil Plotcharsky",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Charles Henry Davies",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Sidney Leonard Goodwin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 5,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Kate Buss",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Matthew Sadlier",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Bertha Lehmann",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. William Ernest Carter",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Carl Olof Jansson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johan Birger Gustafsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Marjorie Newell",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Hjalmar (Agnes Charlotta Bengtsson) Sandstrom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Erik Johansson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Elina Olsson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Peter David McKane",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Dr. Alfred Pain",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. William H (Jessie L) Trout",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Juha Niskanen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Adams",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Mari Aina Jussila",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Pekka Pietari Hakkarainen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Marija Oreskovic",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Shadrach Gale",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Carl/Charles Peter Widegren",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. William Rowe Richards",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Hans Martin Monsen Birkeland",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Ida Lefebre",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Todor Sdycoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Henry Hart",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Daisy E Minahan",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Alfred Fleming Cunningham",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Johan Julian Sundman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Thomas (Annie Louise Rowley) Meek",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. James Vivian (Lulu Thorne Christian) Drew",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Lyyli Karoliina Silven",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. William John Matthews",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Catharina Van Impe",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. David Charters",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Leo Zimmerman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Ernst Gilbert (Anna Sigrid Maria Brogren) Danbom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Viktor Richard Rosblom",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Phillippe Wiseman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Charles V (Ada Maria Winfield) Clarke",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Kate Florence Phillips",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. James Flynn",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Berk (Berk Trembisky) Pickard",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Mauritz Hakan Bjornstrom-Steffansson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Percival (Florence Kate White) Thorneycroft",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Charles Alexander (Alice Adelaide Slow) Louch",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Nikolai Erland Kallio",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. William Baird Silvey",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Lucile Polk Carter",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Doolina Margaret Ford",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Sidney (Emily Hocking) Richards",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 3
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Mark Fortune",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 4
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Johan Henrik Johannesson Kvillner",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Benjamin (Esther Ada Bloomfield) Hart",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Leon Hampe",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johan Emil Petterson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Ms. Encarnacion Reynaldo",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Bernt Johannesen-Bratthammer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Master. Washington Dodge",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Madeleine Violet Mellinger",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Frederic Kimber Seward",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Marie Catherine Baclini",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Major. Arthur Godfrey Peuchen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Edwy Arthur West",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ingvald Olai Olsen Hagland",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Benjamin Laventall Foreman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Samuel L Goldenberg",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Joseph Peduzzi",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Ivan Jalsevac",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Francis Davis Millet",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Frederick R (Marion) Kenyon",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Ellen Toomey",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Maurice O'Connor",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Harry Anderson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Morley",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Arthur H Gee",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Jacob Christian Milling",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Simon Maisner",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Manuel Estanslas Goncalves",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. William Campbell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. John Montgomery Smart",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. James Scanlan",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Helene Barbara Baclini",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Arthur Keefe",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Luka Cacic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Edwy Arthur (Ada Mary Worth) West",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Amin S (Marie Marthe Thuillard) Jerwan",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Ida Sofia Strandberg",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. George Quincy Clifford",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Peter Henry Renouf",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Lewis Richard Braund",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Nils August Karlsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Hildur E Hirvonen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Harold Victor Goodwin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 5,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Anthony Wood Frost",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Richard Henry Rouse",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. (Hedwig) Turkula",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Dickinson H Bishop",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Jeannie Lefebre",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Frederick Maxfield (Jane Anne Forby) Hoyt",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Edward Austin Kent",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Francis William Somerton",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Eden Leslie Coutts",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Konrad Mathias Reiersen Hagland",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Einar Windelov",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Harry Markland Molson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Ramon Artagaveytia",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Edward Roland Stanley",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Gerious Yousseff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Elizabeth Mussey Eustis",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Frederick William Shellard",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mrs. Hudson J C (Bessie Waldo Daniels) Allison",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Olof Svensson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Petar Calic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Mary Canavan",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Bridget Mary O'Sullivan",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Kristina Sofia Laitinen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Roberta Maioni",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Victor de Satode Penasco y Castellana",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Frederick Charles (Jane Richards) Quick",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. George Bradley",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Henry Margido Olsen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Fang Lang",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Eugene Patrick Daly",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. James Webber",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. James Robert McGough",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Martin (Elizabeth L. Barrett) Rothschild",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Satio Coleff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. William Anderson Walker",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. (Amelia Milley) Lemore",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Patrick Ryan",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. William A (Florence Agnes Hughes) Angle",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Stefo Pavlovic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Anne Perreault",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Janko Vovk",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Sarkis Lahoud",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Louis Albert (Ida Sophia Fischer) Hippach",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Fared Kassem",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. James Farrell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Lucy Ridsdale",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. John Farthing",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johan Werner Salonen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Richard George Hocking",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Phyllis May Quick",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Nakli Toufik",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Joseph Jr Elias",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Catherine (Catherine Rizk) Peter",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Marija Cacic",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Eva Miriam Hart",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Major. Archibald Willingham Butt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Bertha LeRoy",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Samuel Beard Risien",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Hedwig Margaritha Frolicher",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Harriet R Crosby",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Ingeborg Constanzia Andersson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Sigrid Elisabeth Andersson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mr. Edward Beane",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Walter Donald Douglas",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Arthur Ernest Nicholson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Edward (Ethel Clarke) Beane",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mr. Julian Padro y Manent",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Frank John Goldsmith",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. John Morgan Jr Davies",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. John Borland Jr Thayer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Percival James R Sharp",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Timothy O'Brien",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Fahim Leeni",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Velin Ohman",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. George Wright",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Lady. (Lucille Christiana Sutherland)Duff Gordon",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Victor Robbins",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Emil (Tillie Mandelbaum) Taussig",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Guillaume Joseph (Emma) de Messemaeker",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Thomas Rowan Morrow",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Husein Sivic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Robert Douglas Norman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Simmons",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. (Marion Ogden) Meanwell",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Alfred J Davies",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ilia Stoytcheff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Nils (Alma Cornelia Berglund) Palsson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 4
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Tannous Doharr",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Carl Jonsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mr. George Harris",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Edward Dale (Charlotte Lamson) Appleton",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. John Irwin Flynn",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Mary Kelly",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Alfred George John Rush",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. George Patchett",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Ethel Garside",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. William Baird (Alice Munger) Silvey",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Joseph (Maria Elias) Caram",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Eiriik Jussila",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Julie Rachel Christy",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. John Borland (Marian Longstreth Morris) Thayer",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. William James Downton",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. John Hugo Ross",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Uscher Paulner",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Ruth Taussig",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. John Denzil Jarvis",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Maxmillian Frolicher-Stehli",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Eliezer Gilinski",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Joseph Murdlin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Matti Rintamaki",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Walter Bertram (Martha Eustis) Stephenson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William James Elsbury",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Mary Bourke",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. John Henry Chapman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jean Baptiste Van Impe",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Jessie Wills Leitch",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Alfred Johnson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Hanna Boulos",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Sir. Cosmo Edmund Duff Gordon",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Sidney Samuel (Amy Frances Christy) Jacobsohn",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Petco Slabenoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Charles H Harrington",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ernst William Torber",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Harry Homer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Edvard Bengtsson Lindell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Milan Karaic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Robert Williams Daniel",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Joseph (Juliette Marie Louise Lafargue) Laroche",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Elizabeth W Shutes",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Anders Johan (Alfrida Konstantia Brogren) Andersson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 5
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jose Neto Jardin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Margaret Jane Murphy",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Horgan",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Alfred Brocklebank",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Alice Herman",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ernst Gilbert Danbom",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. William Arthur (Cordelia K Stanlick) Lobb",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Marion Louise Becker",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Lawrence Gavey",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Antoni Yasbeck",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Edwin Nelson Jr Kimball",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Sahid Nakid",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Henry Damsgaard Hansen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. David John Bowen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Frederick Sutton",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Rev. Charles Leonard Kirkland",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Gretchen Fiske Longley",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Guentcho Bostandyeff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Patrick D O'Connell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Algernon Henry Wilson Barkworth",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johan Svensson Lundahl",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Dr. Max Stahelin-Maeglin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. William Henry Marsh Parr",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Mabel Skoog",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Mary Davis",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Antti Gustaf Leinonen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Harvey Collyer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Juha (Maria Emilia Ojala) Panula",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 5
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Percival Thorneycroft",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Hans Peder Jensen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mlle. Emma Sagesser",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Margit Elizabeth Skoog",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Choong Foo",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Eugenie Baclini",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Henry Sleeper Harper",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Liudevit Cor",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Col. Oberst Alfons Simonius-Blumer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Edward Willey",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Amy Zillah Elsie Stanley",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Mito Mitkoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Elsie Doling",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johannes Halvorsen Kalvik",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Hanora O'Leary",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Hanora Hegarty",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Leonard Mark Hickman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Alexander Radeff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. John (Catherine) Bourke",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. George Floyd Eitemiller",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Arthur Webster Newell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Dr. Henry William Frauenthal",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Mohamed Badt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Edward Pomeroy Colley",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Peju Coleff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Eino William Lindqvist",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Lewis Hickman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Reginald Fenton Butler",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Knud Paust Rommetvedt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jacob Cook",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Elmer Zebley (Juliet Cummins Wright) Taylor",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Thomas William Solomon (Elizabeth Catherine Ford) Brown",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Thornton Davidson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Henry Michael Mitchell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mr. Charles Wilhelms",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Ennis Hastings Watson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Gustaf Hjalmar Edvardsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Frederick Charles Sawyer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Anna Sofia Turja",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Frederick (Augusta Tyler) Goodwin",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 6
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Thomas Drake Martinez Cardeza",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Katie Peters",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Hammad Hassab",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Thor Anderson Olsvigen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Charles Edward Goodwin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 5,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Thomas William Solomon Brown",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Joseph Philippe Lemercier Laroche",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jaako Arnold Panula",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Branko Dakic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Eberhard Thelander Fischer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Georgette Alexandra Madill",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Albert Adrian Dick",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Manca Karun",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Ali Lam",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Khalil Saad",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Col. John Weir",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Charles Henry Chapman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. James Kelly",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Katherine Mullens",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. John Borland Thayer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Adolf Mathias Nicolai Olsen Humblen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. John Jacob (Madeleine Talmadge Force) Astor",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Spencer Victor Silverthorne",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Saiide Barbara",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Martin Gallagher",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Henrik Juul Hansen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Henry Samuel Morley",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Florence Kelly",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Edward Pennington Calderhead",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Alice Cleaver",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Halim Gonios Moubarek",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mlle. Berthe Antonine Mayne",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Herman Klaber",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Elmer Zebley Taylor",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. August Viktor Larsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Samuel Greenberg",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Peter Andreas Lauritz Andersen Soholt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Caroline Louise Endres",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Edwina Celia Troutt",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Malkolm Joackim Johnson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Annie Jessie Harper",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Svend Lauritz Jensen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. William Henry Gillespie",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Henry Price Hodges",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Norman Campbell Chambers",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Luka Oreskovic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Peter Henry (Lillian Jefferys) Renouf",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Margareth Mannion",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Kurt Arnold Gottfrid Bryhl",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Pieta Sofia Ilmakangas",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Elisabeth Walton Allen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Houssein G N Hassan",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Robert J Knight",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. William John Berriman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Moses Aaron Troupiansky",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Leslie Williams",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Edward (Margaret Ann Watson) Ford",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 3
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Gustave J Lesurer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Kanio Ivanoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Minko Nankoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Walter James Hawksford",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Tyrell William Cavendish",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Susan Parker Ryerson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Neal McNamee",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Juho Stranden",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Capt. Edward Gifford Crosby",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Rossmore Edward Abbott",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Anna Sinkkonen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Daniel Warner Marvin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Michael Connaghton",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Joan Wells",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Meier Moor",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johannes Joseph Vande Velde",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Lalio Jonkoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Samuel (Jane Laver) Herman",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. Viljo Hamalainen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. August Sigfrid Carlsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Percy Andrew Bailey",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Thomas Leonard Theobald",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "the Countess. of (Lucy Noel Martha Dyer-Edwards) Rothes",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Garfirth",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Iisakki Antino Aijo Nirva",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Hanna Assi Barah",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. William Ernest (Lucile Polk) Carter",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Hans Linus Eklund",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. John C (Anna Andrews) Hogeboom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Dr. Arthur Jackson Brewe",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Mary Mangan",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Daniel J Moran",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Daniel Danielsen Gronnestad",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Rene Aime Lievens",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Niels Peder Jensen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mrs. (Mary) Mack",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Dibo Elias",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Elizabeth (Eliza Needs) Hocking",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 3
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Pehr Fabian Oliver Malkolm Myhrman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Roger Tobin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Virginia Ethel Emanuel",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Thomas J Kilgannon",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Edward Scott (Elisabeth Walton McMillan) Robert",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Banoura Ayoub",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Albert Adrian (Vera Gillespie) Dick",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Milton Clyde Long",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Andrew G Johnston",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Ali",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Abraham (David Lishin) Harmer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Anna Sofia Sjoblom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. George Hugh Rice",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Bertram Vere Dean",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Benjamin Guggenheim",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Andrew Keane",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Alfred Gaskell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Stella Anna Sage",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 8,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. William Fisher Hoyt",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ristiu Dantcheff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Richard Otter",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Dr. Alice (Farnham) Leader",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Mara Osman",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Yousseff Ibrahim Shawah",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. Jean Baptiste (Rosalie Paula Govaert) Van Impe",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Martin Ponesell",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Harvey (Charlotte Annie Tate) Collyer",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Master. William Thornton II Carter",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Assad Alexander Thomas",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Oskar Arvid Hedman",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Karl Johan Johansson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Thomas Jr Andrews",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Ellen Natalia Pettersson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. August Meyer",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Norman Campbell (Bertha Griggs) Chambers",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. William Alexander",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. James Lester",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Richard James Slemen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Ebba Iris Alfrida Andersson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ernest Portage Tomlin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Richard Fry",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Wendla Maria Heininen",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Albert Mallet",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Fredrik Alexander Holm",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Karl Thorsten Skoog",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 3,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Charles Melville (Clara Jennings Gregg) Hays",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Nikola Lulic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Jonkheer. John George Reuchlin",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. (Beila) Moor",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Urho Abraham Panula",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. John Flynn",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Len Lam",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. Andre Mallet",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Thomas Joseph McCormack",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. George Nelson (Martha Evelyn) Stone",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Antoni (Selini Alexander) Yasbeck",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Master. George Sibley Richards",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Amin Saad",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Albert Augustsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Owen George Allum",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Sara Rebecca Compton",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jakob Pasic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Maurice Sirota",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mr. Chang Chip",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Pierre Marechal",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Ilmari Rudolf Alhomaki",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Thomas Charles Mudd",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Augusta Serepeca",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Peter L Lemberopolous",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Jeso Culumovic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Anthony Abbing",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Douglas Bullen Sage",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 8,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Marin Markoff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Rev. John Harper",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Samuel L (Edwiga Grabowska) Goldenberg",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Master. Sigvard Harald Elias Andersson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 4,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johan Svensson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Nourelain Boulos",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Mary Conover Lines",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mrs. Ernest Courtenay (Lilian Hughes) Carter",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Sam (Leah Rosen) Aks",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. George Dennick (Mary Hitchcock) Wick",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Peter Denis Daly",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Mrs. Solomon (Latifa Qurban) Baclini",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 3
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Raihed Razi",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Claus Peter Hansen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 2,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Frederick Edward Giles",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Frederick Joel (Margaret Welles Barron) Swift",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Dorothy Edith Sage",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 8,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. John William Gill",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. (Karolina) Bystrom",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Miss. Asuncion Duran y More",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Washington Augustus II Roebling",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Philemon van Melkebeke",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Master. Harold Theodor Johnson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Cerin Balkic",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Richard Leonard (Sallie Monypeny) Beckwith",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 1,
+    "Name": "Mr. Frans Olof Carlsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Victor Vander Cruyssen",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. Samuel (Hannah Wizosky) Abelson",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 3,
+    "Name": "Miss. Adele Kiamie Najib",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Alfred Ossian Gustafsson",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Nedelio Petroff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Kristo Laleff",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mrs. Thomas Jr (Lily Alexenia Wilson) Potter",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 1,
+    "Pclass": 2,
+    "Name": "Mrs. William (Imanita Parrish Hall) Shelley",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 1
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Johann Markun",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Gerda Ulrika Dahlberg",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Mr. Frederick James Banfield",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Henry Jr Sutehall",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mrs. William (Margaret Norton) Rice",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 5
+  },
+  {
+    "Survived": 0,
+    "Pclass": 2,
+    "Name": "Rev. Juozas Montvila",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Miss. Margaret Edith Graham",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Miss. Catherine Helen Johnston",
+    "Sex": "female",
+    "Siblings_Spouses_Aboard": 1,
+    "Parents_Children_Aboard": 2
+  },
+  {
+    "Survived": 1,
+    "Pclass": 1,
+    "Name": "Mr. Karl Howell Behr",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  },
+  {
+    "Survived": 0,
+    "Pclass": 3,
+    "Name": "Mr. Patrick Dooley",
+    "Sex": "male",
+    "Siblings_Spouses_Aboard": 0,
+    "Parents_Children_Aboard": 0
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "outer1": {
+    "outer2": {
+      "outer3": {
+        "key1": "value1",
+        "key2": "value2"
+      },
+      "outer4": {
+        "key1": "value1",
+        "key2": "value2"
+      }
+    }
+  }
+}
