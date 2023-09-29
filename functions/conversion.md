@@ -6,16 +6,18 @@ Pretty print numbers
 def to_precision($p):
   . |tostring|split(".")
   | [.[0], (.[1]|split("")|.[0:($p|tonumber)]|join(""))]
-  | join(".") 
+  | join(".")
   | tonumber;
 
-def humansize(bytes):
+def humansize(bytes;$p):
   (bytes|tonumber) as $size |
-  if   $size > 1073741824 then "\(($size/1073741824)|to_precision(1))G"
-  elif $size > 1048576    then "\(($size/1048576)|to_precision(1))M"
-  elif $size > 1024       then "\(($size/1024)|to_precision(1))K"
+  if   $size > 1073741824 then "\(($size/1073741824)|to_precision($p))G"
+  elif $size > 1048576    then "\(($size/1048576)|to_precision($p))M"
+  elif $size > 1024       then "\(($size/1024)|to_precision($p))K"
   else $size
-  end; 
+  end;
+
+def humansize(bytes): humansize(bytes;1);
 ```
 
 Examples
@@ -29,4 +31,7 @@ $ jq -nr 'include "recipes"; humansize(301818073)'
 
 $ jq -nr 'include "recipes"; humansize(3018180739)'
 2.8G
+
+$ jq -nr 'include "recipes"; humansize(47221;9)'
+46.114257812K
 ```

@@ -1,12 +1,14 @@
-##########################################################################################
 #
 #  INSTALL
-#    $ curl --create-dirs -o ~/.jq/recipes.jq https://nntrn.github.io/jq-recipes/recipes.jq
+#    $ curl -O https://nntrn.github.io/jq-recipes/recipes.jq
 #
 #  USAGE
 #    $ jq 'include "recipes"; [..] '
 #
-##########################################################################################
+#  SOURCE
+#    https://github.com/nntrn/jq-recipes
+#
+
 ##########################################################################################
 # functions/barcharts.md  
 ##########################################################################################
@@ -53,16 +55,18 @@ def run_barchart:
 def to_precision($p):
   . |tostring|split(".")
   | [.[0], (.[1]|split("")|.[0:($p|tonumber)]|join(""))]
-  | join(".") 
+  | join(".")
   | tonumber;
 
-def humansize(bytes):
+def humansize(bytes;$p):
   (bytes|tonumber) as $size |
-  if   $size > 1073741824 then "\(($size/1073741824)|to_precision(1))G"
-  elif $size > 1048576    then "\(($size/1048576)|to_precision(1))M"
-  elif $size > 1024       then "\(($size/1024)|to_precision(1))K"
+  if   $size > 1073741824 then "\(($size/1073741824)|to_precision($p))G"
+  elif $size > 1048576    then "\(($size/1048576)|to_precision($p))M"
+  elif $size > 1024       then "\(($size/1024)|to_precision($p))K"
   else $size
-  end; 
+  end;
+
+def humansize(bytes): humansize(bytes;1);
 
 ##########################################################################################
 # functions/describe.md  
