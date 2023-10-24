@@ -1,0 +1,11 @@
+{
+  "id": 123456,
+  "name": "Test",
+  "arraySimple": [1, 2, 3],
+  "arrayComplex": [{ "id": 38392 }],
+  "instance": {
+    "id": 8310
+  },
+  "isEmpty": false,
+  "empty": null
+}
