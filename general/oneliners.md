@@ -1,18 +1,21 @@
 # Oneliners
 
-**Example:** Recursively parse escaped JSON
+## Recursively convert appropriate data types from string
+
+input: [ "true", "11", "hello", null ]  
+output: [ true, 11, "hello", null ]
 
 ```jq
 walk( fromjson? // .)
 ```
 
-**Example:** Combine json files
+## Combine json files
 
 ```sh
 jq -n 'reduce inputs as $s (.; .[input_filename|gsub(".json";"")|split("/")|last] += $s)' ./*.json
 ```
 
-**Example:** Simple groupby
+## Simple groupby
 
 ```jq
 group_by(.[$key]) | map({"\(.[0][$key])": length}) | add
@@ -28,7 +31,7 @@ $ jq --arg key Status 'group_by(.[$key]) | map({"\(.[0][$key])": length}) | add'
 }
 ```
 
-**Example:** Flatten json
+## Flatten json
 
 ```jq
 paths(scalars) as $p | "\($p|join("."))=\(getpath($p))"
@@ -52,7 +55,7 @@ $ jq -r 'paths(scalars) as $p | "\($p|join("."))=\(getpath($p))"' data/titanic.j
 1.Parents_Children_Aboard=0
 ```
 
-**Example:** Extract multiple fields
+## Extract multiple fields
 
 ```jq
 ( paths(scalars) | select(IN(.[];
