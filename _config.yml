@@ -30,7 +30,8 @@ nav_sort: case_sensitive
 
 kramdown:
   toc_levels: 2..2
-
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  
 github_username: nntrn
 
 defaults:
