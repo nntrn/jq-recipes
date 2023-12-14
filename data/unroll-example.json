@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "id": 306,
+      "name": "First Company",
+      "branches": [
+        {
+          "id": 4191,
+          "city": "Seattle",
+          "customers": [
+            {
+              "id": 446,
+              "name": "Big Tech 1"
+            },
+            {
+              "id": 447,
+              "name": "Big Tech 2"
+            }
+          ]
+        },
+        {
+          "id": 4192,
+          "city": "Oakland",
+          "customers": [
+            {
+              "id": 448,
+              "name": "Health Tech 1"
+            },
+            {
+              "id": 449,
+              "name": "Health Tech 2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
