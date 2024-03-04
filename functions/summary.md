@@ -1,4 +1,4 @@
-# summary
+# Summary
 
 ```jq
 def grouped_summary($item):
