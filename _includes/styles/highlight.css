@@ -1,4 +1,4 @@
-div.highlight code,pre>code{padding:1rem;display:block}
+pre.highlight{padding:1rem;display:block}
 .highlight,pre.highlight{background:#f9f9f9;color:#383942}
 .highlight pre{background:#f9f9f9}
 .highlight .hll{background:#f9f9f9}
@@ -65,3 +65,4 @@ div.highlight code,pre>code{padding:1rem;display:block}
 .highlight .gi{color:#43d089}
 .highlight .language-json .w+.s2{color:#e35549}
 .highlight .language-json .kc{color:#0083bb}
+  

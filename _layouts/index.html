@@ -4,10 +4,10 @@ layout: default
 
 {%- assign list = site[page.title]  %}
 <h4>{{page.title|upcase}}</h4>
-<ul>
+<ul role="list">
 {%- for p in list %}
   {%- if p.slug != page.slug %}
-    <li><a href="{{p.url|relative_url}}">{{p.title}}</a></li>
+    <li role="listitem"><a href="{{p.url|relative_url}}">{{p.title}}</a></li>
   {%- endif -%}
 {%- endfor %}
 </ul>
