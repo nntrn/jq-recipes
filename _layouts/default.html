@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title != 'Home' %}{{page.title|default:page.name}} | {%-endif %} {{site.title}}</title>
+  <meta name="description" content="{{site.description}}" />
+  <meta name="author" content="{{site.github_username}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nntrn.github.io{{ page.url | relative_url }}" />
+  <link rel="icon" href="{{site.favicon_ico|relative_url}}" type="image/x-icon">
+  <link rel="stylesheet" href="{{'/assets/style.css'|relative_url}}" />
+  <style>
+  {%- for css in site.stylesheets -%}
+  {% include {{css}} %}
+  {% endfor -%}
+  </style>
+</head>
+<body>
+<header>
+  <h1><a href="{{ '/' | relative_url }}">{{site.title}}</a></h1>
+</header>
+<main>
+{{ content }}
+</main>
+<footer>
+  <p>Created by <a href="https://github.com/{{site.repository}}">@{{site.github_username}}</a></p>
+</footer>
+</body>
+</html>

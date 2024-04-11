@@ -1,0 +1,15 @@
+<aside class="sidebar flex gap">
+{% for label in site.sidebar %}
+{%- assign list = site[label] %}
+<div>
+  <h4>{{label|upcase}}</h4>
+  <ul>
+  {%- for p in list %}
+    {%- if label != p.title %}
+      <li><a href="{{p.url|relative_url}}">{{p.title}}</a></li>
+    {%- endif -%}
+  {%- endfor %}
+  </ul>
+</div>
+{%- endfor %}
+</aside>

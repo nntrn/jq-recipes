@@ -3,84 +3,33 @@ description: snippets for working with jq
 baseurl: "/jq-recipes"
 url: "https://nntrn.github.io"
 repository: nntrn/jq-recipes
-recipes_file: recipes.jq
-
-remote_theme: just-the-docs/just-the-docs@v0.5.4
-heading_anchors: false
-color_scheme: custom
-markdown: kramdown
-permalink: pretty
-enable_copy_code_button: true
-
 favicon_ico: "/assets/favicon.ico"
 
-search_enabled: true
-search:
-  # Maximum amount of previews per search result
-  previews: 3
-  # Maximum amount of words to display before a matched word in the preview
-  preview_words_before: 3
-  # Maximum amount of words to display after a matched word in the preview
-  preview_words_after: 3
-  tokenizer_separator: /[^a-zA-Z0-9]+/
-  rel_url: false
-  button: false
-
-nav_sort: case_sensitive
-
 kramdown:
-  toc_levels: 2..2
   smart_quotes: ["apos", "apos", "quot", "quot"]
-  
+
 github_username: nntrn
+
+stylesheets:
+  - styles/highlight.css
 
 defaults:
   - scope:
-      path: "./functions/*.md"
+      path: "_functions"
     values:
-      parent: "Functions"
+      layout: minimal
   - scope:
-      path: "./general/*.md"
+      path: "_general"
     values:
-      parent: "General"
-  - scope:
-      path: "**index.html"
-    values:
-      has_children: true
-      layout: "default"
-  - scope:
-      path: "recipes.jq"
-    values:
-      output: true
+      layout: minimal
 
-plugins:
-  - jekyll-remote-theme
+collections:
+  general:
+    output: true
+  functions:
+    output: true
 
-gh_edit_link: true
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/nntrn/jq-recipes"
-gh_edit_branch: "staging"
-# gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree"
-
-callouts_level: quiet
-callouts:
-  highlight:
-    color: yellow
-  source:
-    title: Source
-    color: green
-  data:
-    title: Data
-    color: yellow
-  note:
-    title: Read more
-    color: blue
-
-custom_css: "/assets/custom/style.css"
-
-sass:
-  style: compact
+sidebar: ["functions", "general"]
 
 compress_html:
   clippings: [div, p, ul, td, h1, h2]
@@ -90,4 +39,8 @@ compress_html:
   blanklines: true
   profile: false
 
-exclude: [readme.md]
+exclude:
+  - readme.md
+  - Gemfile.lock
+  - _config.old.yml
+  - scripts

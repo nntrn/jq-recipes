@@ -16,19 +16,15 @@ BANNER="#
 #
 #  SOURCE
 #    https://github.com/nntrn/jq-recipes
-#"
-
-BORDER="##########################################################################################"
+#
+"
 
 build() {
   echo "$BANNER"
-  echo
-  head -n 1000 $(grep --include "*.md" -rlE '^def ' . | sort) |
+  head -n 1000 $(grep --exclude-dir "_site" --include "*.md" -rlE '^def ' _* | sort) |
     sed 's,^`.*,,g; s,<==$,\n,g' |
-    sed -nE '/^==>|^def/,/^$/p' |
-    sed -E 's,^==> \./(.*)$,<BORDER>\n# \1 \n<BORDER>,g' |
-    sed "s,<BORDER>,$BORDER,g"
+    sed -nE '/^==>|^def/,/^$/p' | sed 's,^==> ,\n# source: ,g'
 }
 
-build | tee $JQFILE
+build | cat -s | tee $JQFILE
 jq -nr -L . 'include "recipes"; try error("has error") catch ""'
