@@ -1,3 +1,5 @@
+---
+---
 # pick
 
 [[Source]](https://github.com/jqlang/jq/issues/2578#issuecomment-1532632453)
@@ -34,4 +36,12 @@ $ jq 'include "recipes"; pick(.properties.dtsRollup.type)' data/api-extractor.sc
   }
 }
 ```
+
+## string pick
+
+```jq
+def spick($key): 
+  getpath([($key|split(".")[]|select(length > 0))]);
+```
+
 

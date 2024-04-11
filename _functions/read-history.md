@@ -1,3 +1,6 @@
+---
+---
+
 # Read history
 
 Compile timestamps in `.bash_history` for all users

@@ -1,3 +1,6 @@
+---
+---
+
 # Text functions
 
 ## Recursively split strings w/ new lines

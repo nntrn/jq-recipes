@@ -1,3 +1,6 @@
+---
+---
+
 # Working with streams
 
 Data used: [nested.json](../data/outer.json)

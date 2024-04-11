@@ -1,3 +1,6 @@
+---
+---
+
 # Working with `inputs`
 
 **DATA**: [tmp.tsv](../data/tmp.tsv)
