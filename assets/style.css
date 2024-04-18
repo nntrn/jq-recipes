@@ -46,12 +46,13 @@ button{position:fixed;z-index:1000;right:0}
 .gap{gap:var(--gap,1rem)}
 .wrap{flex-wrap:wrap}
 .flex-1{display:flex;flex:1}
+.site-title{font-size:2rem;font-weight:300}
 .sidebar-groups{gap:1rem;display:flex;flex-direction:column;padding-bottom:4rem}
 .language-jq{user-select:all}
 @media (max-width:700px){
 .container{flex-direction:column-reverse}
 .sidebar{border-top:1px solid #222;padding-top:1rem}
 .sidebar>div{flex:1;flex-wrap:wrap}
-.sidebar-groups{display:unset;columns:2}
-.sidebar-groups ul{margin:0 0}
+.sidebar-groups{display:unset;columns:3}
+.sidebar-groups ul{margin:0 0;width:200px}
 }
