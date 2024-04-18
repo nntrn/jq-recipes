@@ -1,30 +1,30 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2046
 
-RECIPES_PATH=recipes.jq
+JQFILE=recipes.jq
 SCRIPT=$(realpath $0)
 
-cd ${SCRIPT%/*} || cd "$(dirname "$SCRIPT")"
+cd ${SCRIPT%/*} || exit 1
 cd $(git rev-parse --show-toplevel) || exit 1
 
-recipes() {
-  CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-  local repo=${PWD##*/}
+BANNER="#
+#  INSTALL
+#    $ curl -O https://nntrn.github.io/jq-recipes/recipes.jq
+#
+#  USAGE
+#    $ jq 'include \"${JQFILE%.jq}\"; [..] '
+#
+#  SOURCE
+#    https://github.com/nntrn/jq-recipes
+#
+"
 
-  cd ../
-  echo "#"
-  echo "# https://github.com/nntrn/jq-recipes"
-  echo "#"
-  echo "# USAGE"
-  echo "#     $ cd ~/.jq"
-  echo "#     $ curl -O https://nntrn.github.io/jq-recipes/$RECIPES_PATH"
-  echo "#     $ jq 'include \"${RECIPES_PATH%.jq}\"; [funcname]'"
-  echo "#"
-  echo
-  head -n 1000 $(grep --include "*.md" -rlE '^def ' $repo) |
-    sed 's,^`.*,,g;s,<==$,<==\n,g' |
-    sed -nE '/^==>|^def/,/^$/p' |
-    sed -E 's,^==>|<==$,##############################,g'
+build() {
+  echo "$BANNER"
+  head -n 1000 $(grep --exclude-dir "_site" --include "*.md" -rlE '^def ' _* | sort) |
+    sed 's,^`.*,,g; s,<==$,\n,g' |
+    sed -nE '/^==>|^def/,/^$/p' | sed 's,^==> ,\n# source: ,g'
 }
 
-recipes | tee $RECIPES_PATH
+build | cat -s | tee $JQFILE
+jq -nr -L . 'include "recipes"; try error("has error") catch ""'

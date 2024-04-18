@@ -1,0 +1,9 @@
+* text=auto
+
+*.md linguist-detectable=false
+*.scss linguist-detectable=false
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.js linguist-detectable=false
+
+scripts/* linguist-language=Shell

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: minimal
 title: Home
 nav_exclude: true
 ---
@@ -8,11 +8,10 @@ nav_exclude: true
 
 ## Setup
 
-[**Download recipes.jq**](https://nntrn.github.io/jq-recipes/recipes.jq)
+Download [recipes.jq](https://nntrn.github.io/jq-recipes/recipes.jq)
 
 ```console
-$ mkdir -p ~/.jq
-$ curl --output-dir ~/.jq https://nntrn.github.io/jq-recipes/jqrecipes.jq
+$ curl --create-dirs -o ~/.jq/recipes.jq https://nntrn.github.io/jq-recipes/recipes.jq
 ```
 
 ## Usage
@@ -21,7 +20,6 @@ $ curl --output-dir ~/.jq https://nntrn.github.io/jq-recipes/jqrecipes.jq
 jq 'include "recipes"; <funcname>' <jsonfile>
 ```
 
-
-<details open=false>
-<pre>{% include_relative jqrecipes.jq %}</pre>
+<details><summary>View contents</summary>
+<pre>{% include_relative recipes.jq %}</pre>
 </details>
