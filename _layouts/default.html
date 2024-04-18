@@ -18,10 +18,8 @@
   </style>
 </head>
 <body>
-<header>
-  <h1><a href="{{ '/' | relative_url }}">{{site.title}}</a></h1>
-</header>
-<main>
+<main class="container">
+{% include sidebar.html %}
 {{ content }}
 </main>
 <footer>

@@ -1,21 +1,27 @@
 <aside class="sidebar flex gap">
-  {%- for label in site.sidebar %}
-  {%- assign list = site[label] %}
-  <div>
-    <h4>{{label|upcase}}</h4>
-    <ul>
-    {%- for p in list %}
-      {%- if label != p.title %}
-      <li>
-      {%- if p.title == page.title -%}
-        <u><strong>{{p.title}}</strong></u>
-      {%- else -%}
-        <a href="{{p.url|relative_url}}">{{p.title}}</a>
-      {%- endif -%}
-      </li>
-      {%- endif -%}
+  <header>
+    <h1><a href="{{ '/' | relative_url }}">{{site.title}}</a></h1>
+    <h5><a href="https://github.com/nntrn/jq-recipes/wiki">View the wiki</a></h5>
+  </header>
+  <div class="sidebar-groups">
+    {%- for label in site.sidebar %}
+    {%- assign list = site[label] %}
+    <div>
+      <h4>{{label|upcase}}</h4>
+      <ul>
+      {%- for p in list %}
+        {%- if label != p.title %}
+        <li>
+        {%- if p.title == page.title -%}
+          <u><strong>{{p.title}}</strong></u>
+        {%- else -%}
+          <a href="{{p.url|relative_url}}">{{p.title}}</a>
+        {%- endif -%}
+        </li>
+        {%- endif -%}
+      {%- endfor %}
+      </ul>
+    </div>
     {%- endfor %}
-    </ul>
   </div>
-  {%- endfor %}
 </aside>

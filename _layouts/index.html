@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-
-{%- assign list = site[page.title]  %}
+{%- comment -%}{%- assign list = site[page.title]  %}
 <h4>{{page.title|upcase}}</h4>
 <ul role="list">
 {%- for p in list %}
@@ -10,4 +9,4 @@ layout: default
     <li role="listitem"><a href="{{p.url|relative_url}}">{{p.title}}</a></li>
   {%- endif -%}
 {%- endfor %}
-</ul>
+</ul>{%- endcomment -%}
