@@ -26,3 +26,25 @@ def dquote($text): "\"\($text)\"";
 def unsmart($text): $text | gsub("[“”]";"\"") | gsub("[’‘]";"'");
 def unsmart: . | unsmart;
 ```
+
+## Cleaning up text
+
+
+Remove repeated special characters using `\\1` (such as `[[`, `{{`, `'''`)
+
+```jq
+gsub("([^\\w\\d\\s])\\1(\\1)?";"")
+```
+```console
+$ cat wikitext.txt
+{{Date table sorting|December 31}}
+[[Charlotte, North Carolina|Charlotte]] (4)
+[[North Carolina]]
+'''5'''
+
+$ jq -rR 'gsub("([^\\w\\d\\s])\\1(\\1)?";"")' gsub.txt
+Date table sorting|December 31
+Charlotte, North Carolina|Charlotte (4)
+North Carolina
+5
+```
