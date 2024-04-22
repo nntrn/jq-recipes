@@ -30,14 +30,13 @@ def unsmart: . | unsmart;
 ## Cleaning up text
 
 
-Remove repeated special characters using `\\1` (such as `[[`, `{{`, `'''`)
-
 ```jq
 gsub("([^\\w\\d\\s])\\1(\\1)?";"")
 ```
+
 ```console
 $ cat wikitext.txt
-{{Date table sorting|December 31}}
+{%raw%}{{Date table sorting|December 31}}{%endraw%}
 [[Charlotte, North Carolina|Charlotte]] (4)
 [[North Carolina]]
 '''5'''

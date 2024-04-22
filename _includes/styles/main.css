@@ -25,9 +25,9 @@ a{color:inherit;text-decoration-color:hsl(var(--h),var(--s),var(--l))}
 h1,h2,h3,h4,h5,ul{margin:0 0}
 h1,h2,h4{line-height:1}
 main{padding:0 1rem}
-header{padding:0 0 1rem 0;gap:1.5rem;display:flex;flex-direction:column}
-header h5 a{text-decoration:none;background:#222;border:2px solid #222;color:#fff;padding:.15rem .5rem}
-header h5 a:hover{background:#fff;color:#222;color:#222}
+nav{padding:0 0 1rem 0;gap:1.5rem;display:flex;flex-direction:column}
+nav h5 a{text-decoration:none;background:#222;border:2px solid #222;color:#fff;padding:.15rem .5rem}
+nav h5 a:hover{background:#fff;color:#222;color:#222}
 footer{background:#222;min-height:100px;padding:1.5rem;color:#fff}
 pre{font-size:.9rem;max-width:100%}
 pre code{white-space:pre;display:block;overflow-x:scroll}
@@ -49,10 +49,3 @@ button{position:fixed;z-index:1000;right:0}
 .site-title{font-size:2rem;font-weight:300}
 .sidebar-groups{gap:1rem;display:flex;flex-direction:column;padding-bottom:4rem}
 .language-jq{user-select:all}
-@media (max-width:700px){
-.container{flex-direction:column-reverse}
-.sidebar{border-top:1px solid #222;padding-top:1rem}
-.sidebar>div{flex:1;flex-wrap:wrap}
-.sidebar-groups{display:unset;columns:3}
-.sidebar-groups ul{margin:0 0;width:200px}
-}

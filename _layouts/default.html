@@ -10,17 +10,19 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nntrn.github.io{{ page.url | relative_url }}" />
   <link rel="icon" href="{{site.favicon_ico|relative_url}}" type="image/x-icon">
-  <link rel="stylesheet" href="{{'/assets/style.css'|relative_url}}" />
-  <style>
+
   {%- for css in site.stylesheets -%}
-  {% include {{css}} %}
-  {% endfor -%}
-  </style>
+  {%capture style %}<style>{%- include {{css}} -%}</style>{%endcapture%}
+  {{style}}
+  {% endfor %}
 </head>
-<body>
-<main class="container">
+<body class="container">
+<header>
+<h1 class="site-title"><a href="{{ '/' | relative_url }}">{{site.title}}</a></h1>
+</header>
 {% include sidebar.html %}
-{{ content }}
+<main>
+  {{ content }}
 </main>
 <footer>
   <p>Created by <a href="https://github.com/{{site.repository}}">@{{site.github_username}}</a></p>

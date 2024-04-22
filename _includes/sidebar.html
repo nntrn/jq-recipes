@@ -1,13 +1,13 @@
 <aside class="sidebar flex gap">
-  <header>
+  <nav>
     <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{site.title}}</a></h1>
     <h5><a href="https://github.com/nntrn/jq-recipes/wiki">View the wiki</a></h5>
-  </header>
+  </nav>
   <div class="sidebar-groups">
     {%- for label in site.sidebar %}
     {%- assign list = site[label] %}
     <div>
-      <h4>{{label|upcase}}</h4>
+      <h4><a href="{{label|relative_url}}">{{label|upcase}}</a></h4>
       <ul>
       {%- for p in list %}
         {%- if label != p.title %}

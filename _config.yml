@@ -5,13 +5,18 @@ url: "https://nntrn.github.io"
 repository: nntrn/jq-recipes
 favicon_ico: "/assets/favicon.ico"
 
+markdown: kramdown
+
 kramdown:
+  parse_block_html: true
   smart_quotes: ["apos", "apos", "quot", "quot"]
 
 github_username: nntrn
 
 stylesheets:
   - styles/highlight.css
+  - styles/main.css
+  - styles/grid.css
 
 defaults:
   - scope:

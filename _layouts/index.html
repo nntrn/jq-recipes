@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
-{%- comment -%}{%- assign list = site[page.title]  %}
-<h4>{{page.title|upcase}}</h4>
-<ul role="list">
-{%- for p in list %}
-  {%- if p.slug != page.slug %}
-    <li role="listitem"><a href="{{p.url|relative_url}}">{{p.title}}</a></li>
-  {%- endif -%}
+<h2>{{page.title|upcase}}</h2> 
+
+<section>
+{%- for p in site[page.title] %}
+  {%- assign indexpath = p.slug | append: p.ext -%}
+  {%- capture page_content %}{% include_relative {{indexpath}} %}{% endcapture -%}
+  <div class="page-content">{{page_content|markdownify}}</div>
 {%- endfor %}
-</ul>{%- endcomment -%}
+</section>
+
