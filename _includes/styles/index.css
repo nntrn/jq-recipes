@@ -1,0 +1,16 @@
+.container{grid-template-areas:"header header header" "sidebar sidebar sidebar" "main main main" "footer footer footer"}
+header{display:block}
+.page-content h1{font-size:1.5rem;border-bottom:4px solid #222;line-height:1.4}
+.page-content h2{font-size:1.25rem;margin-top:1.5rem}
+.page-content h3{font-size:1.15rem;border-bottom:1.5px dotted #222}
+.page-content{border:0;margin-bottom:2rem;break-inside:avoid}
+section{column-count:2;column-gap:5rem}
+body>:not(header,footer){width:95%!important;margin:auto}
+li h2,li h3{font-size:unset!important;all:unset}
+aside nav{display:none}
+.sidebar-groups{flex-direction:row;width:100%;margin:0 0;padding:2rem;background:hsla(var(--h),var(--s),var(--l),.2);color:hsl(var(--h),var(--s),20%)}
+.sidebar-groups>div{flex:1;columns:2}
+.sidebar a:hover{text-decoration:2px underline #fff}
+@media (max-width:700px){
+section{column-count:1;column-gap:3rem}
+}

@@ -18,6 +18,6 @@ $ curl --create-dirs -o ~/.jq/recipes.jq https://nntrn.github.io/jq-recipes/reci
 jq 'include "recipes"; <funcname>' <jsonfile>
 ```
 
-<details><summary>View contents</summary>
+<details>
 <pre>{% include_relative recipes.jq %}</pre>
 </details>

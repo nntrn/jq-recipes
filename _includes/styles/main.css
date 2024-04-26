@@ -14,7 +14,7 @@
 *{box-sizing:border-box}
 .hidden,[hidden]{display:none!important}
 html{font-size:13px}
-body{padding:0 0;margin:auto;font-family:var(--sans-serif);font-size:inherit;line-height:1.3;overflow-x:hidden}
+body{padding:0 0;margin:auto;font-family:var(--sans-serif);font-size:inherit;line-height:1.3;overflow-x:hidden;min-height:100vh}
 h1{--underline-thickness:3px}
 a,u{text-underline-offset:1px;text-decoration-skip-ink:none;text-decoration-thickness:var(--underline-thickness)}
 u{text-decoration-color:inherit}
@@ -33,7 +33,7 @@ pre{font-size:.9rem;max-width:100%}
 pre code{white-space:pre;display:block;overflow-x:scroll}
 button{position:fixed;z-index:1000;right:0}
 .container{display:flex;gap:1rem;padding:1rem;width:100%}
-.container,main{height:100%;min-height:100vh}
+.container,main{height:100%;}
 .container .sidebar{flex:1}
 .container .content>:first-child{padding:0 0;margin:0 0;margin-bottom:1rem}
 .container .content{flex:3;width:100%;overflow-x:hidden}
@@ -46,6 +46,8 @@ button{position:fixed;z-index:1000;right:0}
 .gap{gap:var(--gap,1rem)}
 .wrap{flex-wrap:wrap}
 .flex-1{display:flex;flex:1}
+.sb{justify-content:space-between}
 .site-title{font-size:2rem;font-weight:300}
 .sidebar-groups{gap:1rem;display:flex;flex-direction:column;padding-bottom:4rem}
-.language-jq{user-select:all}
+.language-jq{user-select:all;background:#222;color:#fff;padding:1rem}
+

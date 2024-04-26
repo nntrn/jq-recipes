@@ -15,6 +15,7 @@
   {%capture style %}<style>{%- include {{css}} -%}</style>{%endcapture%}
   {{style}}
   {% endfor %}
+
 </head>
 <body class="container">
 <header>
@@ -25,7 +26,10 @@
   {{ content }}
 </main>
 <footer>
-  <p>Created by <a href="https://github.com/{{site.repository}}">@{{site.github_username}}</a></p>
+  <div class="flex sb">
+    <p>Download <a href="https://nntrn.github.io/jq-recipes/recipes.jq">recipes.jq</a></p>
+    <p>Created by <a href="https://github.com/{{site.repository}}">@{{site.github_username}}</a></p>
+  </div>
 </footer>
 </body>
 </html>
