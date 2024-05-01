@@ -1,14 +1,11 @@
-header{grid-area:header;padding:1rem;display:none}
-main{grid-area:main;padding:.5rem 1rem;padding-right:1.5rem}
-aside{padding:.125rem 1rem;grid-area:sidebar}
-footer{grid-area:footer}
-.container{padding:0 0;display:grid;grid-template-columns:1fr 2fr 1fr;grid-template-areas:"header header header" "sidebar main main" "footer footer footer"}
+header{grid-area:header;padding:1rem;display:none;grid-row:1/2}
+main{grid-area:main;grid-row:2/4}
+aside{padding:.125rem 1rem;grid-area:sidebar;grid-row:4/4}
+footer{grid-area:footer;grid-row:5/5}
+.container{padding:0 0;display:grid;grid-template-columns:1fr 2fr 1fr;grid-template-areas:"header header header" "main main main" "main main main" "footer footer footer";display:grid;grid-template-columns:repeat(3,1fr)}
 .page-content h1,.page-content h2,.page-content h3{margin:1rem 0;font-size:unset}
 .page-content hr,hr{display:none}
 .page-content{border-top:3px solid #222}
-table{border-collapse:collapse;margin:1rem 0}
-td,th{text-align:left}
-td{border:1px solid #ddd}
 @media (max-width:700px){
 nav h1{display:none}
 header{padding:1rem;display:block}

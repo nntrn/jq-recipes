@@ -1,0 +1,17 @@
+{%- for css in site.stylesheets %}
+<style data-include-path="{{css|replace:".css"}}">
+{% include {{css}} %}
+</style>
+{%- endfor %}
+
+{% comment %}
+{%- capture scss -%}
+{% include styles/section.scss %}
+{%- endcapture -%}
+
+{% if page.layout == "minimal" or page.layout == "cheatsheet" %}
+<style data-include-path="styles/cheatsheet">
+{{ scss | scssify }}
+</style>
+{% endif %}
+{% endcomment %}
