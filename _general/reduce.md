@@ -1,7 +1,6 @@
 ---
+title: Reduce
 ---
-
-# Reduce
 
 ## empty
 

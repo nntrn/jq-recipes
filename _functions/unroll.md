@@ -1,7 +1,6 @@
 ---
+title: Unroll
 ---
-
-# Unroll
 
 ```jq
 [leaf_paths as $path | {

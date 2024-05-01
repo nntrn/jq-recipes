@@ -1,9 +1,8 @@
 ---
+title: Text
 ---
 
-# Text functions
-
-## Recursively split strings w/ new lines
+## Recursively split strings
 
 ```jq
 def split_newlines($s): 
@@ -29,18 +28,11 @@ def unsmart: . | unsmart;
 
 ## Cleaning up text
 
-
 ```jq
 gsub("([^\\w\\d\\s])\\1(\\1)?";"")
 ```
 
 ```console
-$ cat wikitext.txt
-{%raw%}{{Date table sorting|December 31}}{%endraw%}
-[[Charlotte, North Carolina|Charlotte]] (4)
-[[North Carolina]]
-'''5'''
-
 $ jq -rR 'gsub("([^\\w\\d\\s])\\1(\\1)?";"")' gsub.txt
 Date table sorting|December 31
 Charlotte, North Carolina|Charlotte (4)

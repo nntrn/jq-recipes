@@ -1,7 +1,6 @@
 ---
+title: Wrangle
 ---
-
-# Wrangle
 
 ## Zip Column Headers
 

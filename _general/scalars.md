@@ -1,7 +1,6 @@
 ---
+title: Scalars
 ---
-
-# Scalars
 
 Scalars are variables that hold an *individual* value (strings, integers, and booleans). If it's not an object or array &mdash; it's most likely a scalar
 

@@ -1,7 +1,6 @@
 ---
+title: Codepoints
 ---
-
-# Codepoints
 
 Work with explode/implode
 

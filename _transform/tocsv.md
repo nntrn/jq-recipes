@@ -1,7 +1,6 @@
 ---
+title: tocsv
 ---
-
-# tocsv
 
 ```jq
 def tocsv:

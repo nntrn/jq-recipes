@@ -1,7 +1,6 @@
 ---
+title: Conversion
 ---
-
-# conversion
 
 Pretty print numbers
 

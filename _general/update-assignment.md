@@ -1,8 +1,7 @@
 ---
 source: https://github.com/stedolan/jq/issues/873#issuecomment-125385615
+title: Update
 ---
-
-# Update assignment
 
 ## |=
 

@@ -1,6 +1,6 @@
 ---
+title: Pick
 ---
-# pick
 
 [[Source]](https://github.com/jqlang/jq/issues/2578#issuecomment-1532632453)
 

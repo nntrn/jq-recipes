@@ -1,7 +1,6 @@
 ---
+title: json2csv
 ---
-
-# json2csv
 
 ```jq
 # ~/.jq/convert.jq

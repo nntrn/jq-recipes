@@ -1,7 +1,6 @@
 ---
+title: Range
 ---
-
-# Range
 
 ```console
 $ jq -c -n '{x: range(2), y: range(2;5) }'

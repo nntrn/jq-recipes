@@ -1,9 +1,8 @@
 ---
+title: Inputs
 ---
 
-# Working with `inputs`
-
-**DATA**: [tmp.tsv](../data/tmp.tsv)
+[tmp.tsv](../data/tmp.tsv)
 
 ```console
 $ jq -R 'inputs' data/tmp.tsv

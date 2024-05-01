@@ -1,7 +1,6 @@
 ---
+title: Summary
 ---
-
-# Summary
 
 ```jq
 def grouped_summary($item):

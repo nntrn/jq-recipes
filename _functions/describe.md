@@ -1,7 +1,6 @@
 ---
+title: Describe
 ---
-
-# describe
 
 Get object outline
 

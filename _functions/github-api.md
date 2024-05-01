@@ -1,7 +1,6 @@
 ---
+title: Github API
 ---
-
-# github api
 
 ```jq
 def github_raw_url:

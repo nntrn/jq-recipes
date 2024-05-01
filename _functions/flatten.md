@@ -1,7 +1,6 @@
 ---
+title: Flatten
 ---
-
-# Flatten
 
 ## Flat JSON
 

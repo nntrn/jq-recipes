@@ -1,10 +1,15 @@
 ---
-sources:
-  - https://stackoverflow.com/a/19301868
-  - https://github.com/kkos/oniguruma/blob/master/doc/RE
+title: regex
 ---
-
 jq uses the Oniguruma regular expression library
+
+| Match               |  |
+|---------------------|-------|
+| Positive lookahead  | ?=    |
+| Negative lookahead  | ?!    |
+| Positive lookbehind | ?<=   |
+| Negative lookbehind | ?<!   |
+
 
 ```
 Extended groups
@@ -28,10 +33,9 @@ Extended groups
     y{w}: Word mode
 ```                              
                               
-# Regex
+## Lookahead
 
-
-## Lookahead to remove repeating characters
+Remove repeating characters
 
 ```console
 $ jq -n '"aaaabbbbcccc" | gsub("(.)(?=.*\\1)";"")'
@@ -41,7 +45,7 @@ $ jq -n '"aaaabbbbccccaaaa" | gsub("(.)(?=.*\\1)";"")'
 "bca"
 ```
 
-### Only remove first repeating 'a'
+Only remove first repeating 'a'
 
 ```console
 $ jq -n '"aaaabbbbcccc126186" | gsub("\\b(.)(?=.*\\1)";"")'
@@ -53,11 +57,9 @@ $ jq -n '"aaaa bbbb cccc 126 126" | gsub("(\\b.)(?=.*\\1)";"")'
 "abc 126"
 ```
 
----
+### Resources: 
 
-| Match               |  |
-|---------------------|-------|
-| Positive lookahead  | ?=    |
-| Negative lookahead  | ?!    |
-| Positive lookbehind | ?<=   |
-| Negative lookbehind | ?<!   |
+* [Regex remove repeated characters from a string](https://stackoverflow.com/a/19301868)
+* [Oniguruma Regular Expressions](https://github.com/kkos/oniguruma/blob/master/doc/RE)
+
+ 

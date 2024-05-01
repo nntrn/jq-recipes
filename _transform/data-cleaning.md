@@ -1,7 +1,6 @@
 ---
+title: data clean
 ---
-
-# Data cleaning
 
 ## Delete keys
 

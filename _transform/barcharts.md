@@ -1,7 +1,6 @@
 ---
+title: Barcharts
 ---
-
-# barcharts
 
 ```jq
 def barchart($key):

@@ -1,6 +1,6 @@
 ---
+title: Slurp
 ---
-# Slurp
 
 ## Slurpfile
 
