@@ -17,24 +17,45 @@ stylesheets:
   - styles/highlight.css
   - styles/main.css
   - styles/grid.css
+  - styles/cheatsheet.css
 
 defaults:
   - scope:
-      path: "_functions"
+      path: "_functions/*.md"
+      type: "functions"
     values:
       layout: minimal
   - scope:
-      path: "_general"
+      path: "_general/*.md"
+      type: "general"
     values:
       layout: minimal
+  - scope:
+      path: "_notes/*.md"
+      type: "notes"
+    values:
+      layout: minimal
+  - scope:
+      path: "_transform/*.md"
+      type: "transform"
+    values:
+      layout: minimal
+  - scope:
+      path: "**/index.html"
+    values:
+      layout: cheatsheet
 
 collections:
   general:
     output: true
   functions:
     output: true
+  transform:
+    output: true
+  notes:
+    output: true
 
-sidebar: ["functions", "general"]
+sidebar: ["general", "transform", "functions", "notes"]
 
 compress_html:
   clippings: [div, p, ul, td, h1, h2]
@@ -44,8 +65,10 @@ compress_html:
   blanklines: true
   profile: false
 
+sass:
+  style: compressed
+
 exclude:
   - readme.md
   - Gemfile.lock
-  - _config.old.yml
   - scripts
