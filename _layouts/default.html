@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +14,7 @@
   <link rel="canonical" href="https://nntrn.github.io{{ page.url | relative_url }}" />
   <link rel="icon" href="{{site.favicon_ico|relative_url}}" type="image/x-icon">
 
-  {%- for css in site.stylesheets -%}
-  {%capture style %}<style>{%- include {{css}} -%}</style>{%endcapture%}
-  {{style}}
-  {% endfor %}
+  {% include style.html %}
 
 </head>
 <body class="container">
@@ -27,7 +27,10 @@
 </main>
 <footer>
   <div class="flex sb">
-    <p>Download <a href="https://nntrn.github.io/jq-recipes/recipes.jq">recipes.jq</a></p>
+    <div class="flex col">
+      <p>Download <a href="https://nntrn.github.io/jq-recipes/recipes.jq">recipes.jq</a></p>
+      <a role="button" class="btn" href="https://github.com/nntrn/jq-recipes/wiki">View the wiki</a>
+    </div>
     <p>Created by <a href="https://github.com/{{site.repository}}">@{{site.github_username}}</a></p>
   </div>
 </footer>

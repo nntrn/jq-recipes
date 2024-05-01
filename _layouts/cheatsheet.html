@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h2 class="page-title">{{page.title|upcase}}</h2> 
+<section>
+{% assign cheatsheets = site[page.title] %}
+{% for sheet in cheatsheets %}
+  {% if sheet.content.size > 10 %}
+  <div id="{{sheet.title|slugify}}" class="page-content">
+    <h1 class="item-title">{{sheet.title}}</h1>
+    <div class="item-body">{{sheet.content|markdownify}}</div>
+    <div class="github-url">
+      <a href="https://github.com/{{site.repository}}/blob/main/{{sheet.path}}">Github</a>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+</section>
